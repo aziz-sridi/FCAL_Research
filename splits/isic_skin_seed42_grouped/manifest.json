@@ -1,0 +1,87 @@
+{
+  "dataset": "ISIC skin-cancer classification subset",
+  "seed": 42,
+  "class_order": [
+    "MEL",
+    "NV",
+    "BCC",
+    "AK",
+    "BKL",
+    "DF",
+    "VASC",
+    "SCC"
+  ],
+  "class_mapping": {
+    "MEL": 0,
+    "NV": 1,
+    "BCC": 2,
+    "AK": 3,
+    "BKL": 4,
+    "DF": 5,
+    "VASC": 6,
+    "SCC": 7
+  },
+  "seborrheic_keratosis_policy": "merged_into_BKL",
+  "mask_policy": "official challenge mask preferred, then reviewed novice U-Net mask",
+  "mask_sources": {
+    "expert": "ISIC 2016/2017/2018 Task 1 challenge ground truth",
+    "reviewed_novice": "ISIC Archive DOI 10.34970/387951"
+  },
+  "raw_counts": {
+    "train_files": 2239,
+    "test_files": 118
+  },
+  "exclusions": {
+    "duplicate_file_copies_collapsed": 137,
+    "folder_official_label_conflicts_excluded": 3,
+    "missing_lesion_mask_excluded": 286,
+    "train_exact_test_id_copies_excluded": 18,
+    "train_test_lesion_siblings_excluded": 43
+  },
+  "mask_index": {
+    "expert_ids": 4075,
+    "reviewed_novice_ids_added": 11720,
+    "total_mask_ids": 15795
+  },
+  "splits": {
+    "train": {
+      "samples": 1414,
+      "class_counts": {
+        "MEL": 155,
+        "NV": 202,
+        "BCC": 290,
+        "AK": 83,
+        "BKL": 361,
+        "DF": 70,
+        "VASC": 110,
+        "SCC": 143
+      }
+    },
+    "validation": {
+      "samples": 356,
+      "class_counts": {
+        "MEL": 40,
+        "NV": 49,
+        "BCC": 73,
+        "AK": 24,
+        "BKL": 92,
+        "DF": 24,
+        "VASC": 28,
+        "SCC": 26
+      }
+    },
+    "test": {
+      "samples": 100,
+      "class_counts": {
+        "MEL": 16,
+        "NV": 15,
+        "BCC": 16,
+        "AK": 14,
+        "BKL": 16,
+        "DF": 9,
+        "VASC": 3,
+        "SCC": 11
+      }
+    }
+  }
+}

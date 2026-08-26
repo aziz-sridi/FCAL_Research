@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fcal-research"
+version = "0.2.0"
+description = "Foreground-Constrained Attention Learning research implementation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pandas",
+  "pyarrow",
+  "Pillow",
+  "PyYAML",
+  "scipy",
+  "scikit-learn",
+  "matplotlib",
+  "torch",
+  "torchvision",
+  "timm",
+]
+
+[project.optional-dependencies]
+dev = [
+  "nbclient",
+  "nbformat",
+  "pytest",
+  "tabulate",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["src"]

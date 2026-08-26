@@ -1,0 +1,19 @@
+dataset,family,architecture,case_rank,image_id,true_class,ce_prediction,ce_correct,ce_confidence,ce_inside_fraction,fcal_v1_prediction,fcal_v1_correct,fcal_v1_confidence,fcal_v1_inside_fraction,fcal_v2_prediction,fcal_v2_correct,fcal_v2_confidence,fcal_v2_inside_fraction
+CUB-200-2011,CNN,ResNet-50,1,5082,Mallard,Mallard,True,0.498029,0.432726,Harris Sparrow,False,0.428381,0.934184,Mallard,True,0.445979,0.873623
+CUB-200-2011,CNN,ResNet-50,2,7470,Seaside Sparrow,Whip poor Will,False,0.563468,0.904481,Whip poor Will,False,0.581104,0.932505,Seaside Sparrow,True,0.820357,0.888386
+CUB-200-2011,CNN,ResNet-50,3,11600,Marsh Wren,Marsh Wren,True,0.973963,0.132846,Marsh Wren,True,0.997224,0.315426,Marsh Wren,True,0.507141,0.795869
+CUB-200-2011,CNN,DenseNet-121,1,6722,Brewer Sparrow,Brewer Sparrow,True,0.467392,0.281709,Brewer Sparrow,True,0.797671,0.339189,Brewer Sparrow,True,0.295049,0.947093
+CUB-200-2011,CNN,DenseNet-121,2,5873,White Pelican,Horned Puffin,False,0.272457,0.817086,White Pelican,True,0.902794,0.5811,White Pelican,True,0.826372,0.928401
+CUB-200-2011,CNN,DenseNet-121,3,7498,Seaside Sparrow,Seaside Sparrow,True,0.963534,0.117436,Seaside Sparrow,True,0.987964,0.045576,Seaside Sparrow,True,0.43546,0.559003
+CUB-200-2011,CNN,EfficientNet-B0,1,1901,Gray crowned Rosy Finch,Gray crowned Rosy Finch,True,0.574587,0.276944,Gray crowned Rosy Finch,True,0.8051,0.381911,Gray crowned Rosy Finch,True,0.946462,0.679888
+CUB-200-2011,CNN,EfficientNet-B0,2,10506,Tennessee Warbler,White throated Sparrow,False,0.28538,0.107266,Grasshopper Sparrow,False,0.368613,0.238428,Tennessee Warbler,True,0.681935,0.555089
+CUB-200-2011,CNN,EfficientNet-B0,3,7344,Nelson Sharp tailed Sparrow,Nelson Sharp tailed Sparrow,True,0.479762,0.051605,Nelson Sharp tailed Sparrow,True,0.897759,0.321672,Nelson Sharp tailed Sparrow,True,0.858557,0.477938
+CUB-200-2011,ViT,ViT-Tiny/16,1,10532,Tennessee Warbler,Tennessee Warbler,True,0.767033,0.307536,Tennessee Warbler,True,0.778679,0.314079,Tennessee Warbler,True,0.971893,0.365947
+CUB-200-2011,ViT,ViT-Tiny/16,2,4889,Red legged Kittiwake,Elegant Tern,False,0.218154,0.28448,Elegant Tern,False,0.344465,0.285331,Red legged Kittiwake,True,0.466811,0.336129
+CUB-200-2011,ViT,ViT-Tiny/16,3,2617,Gadwall,Gadwall,True,0.972114,0.181394,Gadwall,True,0.975051,0.183908,Gadwall,True,0.99916,0.236179
+CUB-200-2011,ViT,ViT-Small/16,1,2288,Olive sided Flycatcher,Olive sided Flycatcher,True,0.91475,0.407646,Olive sided Flycatcher,True,0.902972,0.432632,Olive sided Flycatcher,True,0.735711,0.453576
+CUB-200-2011,ViT,ViT-Small/16,2,3735,Slaty backed Gull,Western Gull,False,0.444374,0.231924,Slaty backed Gull,True,0.677518,0.257679,Slaty backed Gull,True,0.195052,0.265424
+CUB-200-2011,ViT,ViT-Small/16,3,8143,Scarlet Tanager,Scarlet Tanager,True,0.747062,0.347426,Scarlet Tanager,True,0.829161,0.389976,Scarlet Tanager,True,0.464336,0.391999
+CUB-200-2011,ViT,ViT-Base/16,1,10754,Northern Waterthrush,Northern Waterthrush,True,0.774804,0.093366,Northern Waterthrush,True,0.990664,0.208226,Northern Waterthrush,True,0.554311,0.80616
+CUB-200-2011,ViT,ViT-Base/16,2,10142,Orange crowned Warbler,Philadelphia Vireo,False,0.466063,0.081134,Orange crowned Warbler,True,0.663025,0.165674,Orange crowned Warbler,True,0.237836,0.786014
+CUB-200-2011,ViT,ViT-Base/16,3,4980,Pacific Loon,Pacific Loon,True,0.99968,0.069089,Pacific Loon,True,0.99728,0.166141,Pacific Loon,True,0.995395,0.690622

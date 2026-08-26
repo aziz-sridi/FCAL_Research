@@ -1,0 +1,19 @@
+dataset,family,architecture,case_rank,image_id,true_class,ce_prediction,ce_correct,ce_confidence,ce_inside_fraction,fcal_v1_prediction,fcal_v1_correct,fcal_v1_confidence,fcal_v1_inside_fraction,fcal_v2_prediction,fcal_v2_correct,fcal_v2_confidence,fcal_v2_inside_fraction,universal_prediction,universal_correct,universal_confidence,universal_inside_fraction
+Oxford-IIIT Pet,CNN,ResNet-50,1,3301,boxer,boxer,True,0.997385,0.480619,boxer,True,0.999674,0.519072,boxer,True,0.739414,0.806502,boxer,True,0.601388,0.560528
+Oxford-IIIT Pet,CNN,ResNet-50,2,6094,saint bernard,great pyrenees,False,0.631316,0.752105,saint bernard,True,0.61129,0.731627,saint bernard,True,0.510102,0.903251,great pyrenees,False,0.536426,0.785685
+Oxford-IIIT Pet,CNN,ResNet-50,3,3527,chihuahua,chihuahua,True,0.997644,0.493302,chihuahua,True,0.781052,0.551679,chihuahua,True,0.982563,0.805257,chihuahua,True,0.99824,0.575051
+Oxford-IIIT Pet,CNN,DenseNet-121,1,2519,american bulldog,american bulldog,True,0.893567,0.727457,Sphynx,False,0.52311,0.833881,american bulldog,True,0.998599,0.924001,american bulldog,True,0.9291,0.820726
+Oxford-IIIT Pet,CNN,DenseNet-121,2,346,Bengal,english setter,False,0.617666,0.530386,Bengal,True,0.51546,0.533039,Bengal,True,0.261008,0.707692,english setter,False,0.549533,0.598016
+Oxford-IIIT Pet,CNN,DenseNet-121,3,4295,great pyrenees,great pyrenees,True,0.999178,0.590193,great pyrenees,True,0.998867,0.623046,great pyrenees,True,0.999702,0.804901,great pyrenees,True,0.999876,0.64207
+Oxford-IIIT Pet,CNN,EfficientNet-B0,1,6553,scottish terrier,scottish terrier,True,0.429142,0.209198,shiba inu,False,0.943002,0.305056,scottish terrier,True,0.444193,0.361749,scottish terrier,True,0.683758,0.263819
+Oxford-IIIT Pet,CNN,EfficientNet-B0,2,1766,Ragdoll,shiba inu,False,0.442182,0.490744,Ragdoll,True,0.522863,0.468481,Ragdoll,True,0.962777,0.779855,Ragdoll,True,0.429344,0.462727
+Oxford-IIIT Pet,CNN,EfficientNet-B0,3,2371,Sphynx,Sphynx,True,0.964486,0.549904,Sphynx,True,0.998376,0.584611,Sphynx,True,0.998089,0.714897,Sphynx,True,0.996449,0.571733
+Oxford-IIIT Pet,ViT,ViT-Tiny/16,1,1768,Ragdoll,Ragdoll,True,0.988345,0.481553,Ragdoll,True,0.99736,0.506645,Ragdoll,True,0.97857,0.520038,Ragdoll,True,0.994823,0.487975
+Oxford-IIIT Pet,ViT,ViT-Tiny/16,2,591,Birman,Ragdoll,False,0.442669,0.640103,Birman,True,0.818623,0.618216,Birman,True,0.364532,0.640922,Ragdoll,False,0.629571,0.649994
+Oxford-IIIT Pet,ViT,ViT-Tiny/16,3,5694,pomeranian,pomeranian,True,0.951461,0.500795,pomeranian,True,0.906959,0.515862,pomeranian,True,0.819386,0.536897,pomeranian,True,0.848942,0.504137
+Oxford-IIIT Pet,ViT,ViT-Small/16,1,120,Abyssinian,Abyssinian,True,0.990723,0.517259,Bengal,False,0.964096,0.591958,Abyssinian,True,0.955402,0.566746,Abyssinian,True,0.646459,0.540239
+Oxford-IIIT Pet,ViT,ViT-Small/16,2,2758,american pit bull terrier,beagle,False,0.900151,0.217429,american bulldog,False,0.287118,0.242641,american pit bull terrier,True,0.944641,0.259061,staffordshire bull terrier,False,0.424267,0.251126
+Oxford-IIIT Pet,ViT,ViT-Small/16,3,133,Abyssinian,Abyssinian,True,0.996914,0.513299,Abyssinian,True,0.999929,0.546936,Abyssinian,True,0.999705,0.556965,Abyssinian,True,0.99954,0.531038
+Oxford-IIIT Pet,ViT,ViT-Base/16,1,6720,shiba inu,shiba inu,True,0.999995,0.034474,shiba inu,True,0.925179,0.206524,shiba inu,True,0.931372,0.729831,shiba inu,True,0.999999,0.034418
+Oxford-IIIT Pet,ViT,ViT-Base/16,2,6353,samoyed,american bulldog,False,0.600399,0.107329,samoyed,True,0.76552,0.411049,samoyed,True,0.953406,0.888403,samoyed,True,0.997755,0.099819
+Oxford-IIIT Pet,ViT,ViT-Base/16,3,7082,wheaten terrier,wheaten terrier,True,0.821639,0.103491,wheaten terrier,True,0.820311,0.335247,wheaten terrier,True,0.47044,0.850656,great pyrenees,False,0.305143,0.10326

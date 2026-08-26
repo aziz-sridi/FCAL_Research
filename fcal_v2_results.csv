@@ -1,4 +1,0 @@
-Dataset,Backbone,Method,Top-1 Acc,Leakage (lower=better)
-CUB-200-2011,ViT-Base,Baseline (CE only),N/A,0.4900
-CUB-200-2011,ViT-Base,"FCAL v1 (rollout, fixed λ=0.3)",0.8114,0.4925
-CUB-200-2011,ViT-Base,"FCAL v2 (per-layer, adaptive λ)",0.7901,0.4102

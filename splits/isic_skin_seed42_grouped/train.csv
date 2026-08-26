@@ -1,0 +1,1415 @@
+image_id,numeric_id,image_path,mask_path,label,class_code,lesion_id,mask_source
+ISIC_0000019,19,Train/nevus/ISIC_0000019.jpg,ISIC_0000019.png,1,NV,,expert_challenge
+ISIC_0000021,21,Train/nevus/ISIC_0000021.jpg,ISIC_0000021.png,1,NV,,expert_challenge
+ISIC_0000024,24,Train/nevus/ISIC_0000024.jpg,ISIC_0000024.png,1,NV,,expert_challenge
+ISIC_0000025,25,Train/nevus/ISIC_0000025.jpg,ISIC_0000025.png,1,NV,,expert_challenge
+ISIC_0000027,27,Train/nevus/ISIC_0000027.jpg,ISIC_0000027.png,1,NV,,expert_challenge
+ISIC_0000028,28,Train/nevus/ISIC_0000028.jpg,ISIC_0000028.png,1,NV,,expert_challenge
+ISIC_0000034,34,Train/nevus/ISIC_0000034.jpg,ISIC_0000034.png,1,NV,,expert_challenge
+ISIC_0000037,37,Train/nevus/ISIC_0000037.jpg,ISIC_0000037.png,1,NV,,expert_challenge
+ISIC_0000038,38,Train/nevus/ISIC_0000038.jpg,ISIC_0000038.png,1,NV,,expert_challenge
+ISIC_0000041,41,Train/nevus/ISIC_0000041.jpg,ISIC_0000041.png,1,NV,,expert_challenge
+ISIC_0000042,42,Train/nevus/ISIC_0000042.jpg,ISIC_0000042.png,1,NV,,expert_challenge
+ISIC_0000047,47,Train/nevus/ISIC_0000047.jpg,ISIC_0000047.png,1,NV,,expert_challenge
+ISIC_0000051,51,Train/nevus/ISIC_0000051.jpg,ISIC_0000051.png,1,NV,,expert_challenge
+ISIC_0000052,52,Train/nevus/ISIC_0000052.jpg,ISIC_0000052.png,1,NV,,expert_challenge
+ISIC_0000053,53,Train/nevus/ISIC_0000053.jpg,ISIC_0000053.png,1,NV,,expert_challenge
+ISIC_0000055,55,Train/nevus/ISIC_0000055.jpg,ISIC_0000055.png,1,NV,,expert_challenge
+ISIC_0000057,57,Train/nevus/ISIC_0000057.jpg,ISIC_0000057.png,1,NV,,expert_challenge
+ISIC_0000058,58,Train/nevus/ISIC_0000058.jpg,ISIC_0000058.png,1,NV,,expert_challenge
+ISIC_0000059,59,Train/nevus/ISIC_0000059.jpg,ISIC_0000059.png,1,NV,,expert_challenge
+ISIC_0000061,61,Train/nevus/ISIC_0000061.jpg,ISIC_0000061.png,1,NV,,expert_challenge
+ISIC_0000062,62,Train/nevus/ISIC_0000062.jpg,ISIC_0000062.png,1,NV,,expert_challenge
+ISIC_0000063,63,Train/nevus/ISIC_0000063.jpg,ISIC_0000063.png,1,NV,,expert_challenge
+ISIC_0000064,64,Train/nevus/ISIC_0000064.jpg,ISIC_0000064.png,1,NV,,expert_challenge
+ISIC_0000066,66,Train/nevus/ISIC_0000066.jpg,ISIC_0000066.png,1,NV,,expert_challenge
+ISIC_0000067,67,Train/nevus/ISIC_0000067.jpg,ISIC_0000067.png,1,NV,,expert_challenge
+ISIC_0000073,73,Train/nevus/ISIC_0000073.jpg,ISIC_0000073.png,1,NV,,expert_challenge
+ISIC_0000079,79,Train/nevus/ISIC_0000079.jpg,ISIC_0000079.png,1,NV,,expert_challenge
+ISIC_0000080,80,Train/nevus/ISIC_0000080.jpg,ISIC_0000080.png,1,NV,,expert_challenge
+ISIC_0000081,81,Train/nevus/ISIC_0000081.jpg,ISIC_0000081.png,1,NV,,expert_challenge
+ISIC_0000082,82,Train/nevus/ISIC_0000082.jpg,ISIC_0000082.png,1,NV,,expert_challenge
+ISIC_0000085,85,Train/nevus/ISIC_0000085.jpg,ISIC_0000085.png,1,NV,,expert_challenge
+ISIC_0000086,86,Train/nevus/ISIC_0000086.jpg,ISIC_0000086.png,1,NV,,expert_challenge
+ISIC_0000087,87,Train/nevus/ISIC_0000087.jpg,ISIC_0000087.png,1,NV,,expert_challenge
+ISIC_0000088,88,Train/nevus/ISIC_0000088.jpg,ISIC_0000088.png,1,NV,,expert_challenge
+ISIC_0000091,91,Train/nevus/ISIC_0000091.jpg,ISIC_0000091.png,1,NV,,expert_challenge
+ISIC_0000092,92,Train/nevus/ISIC_0000092.jpg,ISIC_0000092.png,1,NV,,expert_challenge
+ISIC_0000094,94,Train/nevus/ISIC_0000094.jpg,ISIC_0000094.png,1,NV,,expert_challenge
+ISIC_0000095,95,Train/nevus/ISIC_0000095.jpg,ISIC_0000095.png,1,NV,,expert_challenge
+ISIC_0000096,96,Train/nevus/ISIC_0000096.jpg,ISIC_0000096.png,1,NV,,expert_challenge
+ISIC_0000097,97,Train/nevus/ISIC_0000097.jpg,ISIC_0000097.png,1,NV,,expert_challenge
+ISIC_0000139,139,Train/melanoma/ISIC_0000139.jpg,ISIC_0000139.png,0,MEL,,expert_challenge
+ISIC_0000141,141,Train/melanoma/ISIC_0000141.jpg,ISIC_0000141.png,0,MEL,,expert_challenge
+ISIC_0000142,142,Train/melanoma/ISIC_0000142.jpg,ISIC_0000142.png,0,MEL,,expert_challenge
+ISIC_0000145,145,Train/melanoma/ISIC_0000145.jpg,ISIC_0000145.png,0,MEL,,expert_challenge
+ISIC_0000146,146,Train/melanoma/ISIC_0000146.jpg,ISIC_0000146.png,0,MEL,,expert_challenge
+ISIC_0000147,147,Train/melanoma/ISIC_0000147.jpg,ISIC_0000147.png,0,MEL,,expert_challenge
+ISIC_0000148,148,Train/melanoma/ISIC_0000148.jpg,ISIC_0000148.png,0,MEL,,expert_challenge
+ISIC_0000149,149,Train/melanoma/ISIC_0000149.jpg,ISIC_0000149.png,0,MEL,,expert_challenge
+ISIC_0000151,151,Train/melanoma/ISIC_0000151.jpg,ISIC_0000151.png,0,MEL,,expert_challenge
+ISIC_0000152,152,Train/melanoma/ISIC_0000152.jpg,ISIC_0000152.png,0,MEL,,expert_challenge
+ISIC_0000153,153,Train/melanoma/ISIC_0000153.jpg,ISIC_0000153.png,0,MEL,,expert_challenge
+ISIC_0000155,155,Train/melanoma/ISIC_0000155.jpg,ISIC_0000155.png,0,MEL,,expert_challenge
+ISIC_0000156,156,Train/melanoma/ISIC_0000156.jpg,ISIC_0000156.png,0,MEL,,expert_challenge
+ISIC_0000160,160,Train/melanoma/ISIC_0000160.jpg,ISIC_0000160.png,0,MEL,,expert_challenge
+ISIC_0000161,161,Train/melanoma/ISIC_0000161.jpg,ISIC_0000161.png,0,MEL,,expert_challenge
+ISIC_0000162,162,Train/melanoma/ISIC_0000162.jpg,ISIC_0000162.png,0,MEL,,expert_challenge
+ISIC_0000163,163,Train/melanoma/ISIC_0000163.jpg,ISIC_0000163.png,0,MEL,,expert_challenge
+ISIC_0000164,164,Train/melanoma/ISIC_0000164.jpg,ISIC_0000164.png,0,MEL,,expert_challenge
+ISIC_0000166,166,Train/melanoma/ISIC_0000166.jpg,ISIC_0000166.png,0,MEL,,expert_challenge
+ISIC_0000167,167,Train/melanoma/ISIC_0000167.jpg,ISIC_0000167.png,0,MEL,,expert_challenge
+ISIC_0000170,170,Train/melanoma/ISIC_0000170.jpg,ISIC_0000170.png,0,MEL,,expert_challenge
+ISIC_0000171,171,Train/melanoma/ISIC_0000171.jpg,ISIC_0000171.png,0,MEL,,expert_challenge
+ISIC_0000172,172,Train/melanoma/ISIC_0000172.jpg,ISIC_0000172.png,0,MEL,,expert_challenge
+ISIC_0000173,173,Train/melanoma/ISIC_0000173.jpg,ISIC_0000173.png,0,MEL,,expert_challenge
+ISIC_0000174,174,Train/melanoma/ISIC_0000174.jpg,ISIC_0000174.png,0,MEL,,expert_challenge
+ISIC_0000176,176,Train/melanoma/ISIC_0000176.jpg,ISIC_0000176.png,0,MEL,,expert_challenge
+ISIC_0000219,219,Train/nevus/ISIC_0000219.jpg,ISIC_0000219.png,1,NV,,expert_challenge
+ISIC_0000220,220,Train/nevus/ISIC_0000220.jpg,ISIC_0000220.png,1,NV,,expert_challenge
+ISIC_0000221,221,Train/nevus/ISIC_0000221.jpg,ISIC_0000221.png,1,NV,,expert_challenge
+ISIC_0000222,222,Train/nevus/ISIC_0000222.jpg,ISIC_0000222.png,1,NV,,expert_challenge
+ISIC_0000223,223,Train/nevus/ISIC_0000223.jpg,ISIC_0000223.png,1,NV,,expert_challenge
+ISIC_0000224,224,Train/nevus/ISIC_0000224.jpg,ISIC_0000224.png,1,NV,,expert_challenge
+ISIC_0000225,225,Train/nevus/ISIC_0000225.jpg,ISIC_0000225.png,1,NV,,expert_challenge
+ISIC_0000227,227,Train/nevus/ISIC_0000227.jpg,ISIC_0000227.png,1,NV,,expert_challenge
+ISIC_0000228,228,Train/nevus/ISIC_0000228.jpg,ISIC_0000228.png,1,NV,,expert_challenge
+ISIC_0000229,229,Train/nevus/ISIC_0000229.jpg,ISIC_0000229.png,1,NV,,expert_challenge
+ISIC_0000230,230,Train/nevus/ISIC_0000230.jpg,ISIC_0000230.png,1,NV,,expert_challenge
+ISIC_0000233,233,Train/nevus/ISIC_0000233.jpg,ISIC_0000233.png,1,NV,,expert_challenge
+ISIC_0000234,234,Train/nevus/ISIC_0000234.jpg,ISIC_0000234.png,1,NV,,expert_challenge
+ISIC_0000235,235,Train/nevus/ISIC_0000235.jpg,ISIC_0000235.png,1,NV,,expert_challenge
+ISIC_0000236,236,Train/nevus/ISIC_0000236.jpg,ISIC_0000236.png,1,NV,,expert_challenge
+ISIC_0000237,237,Train/nevus/ISIC_0000237.jpg,ISIC_0000237.png,1,NV,,expert_challenge
+ISIC_0000239,239,Train/nevus/ISIC_0000239.jpg,ISIC_0000239.png,1,NV,,expert_challenge
+ISIC_0000240,240,Train/nevus/ISIC_0000240.jpg,ISIC_0000240.png,1,NV,,expert_challenge
+ISIC_0000243,243,Train/nevus/ISIC_0000243.jpg,ISIC_0000243.png,1,NV,,expert_challenge
+ISIC_0000244,244,Train/nevus/ISIC_0000244.jpg,ISIC_0000244.png,1,NV,,expert_challenge
+ISIC_0000246,246,Train/nevus/ISIC_0000246.jpg,ISIC_0000246.png,1,NV,,expert_challenge
+ISIC_0000250,250,Train/nevus/ISIC_0000250.jpg,ISIC_0000250.png,1,NV,,expert_challenge
+ISIC_0000256,256,Train/nevus/ISIC_0000256.jpg,ISIC_0000256.png,1,NV,,expert_challenge
+ISIC_0000258,258,Train/nevus/ISIC_0000258.jpg,ISIC_0000258.png,1,NV,,expert_challenge
+ISIC_0000259,259,Train/nevus/ISIC_0000259.jpg,ISIC_0000259.png,1,NV,,expert_challenge
+ISIC_0000260,260,Train/nevus/ISIC_0000260.jpg,ISIC_0000260.png,1,NV,,expert_challenge
+ISIC_0000261,261,Train/nevus/ISIC_0000261.jpg,ISIC_0000261.png,1,NV,,expert_challenge
+ISIC_0000262,262,Train/nevus/ISIC_0000262.jpg,ISIC_0000262.png,1,NV,,expert_challenge
+ISIC_0000263,263,Train/nevus/ISIC_0000263.jpg,ISIC_0000263.png,1,NV,,expert_challenge
+ISIC_0000264,264,Train/nevus/ISIC_0000264.jpg,ISIC_0000264.png,1,NV,,expert_challenge
+ISIC_0000268,268,Train/nevus/ISIC_0000268.jpg,ISIC_0000268.png,1,NV,,expert_challenge
+ISIC_0000271,271,Train/nevus/ISIC_0000271.jpg,ISIC_0000271.png,1,NV,,expert_challenge
+ISIC_0000279,279,Train/melanoma/ISIC_0000279.jpg,ISIC_0000279.png,0,MEL,,expert_challenge
+ISIC_0000280,280,Train/melanoma/ISIC_0000280.jpg,ISIC_0000280.png,0,MEL,,expert_challenge
+ISIC_0000285,285,Train/melanoma/ISIC_0000285.jpg,ISIC_0000285.png,0,MEL,,expert_challenge
+ISIC_0000289,289,Train/melanoma/ISIC_0000289.jpg,ISIC_0000289.png,0,MEL,,expert_challenge
+ISIC_0000292,292,Train/melanoma/ISIC_0000292.jpg,ISIC_0000292.png,0,MEL,,expert_challenge
+ISIC_0000293,293,Train/melanoma/ISIC_0000293.jpg,ISIC_0000293.png,0,MEL,,expert_challenge
+ISIC_0000294,294,Train/melanoma/ISIC_0000294.jpg,ISIC_0000294.png,0,MEL,,expert_challenge
+ISIC_0000297,297,Train/melanoma/ISIC_0000297.jpg,ISIC_0000297.png,0,MEL,,expert_challenge
+ISIC_0000298,298,Train/melanoma/ISIC_0000298.jpg,ISIC_0000298.png,0,MEL,,expert_challenge
+ISIC_0000299,299,Train/melanoma/ISIC_0000299.jpg,ISIC_0000299.png,0,MEL,,expert_challenge
+ISIC_0000300,300,Train/melanoma/ISIC_0000300.jpg,ISIC_0000300.png,0,MEL,,expert_challenge
+ISIC_0000301,301,Train/melanoma/ISIC_0000301.jpg,ISIC_0000301.png,0,MEL,,expert_challenge
+ISIC_0000302,302,Train/melanoma/ISIC_0000302.jpg,ISIC_0000302.png,0,MEL,,expert_challenge
+ISIC_0000303,303,Train/melanoma/ISIC_0000303.jpg,ISIC_0000303.png,0,MEL,,expert_challenge
+ISIC_0000306,306,Train/melanoma/ISIC_0000306.jpg,ISIC_0000306.png,0,MEL,,expert_challenge
+ISIC_0000313,313,Train/melanoma/ISIC_0000313.jpg,ISIC_0000313.png,0,MEL,,expert_challenge
+ISIC_0000315,315,Train/nevus/ISIC_0000315.jpg,ISIC_0000315.png,1,NV,,expert_challenge
+ISIC_0000316,316,Train/nevus/ISIC_0000316.jpg,ISIC_0000316.png,1,NV,,expert_challenge
+ISIC_0000317,317,Train/nevus/ISIC_0000317.jpg,ISIC_0000317.png,1,NV,,expert_challenge
+ISIC_0000319,319,Train/nevus/ISIC_0000319.jpg,ISIC_0000319.png,1,NV,,expert_challenge
+ISIC_0000320,320,Train/nevus/ISIC_0000320.jpg,ISIC_0000320.png,1,NV,,expert_challenge
+ISIC_0000321,321,Train/nevus/ISIC_0000321.jpg,ISIC_0000321.png,1,NV,,expert_challenge
+ISIC_0000322,322,Train/nevus/ISIC_0000322.jpg,ISIC_0000322.png,1,NV,,expert_challenge
+ISIC_0000323,323,Train/nevus/ISIC_0000323.jpg,ISIC_0000323.png,1,NV,,expert_challenge
+ISIC_0000324,324,Train/nevus/ISIC_0000324.jpg,ISIC_0000324.png,1,NV,,expert_challenge
+ISIC_0000325,325,Train/nevus/ISIC_0000325.jpg,ISIC_0000325.png,1,NV,,expert_challenge
+ISIC_0000327,327,Train/nevus/ISIC_0000327.jpg,ISIC_0000327.png,1,NV,,expert_challenge
+ISIC_0000328,328,Train/nevus/ISIC_0000328.jpg,ISIC_0000328.png,1,NV,,expert_challenge
+ISIC_0000330,330,Train/nevus/ISIC_0000330.jpg,ISIC_0000330.png,1,NV,,expert_challenge
+ISIC_0000331,331,Train/nevus/ISIC_0000331.jpg,ISIC_0000331.png,1,NV,,expert_challenge
+ISIC_0000333,333,Train/nevus/ISIC_0000333.jpg,ISIC_0000333.png,1,NV,,expert_challenge
+ISIC_0000336,336,Train/nevus/ISIC_0000336.jpg,ISIC_0000336.png,1,NV,,expert_challenge
+ISIC_0000337,337,Train/nevus/ISIC_0000337.jpg,ISIC_0000337.png,1,NV,,expert_challenge
+ISIC_0000338,338,Train/nevus/ISIC_0000338.jpg,ISIC_0000338.png,1,NV,,expert_challenge
+ISIC_0000340,340,Train/nevus/ISIC_0000340.jpg,ISIC_0000340.png,1,NV,,expert_challenge
+ISIC_0000341,341,Train/nevus/ISIC_0000341.jpg,ISIC_0000341.png,1,NV,,expert_challenge
+ISIC_0000342,342,Train/nevus/ISIC_0000342.jpg,ISIC_0000342.png,1,NV,,expert_challenge
+ISIC_0000343,343,Train/nevus/ISIC_0000343.jpg,ISIC_0000343.png,1,NV,,expert_challenge
+ISIC_0000344,344,Train/nevus/ISIC_0000344.jpg,ISIC_0000344.png,1,NV,,expert_challenge
+ISIC_0000346,346,Train/nevus/ISIC_0000346.jpg,ISIC_0000346.png,1,NV,,expert_challenge
+ISIC_0000347,347,Train/nevus/ISIC_0000347.jpg,ISIC_0000347.png,1,NV,,expert_challenge
+ISIC_0000348,348,Train/nevus/ISIC_0000348.jpg,ISIC_0000348.png,1,NV,,expert_challenge
+ISIC_0000350,350,Train/nevus/ISIC_0000350.jpg,ISIC_0000350.png,1,NV,,expert_challenge
+ISIC_0000351,351,Train/nevus/ISIC_0000351.jpg,ISIC_0000351.png,1,NV,,expert_challenge
+ISIC_0000352,352,Train/nevus/ISIC_0000352.jpg,ISIC_0000352.png,1,NV,,expert_challenge
+ISIC_0000353,353,Train/nevus/ISIC_0000353.jpg,ISIC_0000353.png,1,NV,,expert_challenge
+ISIC_0000354,354,Train/nevus/ISIC_0000354.jpg,ISIC_0000354.png,1,NV,,expert_challenge
+ISIC_0000357,357,Train/nevus/ISIC_0000357.jpg,ISIC_0000357.png,1,NV,,expert_challenge
+ISIC_0000358,358,Train/nevus/ISIC_0000358.jpg,ISIC_0000358.png,1,NV,,expert_challenge
+ISIC_0000359,359,Train/nevus/ISIC_0000359.jpg,ISIC_0000359.png,1,NV,,expert_challenge
+ISIC_0000360,360,Train/nevus/ISIC_0000360.jpg,ISIC_0000360.png,1,NV,,expert_challenge
+ISIC_0000363,363,Train/nevus/ISIC_0000363.jpg,ISIC_0000363.png,1,NV,,expert_challenge
+ISIC_0000364,364,Train/nevus/ISIC_0000364.jpg,ISIC_0000364.png,1,NV,,expert_challenge
+ISIC_0000365,365,Train/nevus/ISIC_0000365.jpg,ISIC_0000365.png,1,NV,,expert_challenge
+ISIC_0000366,366,Train/nevus/ISIC_0000366.jpg,ISIC_0000366.png,1,NV,,expert_challenge
+ISIC_0000367,367,Train/nevus/ISIC_0000367.jpg,ISIC_0000367.png,1,NV,,expert_challenge
+ISIC_0000368,368,Train/nevus/ISIC_0000368.jpg,ISIC_0000368.png,1,NV,,expert_challenge
+ISIC_0000369,369,Train/nevus/ISIC_0000369.jpg,ISIC_0000369.png,1,NV,,expert_challenge
+ISIC_0000371,371,Train/nevus/ISIC_0000371.jpg,ISIC_0000371.png,1,NV,,expert_challenge
+ISIC_0000372,372,Train/nevus/ISIC_0000372.jpg,ISIC_0000372.png,1,NV,,expert_challenge
+ISIC_0000374,374,Train/nevus/ISIC_0000374.jpg,ISIC_0000374.png,1,NV,,expert_challenge
+ISIC_0000377,377,Train/nevus/ISIC_0000377.jpg,ISIC_0000377.png,1,NV,,expert_challenge
+ISIC_0000378,378,Train/nevus/ISIC_0000378.jpg,ISIC_0000378.png,1,NV,,expert_challenge
+ISIC_0000380,380,Train/nevus/ISIC_0000380.jpg,ISIC_0000380.png,1,NV,,expert_challenge
+ISIC_0000381,381,Train/nevus/ISIC_0000381.jpg,ISIC_0000381.png,1,NV,,expert_challenge
+ISIC_0000382,382,Train/nevus/ISIC_0000382.jpg,ISIC_0000382.png,1,NV,,expert_challenge
+ISIC_0000383,383,Train/nevus/ISIC_0000383.jpg,ISIC_0000383.png,1,NV,,expert_challenge
+ISIC_0000384,384,Train/nevus/ISIC_0000384.jpg,ISIC_0000384.png,1,NV,,expert_challenge
+ISIC_0000385,385,Train/nevus/ISIC_0000385.jpg,ISIC_0000385.png,1,NV,,expert_challenge
+ISIC_0000386,386,Train/nevus/ISIC_0000386.jpg,ISIC_0000386.png,1,NV,,expert_challenge
+ISIC_0000387,387,Train/nevus/ISIC_0000387.jpg,ISIC_0000387.png,1,NV,,expert_challenge
+ISIC_0000390,390,Train/melanoma/ISIC_0000390.jpg,ISIC_0000390.png,0,MEL,,expert_challenge
+ISIC_0000392,392,Train/nevus/ISIC_0000392.jpg,ISIC_0000392.png,1,NV,,expert_challenge
+ISIC_0000393,393,Train/melanoma/ISIC_0000393.jpg,ISIC_0000393.png,0,MEL,,expert_challenge
+ISIC_0000395,395,Train/melanoma/ISIC_0000395.jpg,ISIC_0000395.png,0,MEL,,expert_challenge
+ISIC_0000396,396,Train/nevus/ISIC_0000396.jpg,ISIC_0000396.png,1,NV,,expert_challenge
+ISIC_0000397,397,Train/nevus/ISIC_0000397.jpg,ISIC_0000397.png,1,NV,,expert_challenge
+ISIC_0000403,403,Train/nevus/ISIC_0000403.jpg,ISIC_0000403.png,1,NV,,expert_challenge
+ISIC_0000408,408,Train/nevus/ISIC_0000408.jpg,ISIC_0000408.png,1,NV,,expert_challenge
+ISIC_0000410,410,Train/melanoma/ISIC_0000410.jpg,ISIC_0000410.png,0,MEL,,expert_challenge
+ISIC_0000413,413,Train/melanoma/ISIC_0000413.jpg,ISIC_0000413.png,0,MEL,,expert_challenge
+ISIC_0000415,415,Train/melanoma/ISIC_0000415.jpg,ISIC_0000415.png,0,MEL,,expert_challenge
+ISIC_0000416,416,Train/nevus/ISIC_0000416.jpg,ISIC_0000416.png,1,NV,,expert_challenge
+ISIC_0000419,419,Train/nevus/ISIC_0000419.jpg,ISIC_0000419.png,1,NV,,expert_challenge
+ISIC_0000420,420,Train/melanoma/ISIC_0000420.jpg,ISIC_0000420.png,0,MEL,,expert_challenge
+ISIC_0000421,421,Train/nevus/ISIC_0000421.jpg,ISIC_0000421.png,1,NV,,expert_challenge
+ISIC_0000423,423,Train/nevus/ISIC_0000423.jpg,ISIC_0000423.png,1,NV,,expert_challenge
+ISIC_0000425,425,Train/nevus/ISIC_0000425.jpg,ISIC_0000425.png,1,NV,,expert_challenge
+ISIC_0000426,426,Train/nevus/ISIC_0000426.jpg,ISIC_0000426.png,1,NV,,expert_challenge
+ISIC_0000427,427,Train/nevus/ISIC_0000427.jpg,ISIC_0000427.png,1,NV,,expert_challenge
+ISIC_0000431,431,Train/nevus/ISIC_0000431.jpg,ISIC_0000431.png,1,NV,,expert_challenge
+ISIC_0000434,434,Train/melanoma/ISIC_0000434.jpg,ISIC_0000434.png,0,MEL,,expert_challenge
+ISIC_0000436,436,Train/nevus/ISIC_0000436.jpg,ISIC_0000436.png,1,NV,,expert_challenge
+ISIC_0000439,439,Train/nevus/ISIC_0000439.jpg,ISIC_0000439.png,1,NV,,expert_challenge
+ISIC_0000442,442,Train/nevus/ISIC_0000442.jpg,ISIC_0000442.png,1,NV,,expert_challenge
+ISIC_0000444,444,Train/melanoma/ISIC_0000444.jpg,ISIC_0000444.png,0,MEL,,expert_challenge
+ISIC_0000445,445,Train/melanoma/ISIC_0000445.jpg,ISIC_0000445.png,0,MEL,,expert_challenge
+ISIC_0000447,447,Train/nevus/ISIC_0000447.jpg,ISIC_0000447.png,1,NV,,expert_challenge
+ISIC_0000448,448,Train/nevus/ISIC_0000448.jpg,ISIC_0000448.png,1,NV,,expert_challenge
+ISIC_0000449,449,Train/nevus/ISIC_0000449.jpg,ISIC_0000449.png,1,NV,,expert_challenge
+ISIC_0000452,452,Train/nevus/ISIC_0000452.jpg,ISIC_0000452.png,1,NV,,expert_challenge
+ISIC_0000453,453,Train/nevus/ISIC_0000453.jpg,ISIC_0000453.png,1,NV,,expert_challenge
+ISIC_0000455,455,Train/nevus/ISIC_0000455.jpg,ISIC_0000455.png,1,NV,,expert_challenge
+ISIC_0000456,456,Train/nevus/ISIC_0000456.jpg,ISIC_0000456.png,1,NV,,expert_challenge
+ISIC_0000457,457,Train/nevus/ISIC_0000457.jpg,ISIC_0000457.png,1,NV,,expert_challenge
+ISIC_0000458,458,Train/nevus/ISIC_0000458.jpg,ISIC_0000458.png,1,NV,,expert_challenge
+ISIC_0000460,460,Train/nevus/ISIC_0000460.jpg,ISIC_0000460.png,1,NV,,expert_challenge
+ISIC_0000463,463,Train/melanoma/ISIC_0000463.jpg,ISIC_0000463.png,0,MEL,,expert_challenge
+ISIC_0000465,465,Train/nevus/ISIC_0000465.jpg,ISIC_0000465.png,1,NV,,expert_challenge
+ISIC_0000466,466,Train/melanoma/ISIC_0000466.jpg,ISIC_0000466.png,0,MEL,,expert_challenge
+ISIC_0000467,467,Train/nevus/ISIC_0000467.jpg,ISIC_0000467.png,1,NV,,expert_challenge
+ISIC_0000468,468,Train/nevus/ISIC_0000468.jpg,ISIC_0000468.png,1,NV,,expert_challenge
+ISIC_0000470,470,Train/nevus/ISIC_0000470.jpg,ISIC_0000470.png,1,NV,,expert_challenge
+ISIC_0000471,471,Train/nevus/ISIC_0000471.jpg,ISIC_0000471.png,1,NV,,expert_challenge
+ISIC_0000474,474,Train/nevus/ISIC_0000474.jpg,ISIC_0000474.png,1,NV,,expert_challenge
+ISIC_0000475,475,Train/nevus/ISIC_0000475.jpg,ISIC_0000475.png,1,NV,,expert_challenge
+ISIC_0000476,476,Train/nevus/ISIC_0000476.jpg,ISIC_0000476.png,1,NV,,expert_challenge
+ISIC_0000478,478,Train/nevus/ISIC_0000478.jpg,ISIC_0000478.png,1,NV,,expert_challenge
+ISIC_0000479,479,Train/nevus/ISIC_0000479.jpg,ISIC_0000479.png,1,NV,,expert_challenge
+ISIC_0000480,480,Train/nevus/ISIC_0000480.jpg,ISIC_0000480.png,1,NV,,expert_challenge
+ISIC_0000481,481,Train/nevus/ISIC_0000481.jpg,ISIC_0000481.png,1,NV,,expert_challenge
+ISIC_0000482,482,Train/melanoma/ISIC_0000482.jpg,ISIC_0000482.png,0,MEL,,expert_challenge
+ISIC_0000484,484,Train/melanoma/ISIC_0000484.jpg,ISIC_0000484.png,0,MEL,,expert_challenge
+ISIC_0000485,485,Train/nevus/ISIC_0000485.jpg,ISIC_0000485.png,1,NV,,expert_challenge
+ISIC_0000486,486,Train/nevus/ISIC_0000486.jpg,ISIC_0000486.png,1,NV,,expert_challenge
+ISIC_0000487,487,Train/melanoma/ISIC_0000487.jpg,ISIC_0000487.png,0,MEL,,expert_challenge
+ISIC_0000489,489,Train/nevus/ISIC_0000489.jpg,ISIC_0000489.png,1,NV,,expert_challenge
+ISIC_0000490,490,Train/nevus/ISIC_0000490.jpg,ISIC_0000490.png,1,NV,,expert_challenge
+ISIC_0000491,491,Train/nevus/ISIC_0000491.jpg,ISIC_0000491.png,1,NV,,expert_challenge
+ISIC_0000492,492,Train/nevus/ISIC_0000492.jpg,ISIC_0000492.png,1,NV,,expert_challenge
+ISIC_0000493,493,Train/nevus/ISIC_0000493.jpg,ISIC_0000493.png,1,NV,,expert_challenge
+ISIC_0000495,495,Train/nevus/ISIC_0000495.jpg,ISIC_0000495.png,1,NV,,expert_challenge
+ISIC_0000496,496,Train/nevus/ISIC_0000496.jpg,ISIC_0000496.png,1,NV,,expert_challenge
+ISIC_0000498,498,Train/nevus/ISIC_0000498.jpg,ISIC_0000498.png,1,NV,,expert_challenge
+ISIC_0000499,499,Train/nevus/ISIC_0000499.jpg,ISIC_0000499.png,1,NV,,expert_challenge
+ISIC_0000500,500,Train/nevus/ISIC_0000500.jpg,ISIC_0000500.png,1,NV,,expert_challenge
+ISIC_0000501,501,Train/nevus/ISIC_0000501.jpg,ISIC_0000501.png,1,NV,,expert_challenge
+ISIC_0000503,503,Train/nevus/ISIC_0000503.jpg,ISIC_0000503.png,1,NV,,expert_challenge
+ISIC_0000505,505,Train/nevus/ISIC_0000505.jpg,ISIC_0000505.png,1,NV,,expert_challenge
+ISIC_0000506,506,Train/nevus/ISIC_0000506.jpg,ISIC_0000506.png,1,NV,,expert_challenge
+ISIC_0000507,507,Train/nevus/ISIC_0000507.jpg,ISIC_0000507.png,1,NV,,expert_challenge
+ISIC_0000508,508,Train/nevus/ISIC_0000508.jpg,ISIC_0000508.png,1,NV,,expert_challenge
+ISIC_0000509,509,Train/nevus/ISIC_0000509.jpg,ISIC_0000509.png,1,NV,,expert_challenge
+ISIC_0000511,511,Train/melanoma/ISIC_0000511.jpg,ISIC_0000511.png,0,MEL,,expert_challenge
+ISIC_0000513,513,Train/melanoma/ISIC_0000513.jpg,ISIC_0000513.png,0,MEL,,expert_challenge
+ISIC_0000515,515,Train/nevus/ISIC_0000515.jpg,ISIC_0000515.png,1,NV,,expert_challenge
+ISIC_0000516,516,Train/melanoma/ISIC_0000516.jpg,ISIC_0000516.png,0,MEL,,expert_challenge
+ISIC_0000517,517,Train/melanoma/ISIC_0000517.jpg,ISIC_0000517.png,0,MEL,,expert_challenge
+ISIC_0000518,518,Train/melanoma/ISIC_0000518.jpg,ISIC_0000518.png,0,MEL,,expert_challenge
+ISIC_0000519,519,Train/melanoma/ISIC_0000519.jpg,ISIC_0000519.png,0,MEL,,expert_challenge
+ISIC_0000520,520,Train/melanoma/ISIC_0000520.jpg,ISIC_0000520.png,0,MEL,,expert_challenge
+ISIC_0000521,521,Train/melanoma/ISIC_0000521.jpg,ISIC_0000521.png,0,MEL,,expert_challenge
+ISIC_0000522,522,Train/melanoma/ISIC_0000522.jpg,ISIC_0000522.png,0,MEL,,expert_challenge
+ISIC_0000523,523,Train/nevus/ISIC_0000523.jpg,ISIC_0000523.png,1,NV,,expert_challenge
+ISIC_0000524,524,Train/nevus/ISIC_0000524.jpg,ISIC_0000524.png,1,NV,,expert_challenge
+ISIC_0000528,528,Train/nevus/ISIC_0000528.jpg,ISIC_0000528.png,1,NV,,expert_challenge
+ISIC_0000529,529,Train/nevus/ISIC_0000529.jpg,ISIC_0000529.png,1,NV,,expert_challenge
+ISIC_0000530,530,Train/nevus/ISIC_0000530.jpg,ISIC_0000530.png,1,NV,,expert_challenge
+ISIC_0000532,532,Train/nevus/ISIC_0000532.jpg,ISIC_0000532.png,1,NV,,expert_challenge
+ISIC_0000533,533,Train/melanoma/ISIC_0000533.jpg,ISIC_0000533.png,0,MEL,,expert_challenge
+ISIC_0000535,535,Train/nevus/ISIC_0000535.jpg,ISIC_0000535.png,1,NV,,expert_challenge
+ISIC_0000536,536,Train/nevus/ISIC_0000536.jpg,ISIC_0000536.png,1,NV,,expert_challenge
+ISIC_0000537,537,Train/nevus/ISIC_0000537.jpg,ISIC_0000537.png,1,NV,,expert_challenge
+ISIC_0000538,538,Train/nevus/ISIC_0000538.jpg,ISIC_0000538.png,1,NV,,expert_challenge
+ISIC_0000539,539,Train/nevus/ISIC_0000539.jpg,ISIC_0000539.png,1,NV,,expert_challenge
+ISIC_0000540,540,Train/nevus/ISIC_0000540.jpg,ISIC_0000540.png,1,NV,,expert_challenge
+ISIC_0000541,541,Train/nevus/ISIC_0000541.jpg,ISIC_0000541.png,1,NV,,expert_challenge
+ISIC_0000542,542,Train/nevus/ISIC_0000542.jpg,ISIC_0000542.png,1,NV,,expert_challenge
+ISIC_0000544,544,Train/nevus/ISIC_0000544.jpg,ISIC_0000544.png,1,NV,,expert_challenge
+ISIC_0000545,545,Train/nevus/ISIC_0000545.jpg,ISIC_0000545.png,1,NV,,expert_challenge
+ISIC_0000547,547,Train/melanoma/ISIC_0000547.jpg,ISIC_0000547.png,0,MEL,,expert_challenge
+ISIC_0000548,548,Train/melanoma/ISIC_0000548.jpg,ISIC_0000548.png,0,MEL,,expert_challenge
+ISIC_0000549,549,Train/melanoma/ISIC_0000549.jpg,ISIC_0000549.png,0,MEL,,expert_challenge
+ISIC_0000550,550,Train/melanoma/ISIC_0000550.jpg,ISIC_0000550.png,0,MEL,,expert_challenge
+ISIC_0000552,552,Train/melanoma/ISIC_0000552.jpg,ISIC_0000552.png,0,MEL,,expert_challenge
+ISIC_0000555,555,Train/melanoma/ISIC_0000555.jpg,ISIC_0000555.png,0,MEL,,expert_challenge
+ISIC_0000556,556,Train/nevus/ISIC_0000556.jpg,ISIC_0000556.png,1,NV,,expert_challenge
+ISIC_0001102,1102,Train/melanoma/ISIC_0001102.jpg,ISIC_0001102.png,0,MEL,,expert_challenge
+ISIC_0001103,1103,Train/melanoma/ISIC_0001103.jpg,ISIC_0001103.png,0,MEL,,expert_challenge
+ISIC_0001105,1105,Train/melanoma/ISIC_0001105.jpg,ISIC_0001105.png,0,MEL,,expert_challenge
+ISIC_0001106,1106,Train/melanoma/ISIC_0001106.jpg,ISIC_0001106.png,0,MEL,,expert_challenge
+ISIC_0001118,1118,Train/melanoma/ISIC_0001118.jpg,ISIC_0001118.png,0,MEL,,expert_challenge
+ISIC_0001126,1126,Train/melanoma/ISIC_0001126.jpg,ISIC_0001126.png,0,MEL,,expert_challenge
+ISIC_0001128,1128,Train/melanoma/ISIC_0001128.jpg,ISIC_0001128.png,0,MEL,,expert_challenge
+ISIC_0001134,1134,Train/melanoma/ISIC_0001134.jpg,ISIC_0001134.png,0,MEL,,expert_challenge
+ISIC_0001140,1140,Train/melanoma/ISIC_0001140.jpg,ISIC_0001140.png,0,MEL,,expert_challenge
+ISIC_0001148,1148,Train/melanoma/ISIC_0001148.jpg,ISIC_0001148.png,0,MEL,,expert_challenge
+ISIC_0001152,1152,Train/melanoma/ISIC_0001152.jpg,ISIC_0001152.png,0,MEL,,expert_challenge
+ISIC_0009868,9868,Train/melanoma/ISIC_0009868.jpg,ISIC_0009868.png,0,MEL,,expert_challenge
+ISIC_0009882,9882,Train/melanoma/ISIC_0009882.jpg,ISIC_0009882.png,0,MEL,,expert_challenge
+ISIC_0009897,9897,Train/melanoma/ISIC_0009897.jpg,ISIC_0009897.png,0,MEL,,expert_challenge
+ISIC_0009898,9898,Train/melanoma/ISIC_0009898.jpg,ISIC_0009898.png,0,MEL,,expert_challenge
+ISIC_0009910,9910,Train/melanoma/ISIC_0009910.jpg,ISIC_0009910.png,0,MEL,,expert_challenge
+ISIC_0009918,9918,Train/melanoma/ISIC_0009918.jpg,ISIC_0009918.png,0,MEL,,expert_challenge
+ISIC_0009927,9927,Train/melanoma/ISIC_0009927.jpg,ISIC_0009927.png,0,MEL,,expert_challenge
+ISIC_0009934,9934,Train/melanoma/ISIC_0009934.jpg,ISIC_0009934.png,0,MEL,,expert_challenge
+ISIC_0009955,9955,Train/melanoma/ISIC_0009955.jpg,ISIC_0009955.png,0,MEL,,expert_challenge
+ISIC_0009960,9960,Train/melanoma/ISIC_0009960.jpg,ISIC_0009960.png,0,MEL,,expert_challenge
+ISIC_0009971,9971,Train/melanoma/ISIC_0009971.jpg,ISIC_0009971.png,0,MEL,,expert_challenge
+ISIC_0009992,9992,Train/melanoma/ISIC_0009992.jpg,ISIC_0009992.png,0,MEL,,expert_challenge
+ISIC_0009993,9993,Train/melanoma/ISIC_0009993.jpg,ISIC_0009993.png,0,MEL,,expert_challenge
+ISIC_0010011,10011,Train/melanoma/ISIC_0010011.jpg,ISIC_0010011.png,0,MEL,,expert_challenge
+ISIC_0010024,10024,Train/melanoma/ISIC_0010024.jpg,ISIC_0010024.png,0,MEL,,expert_challenge
+ISIC_0010029,10029,Train/melanoma/ISIC_0010029.jpg,ISIC_0010029.png,0,MEL,,expert_challenge
+ISIC_0010034,10034,Train/melanoma/ISIC_0010034.jpg,ISIC_0010034.png,0,MEL,,expert_challenge
+ISIC_0010036,10036,Train/melanoma/ISIC_0010036.jpg,ISIC_0010036.png,0,MEL,,expert_challenge
+ISIC_0010056,10056,Train/melanoma/ISIC_0010056.jpg,ISIC_0010056.png,0,MEL,,expert_challenge
+ISIC_0010067,10067,Train/melanoma/ISIC_0010067.jpg,ISIC_0010067.png,0,MEL,,expert_challenge
+ISIC_0010080,10080,Train/melanoma/ISIC_0010080.jpg,ISIC_0010080.png,0,MEL,,expert_challenge
+ISIC_0010081,10081,Train/melanoma/ISIC_0010081.jpg,ISIC_0010081.png,0,MEL,,expert_challenge
+ISIC_0010094,10094,Train/melanoma/ISIC_0010094.jpg,ISIC_0010094.png,0,MEL,,expert_challenge
+ISIC_0010171,10171,Train/melanoma/ISIC_0010171.jpg,ISIC_0010171.png,0,MEL,,expert_challenge
+ISIC_0010175,10175,Train/melanoma/ISIC_0010175.jpg,ISIC_0010175.png,0,MEL,,expert_challenge
+ISIC_0010189,10189,Train/melanoma/ISIC_0010189.jpg,ISIC_0010189.png,0,MEL,,expert_challenge
+ISIC_0010194,10194,Train/melanoma/ISIC_0010194.jpg,ISIC_0010194.png,0,MEL,,expert_challenge
+ISIC_0010207,10207,Train/melanoma/ISIC_0010207.jpg,ISIC_0010207.png,0,MEL,,expert_challenge
+ISIC_0010225,10225,Train/melanoma/ISIC_0010225.jpg,ISIC_0010225.png,0,MEL,,expert_challenge
+ISIC_0010231,10231,Train/melanoma/ISIC_0010231.jpg,ISIC_0010231.png,0,MEL,,expert_challenge
+ISIC_0010235,10235,Train/melanoma/ISIC_0010235.jpg,ISIC_0010235.png,0,MEL,,expert_challenge
+ISIC_0010241,10241,Train/melanoma/ISIC_0010241.jpg,ISIC_0010241.png,0,MEL,,expert_challenge
+ISIC_0010251,10251,Train/melanoma/ISIC_0010251.jpg,ISIC_0010251.png,0,MEL,,expert_challenge
+ISIC_0010265,10265,Train/melanoma/ISIC_0010265.jpg,ISIC_0010265.png,0,MEL,,expert_challenge
+ISIC_0010267,10267,Train/melanoma/ISIC_0010267.jpg,ISIC_0010267.png,0,MEL,,expert_challenge
+ISIC_0010319,10319,Train/melanoma/ISIC_0010319.jpg,ISIC_0010319.png,0,MEL,,expert_challenge
+ISIC_0010322,10322,Train/melanoma/ISIC_0010322.jpg,ISIC_0010322.png,0,MEL,,expert_challenge
+ISIC_0010329,10329,Train/melanoma/ISIC_0010329.jpg,ISIC_0010329.png,0,MEL,,expert_challenge
+ISIC_0010349,10349,Train/melanoma/ISIC_0010349.jpg,ISIC_0010349.png,0,MEL,,expert_challenge
+ISIC_0010350,10350,Train/melanoma/ISIC_0010350.jpg,ISIC_0010350.png,0,MEL,,expert_challenge
+ISIC_0010360,10360,Train/melanoma/ISIC_0010360.jpg,ISIC_0010360.png,0,MEL,,expert_challenge
+ISIC_0010364,10364,Train/melanoma/ISIC_0010364.jpg,ISIC_0010364.png,0,MEL,,expert_challenge
+ISIC_0010372,10372,Train/melanoma/ISIC_0010372.jpg,ISIC_0010372.png,0,MEL,,expert_challenge
+ISIC_0010379,10379,Train/melanoma/ISIC_0010379.jpg,ISIC_0010379.png,0,MEL,,expert_challenge
+ISIC_0010441,10441,Train/melanoma/ISIC_0010441.jpg,ISIC_0010441.png,0,MEL,,expert_challenge
+ISIC_0010466,10466,Train/melanoma/ISIC_0010466.jpg,ISIC_0010466.png,0,MEL,,expert_challenge
+ISIC_0010468,10468,Train/melanoma/ISIC_0010468.jpg,ISIC_0010468.png,0,MEL,,expert_challenge
+ISIC_0010476,10476,Train/melanoma/ISIC_0010476.jpg,ISIC_0010476.png,0,MEL,,expert_challenge
+ISIC_0010587,10587,Train/melanoma/ISIC_0010587.jpg,ISIC_0010587.png,0,MEL,,expert_challenge
+ISIC_0010591,10591,Train/melanoma/ISIC_0010591.jpg,ISIC_0010591.png,0,MEL,,expert_challenge
+ISIC_0010596,10596,Train/melanoma/ISIC_0010596.jpg,ISIC_0010596.png,0,MEL,,expert_challenge
+ISIC_0010597,10597,Train/melanoma/ISIC_0010597.jpg,ISIC_0010597.png,0,MEL,,expert_challenge
+ISIC_0010852,10852,Train/melanoma/ISIC_0010852.jpg,ISIC_0010852.png,0,MEL,,expert_challenge
+ISIC_0010860,10860,Train/melanoma/ISIC_0010860.jpg,ISIC_0010860.png,0,MEL,,expert_challenge
+ISIC_0010862,10862,Train/melanoma/ISIC_0010862.jpg,ISIC_0010862.png,0,MEL,,expert_challenge
+ISIC_0011095,11095,Train/melanoma/ISIC_0011095.jpg,ISIC_0011095.png,0,MEL,,expert_challenge
+ISIC_0011099,11099,Train/melanoma/ISIC_0011099.jpg,ISIC_0011099.png,0,MEL,,expert_challenge
+ISIC_0011112,11112,Train/melanoma/ISIC_0011112.jpg,ISIC_0011112.png,0,MEL,,expert_challenge
+ISIC_0011121,11121,Train/melanoma/ISIC_0011121.jpg,ISIC_0011121.png,0,MEL,,expert_challenge
+ISIC_0011125,11125,Train/melanoma/ISIC_0011125.jpg,ISIC_0011125.png,0,MEL,,expert_challenge
+ISIC_0011130,11130,Train/melanoma/ISIC_0011130.jpg,ISIC_0011130.png,0,MEL,,expert_challenge
+ISIC_0011132,11132,Train/melanoma/ISIC_0011132.jpg,ISIC_0011132.png,0,MEL,,expert_challenge
+ISIC_0011135,11135,Train/melanoma/ISIC_0011135.jpg,ISIC_0011135.png,0,MEL,,expert_challenge
+ISIC_0011136,11136,Train/melanoma/ISIC_0011136.jpg,ISIC_0011136.png,0,MEL,,expert_challenge
+ISIC_0011139,11139,Train/melanoma/ISIC_0011139.jpg,ISIC_0011139.png,0,MEL,,expert_challenge
+ISIC_0011151,11151,Train/melanoma/ISIC_0011151.jpg,ISIC_0011151.png,0,MEL,,expert_challenge
+ISIC_0011158,11158,Train/melanoma/ISIC_0011158.jpg,ISIC_0011158.png,0,MEL,,expert_challenge
+ISIC_0011161,11161,Train/melanoma/ISIC_0011161.jpg,ISIC_0011161.png,0,MEL,,expert_challenge
+ISIC_0011163,11163,Train/melanoma/ISIC_0011163.jpg,ISIC_0011163.png,0,MEL,,expert_challenge
+ISIC_0011166,11166,Train/melanoma/ISIC_0011166.jpg,ISIC_0011166.png,0,MEL,,expert_challenge
+ISIC_0011169,11169,Train/melanoma/ISIC_0011169.jpg,ISIC_0011169.png,0,MEL,,expert_challenge
+ISIC_0024435,24435,Train/pigmented benign keratosis/ISIC_0024435.jpg,ISIC_0024435.png,4,BKL,HAM_0003317,reviewed_novice_unet
+ISIC_0024445,24445,Train/pigmented benign keratosis/ISIC_0024445.jpg,ISIC_0024445.png,4,BKL,HAM_0000243,reviewed_novice_unet
+ISIC_0024446,24446,Train/pigmented benign keratosis/ISIC_0024446.jpg,ISIC_0024446.png,4,BKL,HAM_0001475,reviewed_novice_unet
+ISIC_0024453,24453,Train/pigmented benign keratosis/ISIC_0024453.jpg,ISIC_0024453.png,4,BKL,HAM_0005514,reviewed_novice_unet
+ISIC_0024471,24471,Train/pigmented benign keratosis/ISIC_0024471.jpg,ISIC_0024471.png,4,BKL,HAM_0000299,reviewed_novice_unet
+ISIC_0024475,24475,Train/vascular lesion/ISIC_0024475.jpg,ISIC_0024475.png,6,VASC,HAM_0003873,reviewed_novice_unet
+ISIC_0024477,24477,Train/pigmented benign keratosis/ISIC_0024477.jpg,ISIC_0024477.png,4,BKL,HAM_0000259,reviewed_novice_unet
+ISIC_0024489,24489,Train/pigmented benign keratosis/ISIC_0024489.jpg,ISIC_0024489.png,4,BKL,HAM_0000710,reviewed_novice_unet
+ISIC_0024490,24490,Train/pigmented benign keratosis/ISIC_0024490.jpg,ISIC_0024490.png,4,BKL,HAM_0000985,reviewed_novice_unet
+ISIC_0024495,24495,Train/pigmented benign keratosis/ISIC_0024495.jpg,ISIC_0024495.png,4,BKL,HAM_0006466,reviewed_novice_unet
+ISIC_0024498,24498,Train/pigmented benign keratosis/ISIC_0024498.jpg,ISIC_0024498.png,4,BKL,HAM_0002462,reviewed_novice_unet
+ISIC_0024505,24505,Train/pigmented benign keratosis/ISIC_0024505.jpg,ISIC_0024505.png,4,BKL,HAM_0000364,reviewed_novice_unet
+ISIC_0024515,24515,Train/basal cell carcinoma/ISIC_0024515.jpg,ISIC_0024515.png,2,BCC,HAM_0003373,reviewed_novice_unet
+ISIC_0024547,24547,Train/pigmented benign keratosis/ISIC_0024547.jpg,ISIC_0024547.png,4,BKL,HAM_0005790,reviewed_novice_unet
+ISIC_0024550,24550,Train/basal cell carcinoma/ISIC_0024550.jpg,ISIC_0024550.png,2,BCC,HAM_0005721,reviewed_novice_unet
+ISIC_0024572,24572,Train/basal cell carcinoma/ISIC_0024572.jpg,ISIC_0024572.png,2,BCC,HAM_0005657,reviewed_novice_unet
+ISIC_0024573,24573,Train/basal cell carcinoma/ISIC_0024573.jpg,ISIC_0024573.png,2,BCC,HAM_0005804,reviewed_novice_unet
+ISIC_0024581,24581,Train/pigmented benign keratosis/ISIC_0024581.jpg,ISIC_0024581.png,4,BKL,HAM_0001995,reviewed_novice_unet
+ISIC_0024582,24582,Train/basal cell carcinoma/ISIC_0024582.jpg,ISIC_0024582.png,2,BCC,HAM_0006727,reviewed_novice_unet
+ISIC_0024590,24590,Train/basal cell carcinoma/ISIC_0024590.jpg,ISIC_0024590.png,2,BCC,HAM_0004511,reviewed_novice_unet
+ISIC_0024592,24592,Train/pigmented benign keratosis/ISIC_0024592.jpg,ISIC_0024592.png,4,BKL,HAM_0000236,reviewed_novice_unet
+ISIC_0024602,24602,Train/pigmented benign keratosis/ISIC_0024602.jpg,ISIC_0024602.png,4,BKL,HAM_0002984,reviewed_novice_unet
+ISIC_0024612,24612,Train/pigmented benign keratosis/ISIC_0024612.jpg,ISIC_0024612.png,4,BKL,HAM_0000383,reviewed_novice_unet
+ISIC_0024623,24623,Train/pigmented benign keratosis/ISIC_0024623.jpg,ISIC_0024623.png,4,BKL,HAM_0003458,reviewed_novice_unet
+ISIC_0024626,24626,Train/pigmented benign keratosis/ISIC_0024626.jpg,ISIC_0024626.png,4,BKL,HAM_0007621,reviewed_novice_unet
+ISIC_0024632,24632,Train/basal cell carcinoma/ISIC_0024632.jpg,ISIC_0024632.png,2,BCC,HAM_0001666,reviewed_novice_unet
+ISIC_0024634,24634,Train/basal cell carcinoma/ISIC_0024634.jpg,ISIC_0024634.png,2,BCC,HAM_0005933,reviewed_novice_unet
+ISIC_0024662,24662,Train/vascular lesion/ISIC_0024662.jpg,ISIC_0024662.png,6,VASC,HAM_0007532,reviewed_novice_unet
+ISIC_0024672,24672,Train/pigmented benign keratosis/ISIC_0024672.jpg,ISIC_0024672.png,4,BKL,HAM_0005790,reviewed_novice_unet
+ISIC_0024673,24673,Train/basal cell carcinoma/ISIC_0024673.jpg,ISIC_0024673.png,2,BCC,HAM_0003429,reviewed_novice_unet
+ISIC_0024696,24696,Train/pigmented benign keratosis/ISIC_0024696.jpg,ISIC_0024696.png,4,BKL,HAM_0001082,reviewed_novice_unet
+ISIC_0024706,24706,Train/vascular lesion/ISIC_0024706.jpg,ISIC_0024706.png,6,VASC,HAM_0001038,reviewed_novice_unet
+ISIC_0024708,24708,Train/pigmented benign keratosis/ISIC_0024708.jpg,ISIC_0024708.png,4,BKL,HAM_0003868,reviewed_novice_unet
+ISIC_0024709,24709,Train/pigmented benign keratosis/ISIC_0024709.jpg,ISIC_0024709.png,4,BKL,HAM_0004832,reviewed_novice_unet
+ISIC_0024710,24710,Train/squamous cell carcinoma/ISIC_0024710.jpg,ISIC_0024710.png,7,SCC,HAM_0004609,reviewed_novice_unet
+ISIC_0024711,24711,Train/pigmented benign keratosis/ISIC_0024711.jpg,ISIC_0024711.png,4,BKL,HAM_0004947,reviewed_novice_unet
+ISIC_0024726,24726,Train/pigmented benign keratosis/ISIC_0024726.jpg,ISIC_0024726.png,4,BKL,HAM_0005125,reviewed_novice_unet
+ISIC_0024740,24740,Train/pigmented benign keratosis/ISIC_0024740.jpg,ISIC_0024740.png,4,BKL,HAM_0005420,reviewed_novice_unet
+ISIC_0024741,24741,Train/pigmented benign keratosis/ISIC_0024741.jpg,ISIC_0024741.png,4,BKL,HAM_0000770,reviewed_novice_unet
+ISIC_0024743,24743,Train/basal cell carcinoma/ISIC_0024743.jpg,ISIC_0024743.png,2,BCC,HAM_0004495,reviewed_novice_unet
+ISIC_0024747,24747,Train/vascular lesion/ISIC_0024747.jpg,ISIC_0024747.png,6,VASC,HAM_0001566,reviewed_novice_unet
+ISIC_0024748,24748,Train/pigmented benign keratosis/ISIC_0024748.jpg,ISIC_0024748.png,4,BKL,HAM_0003420,reviewed_novice_unet
+ISIC_0024758,24758,Train/pigmented benign keratosis/ISIC_0024758.jpg,ISIC_0024758.png,4,BKL,HAM_0005968,reviewed_novice_unet
+ISIC_0024761,24761,Train/pigmented benign keratosis/ISIC_0024761.jpg,ISIC_0024761.png,4,BKL,HAM_0005053,reviewed_novice_unet
+ISIC_0024772,24772,Train/pigmented benign keratosis/ISIC_0024772.jpg,ISIC_0024772.png,4,BKL,HAM_0002400,reviewed_novice_unet
+ISIC_0024773,24773,Train/pigmented benign keratosis/ISIC_0024773.jpg,ISIC_0024773.png,4,BKL,HAM_0000844,reviewed_novice_unet
+ISIC_0024774,24774,Train/pigmented benign keratosis/ISIC_0024774.jpg,ISIC_0024774.png,4,BKL,HAM_0002903,reviewed_novice_unet
+ISIC_0024782,24782,Train/pigmented benign keratosis/ISIC_0024782.jpg,ISIC_0024782.png,4,BKL,HAM_0004004,reviewed_novice_unet
+ISIC_0024786,24786,Train/pigmented benign keratosis/ISIC_0024786.jpg,ISIC_0024786.png,4,BKL,HAM_0002227,reviewed_novice_unet
+ISIC_0024787,24787,Train/basal cell carcinoma/ISIC_0024787.jpg,ISIC_0024787.png,2,BCC,HAM_0005379,reviewed_novice_unet
+ISIC_0024795,24795,Train/basal cell carcinoma/ISIC_0024795.jpg,ISIC_0024795.png,2,BCC,HAM_0004420,reviewed_novice_unet
+ISIC_0024799,24799,Train/basal cell carcinoma/ISIC_0024799.jpg,ISIC_0024799.png,2,BCC,HAM_0001573,reviewed_novice_unet
+ISIC_0024814,24814,Train/pigmented benign keratosis/ISIC_0024814.jpg,ISIC_0024814.png,4,BKL,HAM_0005896,reviewed_novice_unet
+ISIC_0024825,24825,Train/pigmented benign keratosis/ISIC_0024825.jpg,ISIC_0024825.png,4,BKL,HAM_0000893,reviewed_novice_unet
+ISIC_0024829,24829,Train/basal cell carcinoma/ISIC_0024829.jpg,ISIC_0024829.png,2,BCC,HAM_0007535,reviewed_novice_unet
+ISIC_0024833,24833,Train/basal cell carcinoma/ISIC_0024833.jpg,ISIC_0024833.png,2,BCC,HAM_0005617,reviewed_novice_unet
+ISIC_0024839,24839,Train/pigmented benign keratosis/ISIC_0024839.jpg,ISIC_0024839.png,4,BKL,HAM_0000425,reviewed_novice_unet
+ISIC_0024843,24843,Train/squamous cell carcinoma/ISIC_0024843.jpg,ISIC_0024843.png,7,SCC,HAM_0004376,reviewed_novice_unet
+ISIC_0024848,24848,Train/basal cell carcinoma/ISIC_0024848.jpg,ISIC_0024848.png,2,BCC,HAM_0007474,reviewed_novice_unet
+ISIC_0024850,24850,Train/pigmented benign keratosis/ISIC_0024850.jpg,ISIC_0024850.png,4,BKL,HAM_0007393,reviewed_novice_unet
+ISIC_0024851,24851,Train/pigmented benign keratosis/ISIC_0024851.jpg,ISIC_0024851.png,4,BKL,HAM_0007078,reviewed_novice_unet
+ISIC_0024867,24867,Train/vascular lesion/ISIC_0024867.jpg,ISIC_0024867.png,6,VASC,HAM_0007568,reviewed_novice_unet
+ISIC_0024871,24871,Train/pigmented benign keratosis/ISIC_0024871.jpg,ISIC_0024871.png,4,BKL,HAM_0001312,reviewed_novice_unet
+ISIC_0024880,24880,Train/pigmented benign keratosis/ISIC_0024880.jpg,ISIC_0024880.png,4,BKL,HAM_0005157,reviewed_novice_unet
+ISIC_0024881,24881,Train/pigmented benign keratosis/ISIC_0024881.jpg,ISIC_0024881.png,4,BKL,HAM_0004696,reviewed_novice_unet
+ISIC_0024883,24883,Train/pigmented benign keratosis/ISIC_0024883.jpg,ISIC_0024883.png,4,BKL,HAM_0006541,reviewed_novice_unet
+ISIC_0024885,24885,Train/basal cell carcinoma/ISIC_0024885.jpg,ISIC_0024885.png,2,BCC,HAM_0005243,reviewed_novice_unet
+ISIC_0024890,24890,Train/pigmented benign keratosis/ISIC_0024890.jpg,ISIC_0024890.png,4,BKL,HAM_0007439,reviewed_novice_unet
+ISIC_0024897,24897,Train/basal cell carcinoma/ISIC_0024897.jpg,ISIC_0024897.png,2,BCC,HAM_0003716,reviewed_novice_unet
+ISIC_0024904,24904,Train/vascular lesion/ISIC_0024904.jpg,ISIC_0024904.png,6,VASC,HAM_0002914,reviewed_novice_unet
+ISIC_0024909,24909,Train/pigmented benign keratosis/ISIC_0024909.jpg,ISIC_0024909.png,4,BKL,HAM_0002757,reviewed_novice_unet
+ISIC_0024910,24910,Train/pigmented benign keratosis/ISIC_0024910.jpg,ISIC_0024910.png,4,BKL,HAM_0000238,reviewed_novice_unet
+ISIC_0024931,24931,Train/basal cell carcinoma/ISIC_0024931.jpg,ISIC_0024931.png,2,BCC,HAM_0005488,reviewed_novice_unet
+ISIC_0024943,24943,Train/pigmented benign keratosis/ISIC_0024943.jpg,ISIC_0024943.png,4,BKL,HAM_0006988,reviewed_novice_unet
+ISIC_0024946,24946,Train/squamous cell carcinoma/ISIC_0024946.jpg,ISIC_0024946.png,7,SCC,HAM_0005264,reviewed_novice_unet
+ISIC_0024947,24947,Train/pigmented benign keratosis/ISIC_0024947.jpg,ISIC_0024947.png,4,BKL,HAM_0001721,reviewed_novice_unet
+ISIC_0024949,24949,Train/basal cell carcinoma/ISIC_0024949.jpg,ISIC_0024949.png,2,BCC,HAM_0005669,reviewed_novice_unet
+ISIC_0024970,24970,Train/pigmented benign keratosis/ISIC_0024970.jpg,ISIC_0024970.png,4,BKL,HAM_0001815,reviewed_novice_unet
+ISIC_0024981,24981,Train/pigmented benign keratosis/ISIC_0024981.jpg,ISIC_0024981.png,4,BKL,HAM_0005612,reviewed_novice_unet
+ISIC_0024982,24982,Train/pigmented benign keratosis/ISIC_0024982.jpg,ISIC_0024982.png,4,BKL,HAM_0005199,reviewed_novice_unet
+ISIC_0024984,24984,Train/basal cell carcinoma/ISIC_0024984.jpg,ISIC_0024984.png,2,BCC,HAM_0005856,reviewed_novice_unet
+ISIC_0024997,24997,Train/pigmented benign keratosis/ISIC_0024997.jpg,ISIC_0024997.png,4,BKL,HAM_0006343,reviewed_novice_unet
+ISIC_0025005,25005,Train/pigmented benign keratosis/ISIC_0025005.jpg,ISIC_0025005.png,4,BKL,HAM_0002462,reviewed_novice_unet
+ISIC_0025019,25019,Train/basal cell carcinoma/ISIC_0025019.jpg,ISIC_0025019.png,2,BCC,HAM_0001415,reviewed_novice_unet
+ISIC_0025030,25030,Train/pigmented benign keratosis/ISIC_0025030.jpg,ISIC_0025030.png,4,BKL,HAM_0000118,reviewed_novice_unet
+ISIC_0025031,25031,Train/basal cell carcinoma/ISIC_0025031.jpg,ISIC_0025031.png,2,BCC,HAM_0002934,reviewed_novice_unet
+ISIC_0025032,25032,Train/pigmented benign keratosis/ISIC_0025032.jpg,ISIC_0025032.png,4,BKL,HAM_0004500,reviewed_novice_unet
+ISIC_0025033,25033,Train/pigmented benign keratosis/ISIC_0025033.jpg,ISIC_0025033.png,4,BKL,HAM_0003301,reviewed_novice_unet
+ISIC_0025040,25040,Train/pigmented benign keratosis/ISIC_0025040.jpg,ISIC_0025040.png,4,BKL,HAM_0006541,reviewed_novice_unet
+ISIC_0025063,25063,Train/pigmented benign keratosis/ISIC_0025063.jpg,ISIC_0025063.png,4,BKL,HAM_0002985,reviewed_novice_unet
+ISIC_0025064,25064,Train/pigmented benign keratosis/ISIC_0025064.jpg,ISIC_0025064.png,4,BKL,HAM_0006541,reviewed_novice_unet
+ISIC_0025066,25066,Train/pigmented benign keratosis/ISIC_0025066.jpg,ISIC_0025066.png,4,BKL,HAM_0002749,reviewed_novice_unet
+ISIC_0025068,25068,Train/pigmented benign keratosis/ISIC_0025068.jpg,ISIC_0025068.png,4,BKL,HAM_0000542,reviewed_novice_unet
+ISIC_0025069,25069,Train/squamous cell carcinoma/ISIC_0025069.jpg,ISIC_0025069.png,7,SCC,HAM_0006222,reviewed_novice_unet
+ISIC_0025076,25076,Train/pigmented benign keratosis/ISIC_0025076.jpg,ISIC_0025076.png,4,BKL,HAM_0007409,reviewed_novice_unet
+ISIC_0025083,25083,Train/pigmented benign keratosis/ISIC_0025083.jpg,ISIC_0025083.png,4,BKL,HAM_0003015,reviewed_novice_unet
+ISIC_0025086,25086,Train/pigmented benign keratosis/ISIC_0025086.jpg,ISIC_0025086.png,4,BKL,HAM_0004050,reviewed_novice_unet
+ISIC_0025089,25089,Train/squamous cell carcinoma/ISIC_0025089.jpg,ISIC_0025089.png,7,SCC,HAM_0002705,reviewed_novice_unet
+ISIC_0025099,25099,Train/pigmented benign keratosis/ISIC_0025099.jpg,ISIC_0025099.png,4,BKL,HAM_0004641,reviewed_novice_unet
+ISIC_0025102,25102,Train/basal cell carcinoma/ISIC_0025102.jpg,ISIC_0025102.png,2,BCC,HAM_0007248,reviewed_novice_unet
+ISIC_0025103,25103,Train/pigmented benign keratosis/ISIC_0025103.jpg,ISIC_0025103.png,4,BKL,HAM_0001529,reviewed_novice_unet
+ISIC_0025136,25136,Train/pigmented benign keratosis/ISIC_0025136.jpg,ISIC_0025136.png,4,BKL,HAM_0000308,reviewed_novice_unet
+ISIC_0025140,25140,Train/pigmented benign keratosis/ISIC_0025140.jpg,ISIC_0025140.png,4,BKL,HAM_0000907,reviewed_novice_unet
+ISIC_0025144,25144,Train/basal cell carcinoma/ISIC_0025144.jpg,ISIC_0025144.png,2,BCC,HAM_0004831,reviewed_novice_unet
+ISIC_0025178,25178,Train/squamous cell carcinoma/ISIC_0025178.jpg,ISIC_0025178.png,7,SCC,HAM_0005282,reviewed_novice_unet
+ISIC_0025180,25180,Train/pigmented benign keratosis/ISIC_0025180.jpg,ISIC_0025180.png,4,BKL,HAM_0003265,reviewed_novice_unet
+ISIC_0025182,25182,Train/squamous cell carcinoma/ISIC_0025182.jpg,ISIC_0025182.png,7,SCC,HAM_0006213,reviewed_novice_unet
+ISIC_0025197,25197,Train/vascular lesion/ISIC_0025197.jpg,ISIC_0025197.png,6,VASC,HAM_0000460,reviewed_novice_unet
+ISIC_0025199,25199,Train/pigmented benign keratosis/ISIC_0025199.jpg,ISIC_0025199.png,4,BKL,HAM_0003206,reviewed_novice_unet
+ISIC_0025209,25209,Train/pigmented benign keratosis/ISIC_0025209.jpg,ISIC_0025209.png,4,BKL,HAM_0005132,reviewed_novice_unet
+ISIC_0025222,25222,Train/pigmented benign keratosis/ISIC_0025222.jpg,ISIC_0025222.png,4,BKL,HAM_0000973,reviewed_novice_unet
+ISIC_0025223,25223,Train/dermatofibroma/ISIC_0025223.jpg,ISIC_0025223.png,5,DF,HAM_0000827,reviewed_novice_unet
+ISIC_0025244,25244,Train/vascular lesion/ISIC_0025244.jpg,ISIC_0025244.png,6,VASC,HAM_0000845,reviewed_novice_unet
+ISIC_0025247,25247,Train/squamous cell carcinoma/ISIC_0025247.jpg,ISIC_0025247.png,7,SCC,HAM_0005231,reviewed_novice_unet
+ISIC_0025249,25249,Train/vascular lesion/ISIC_0025249.jpg,ISIC_0025249.png,6,VASC,HAM_0002639,reviewed_novice_unet
+ISIC_0025260,25260,Train/basal cell carcinoma/ISIC_0025260.jpg,ISIC_0025260.png,2,BCC,HAM_0001215,reviewed_novice_unet
+ISIC_0025264,25264,Train/squamous cell carcinoma/ISIC_0025264.jpg,ISIC_0025264.png,7,SCC,HAM_0007623,reviewed_novice_unet
+ISIC_0025266,25266,Train/basal cell carcinoma/ISIC_0025266.jpg,ISIC_0025266.png,2,BCC,HAM_0004300,reviewed_novice_unet
+ISIC_0025275,25275,Train/pigmented benign keratosis/ISIC_0025275.jpg,ISIC_0025275.png,4,BKL,HAM_0006123,reviewed_novice_unet
+ISIC_0025285,25285,Train/basal cell carcinoma/ISIC_0025285.jpg,ISIC_0025285.png,2,BCC,HAM_0004084,reviewed_novice_unet
+ISIC_0025286,25286,Train/pigmented benign keratosis/ISIC_0025286.jpg,ISIC_0025286.png,4,BKL,HAM_0000728,reviewed_novice_unet
+ISIC_0025299,25299,Train/basal cell carcinoma/ISIC_0025299.jpg,ISIC_0025299.png,2,BCC,HAM_0007313,reviewed_novice_unet
+ISIC_0025301,25301,Train/basal cell carcinoma/ISIC_0025301.jpg,ISIC_0025301.png,2,BCC,HAM_0000987,reviewed_novice_unet
+ISIC_0025302,25302,Train/dermatofibroma/ISIC_0025302.jpg,ISIC_0025302.png,5,DF,HAM_0007421,reviewed_novice_unet
+ISIC_0025312,25312,Train/pigmented benign keratosis/ISIC_0025312.jpg,ISIC_0025312.png,4,BKL,HAM_0005610,reviewed_novice_unet
+ISIC_0025314,25314,Train/dermatofibroma/ISIC_0025314.jpg,ISIC_0025314.png,5,DF,HAM_0000757,reviewed_novice_unet
+ISIC_0025321,25321,Train/vascular lesion/ISIC_0025321.jpg,ISIC_0025321.png,6,VASC,HAM_0005155,reviewed_novice_unet
+ISIC_0025326,25326,Train/pigmented benign keratosis/ISIC_0025326.jpg,ISIC_0025326.png,4,BKL,HAM_0003000,reviewed_novice_unet
+ISIC_0025339,25339,Train/pigmented benign keratosis/ISIC_0025339.jpg,ISIC_0025339.png,4,BKL,HAM_0006755,reviewed_novice_unet
+ISIC_0025345,25345,Train/pigmented benign keratosis/ISIC_0025345.jpg,ISIC_0025345.png,4,BKL,HAM_0000893,reviewed_novice_unet
+ISIC_0025350,25350,Train/squamous cell carcinoma/ISIC_0025350.jpg,ISIC_0025350.png,7,SCC,HAM_0005701,reviewed_novice_unet
+ISIC_0025358,25358,Train/squamous cell carcinoma/ISIC_0025358.jpg,ISIC_0025358.png,7,SCC,HAM_0004398,reviewed_novice_unet
+ISIC_0025373,25373,Train/dermatofibroma/ISIC_0025373.jpg,ISIC_0025373.png,5,DF,HAM_0007569,reviewed_novice_unet
+ISIC_0025374,25374,Train/pigmented benign keratosis/ISIC_0025374.jpg,ISIC_0025374.png,4,BKL,HAM_0006031,reviewed_novice_unet
+ISIC_0025376,25376,Train/pigmented benign keratosis/ISIC_0025376.jpg,ISIC_0025376.png,4,BKL,HAM_0006580,reviewed_novice_unet
+ISIC_0025383,25383,Train/basal cell carcinoma/ISIC_0025383.jpg,ISIC_0025383.png,2,BCC,HAM_0001907,reviewed_novice_unet
+ISIC_0025387,25387,Train/pigmented benign keratosis/ISIC_0025387.jpg,ISIC_0025387.png,4,BKL,HAM_0000792,reviewed_novice_unet
+ISIC_0025388,25388,Train/pigmented benign keratosis/ISIC_0025388.jpg,ISIC_0025388.png,4,BKL,HAM_0003007,reviewed_novice_unet
+ISIC_0025389,25389,Train/pigmented benign keratosis/ISIC_0025389.jpg,ISIC_0025389.png,4,BKL,HAM_0004921,reviewed_novice_unet
+ISIC_0025411,25411,Train/squamous cell carcinoma/ISIC_0025411.jpg,ISIC_0025411.png,7,SCC,HAM_0002158,reviewed_novice_unet
+ISIC_0025417,25417,Train/basal cell carcinoma/ISIC_0025417.jpg,ISIC_0025417.png,2,BCC,HAM_0002577,reviewed_novice_unet
+ISIC_0025425,25425,Train/vascular lesion/ISIC_0025425.jpg,ISIC_0025425.png,6,VASC,HAM_0002787,reviewed_novice_unet
+ISIC_0025431,25431,Train/pigmented benign keratosis/ISIC_0025431.jpg,ISIC_0025431.png,4,BKL,HAM_0000607,reviewed_novice_unet
+ISIC_0025433,25433,Train/basal cell carcinoma/ISIC_0025433.jpg,ISIC_0025433.png,2,BCC,HAM_0005410,reviewed_novice_unet
+ISIC_0025434,25434,Train/pigmented benign keratosis/ISIC_0025434.jpg,ISIC_0025434.png,4,BKL,HAM_0001878,reviewed_novice_unet
+ISIC_0025452,25452,Train/vascular lesion/ISIC_0025452.jpg,ISIC_0025452.png,6,VASC,HAM_0004257,reviewed_novice_unet
+ISIC_0025454,25454,Train/pigmented benign keratosis/ISIC_0025454.jpg,ISIC_0025454.png,4,BKL,HAM_0001423,reviewed_novice_unet
+ISIC_0025465,25465,Train/pigmented benign keratosis/ISIC_0025465.jpg,ISIC_0025465.png,4,BKL,HAM_0003996,reviewed_novice_unet
+ISIC_0025466,25466,Train/pigmented benign keratosis/ISIC_0025466.jpg,ISIC_0025466.png,4,BKL,HAM_0001620,reviewed_novice_unet
+ISIC_0025467,25467,Train/basal cell carcinoma/ISIC_0025467.jpg,ISIC_0025467.png,2,BCC,HAM_0006047,reviewed_novice_unet
+ISIC_0025471,25471,Train/squamous cell carcinoma/ISIC_0025471.jpg,ISIC_0025471.png,7,SCC,HAM_0001967,reviewed_novice_unet
+ISIC_0025484,25484,Train/pigmented benign keratosis/ISIC_0025484.jpg,ISIC_0025484.png,4,BKL,HAM_0000215,reviewed_novice_unet
+ISIC_0025485,25485,Train/pigmented benign keratosis/ISIC_0025485.jpg,ISIC_0025485.png,4,BKL,HAM_0005260,reviewed_novice_unet
+ISIC_0025504,25504,Train/dermatofibroma/ISIC_0025504.jpg,ISIC_0025504.png,5,DF,HAM_0004317,reviewed_novice_unet
+ISIC_0025513,25513,Train/basal cell carcinoma/ISIC_0025513.jpg,ISIC_0025513.png,2,BCC,HAM_0001907,reviewed_novice_unet
+ISIC_0025515,25515,Train/pigmented benign keratosis/ISIC_0025515.jpg,ISIC_0025515.png,4,BKL,HAM_0001781,reviewed_novice_unet
+ISIC_0025519,25519,Train/pigmented benign keratosis/ISIC_0025519.jpg,ISIC_0025519.png,4,BKL,HAM_0006211,reviewed_novice_unet
+ISIC_0025529,25529,Train/pigmented benign keratosis/ISIC_0025529.jpg,ISIC_0025529.png,4,BKL,HAM_0000898,reviewed_novice_unet
+ISIC_0025548,25548,Train/pigmented benign keratosis/ISIC_0025548.jpg,ISIC_0025548.png,4,BKL,HAM_0003326,reviewed_novice_unet
+ISIC_0025554,25554,Train/pigmented benign keratosis/ISIC_0025554.jpg,ISIC_0025554.png,4,BKL,HAM_0000907,reviewed_novice_unet
+ISIC_0025557,25557,Train/basal cell carcinoma/ISIC_0025557.jpg,ISIC_0025557.png,2,BCC,HAM_0001900,reviewed_novice_unet
+ISIC_0025567,25567,Train/pigmented benign keratosis/ISIC_0025567.jpg,ISIC_0025567.png,4,BKL,HAM_0006574,reviewed_novice_unet
+ISIC_0025575,25575,Train/pigmented benign keratosis/ISIC_0025575.jpg,ISIC_0025575.png,4,BKL,HAM_0001245,reviewed_novice_unet
+ISIC_0025576,25576,Train/basal cell carcinoma/ISIC_0025576.jpg,ISIC_0025576.png,2,BCC,HAM_0006115,reviewed_novice_unet
+ISIC_0025578,25578,Train/vascular lesion/ISIC_0025578.jpg,ISIC_0025578.png,6,VASC,HAM_0002218,reviewed_novice_unet
+ISIC_0025594,25594,Train/dermatofibroma/ISIC_0025594.jpg,ISIC_0025594.png,5,DF,HAM_0005983,reviewed_novice_unet
+ISIC_0025596,25596,Train/vascular lesion/ISIC_0025596.jpg,ISIC_0025596.png,6,VASC,HAM_0005938,reviewed_novice_unet
+ISIC_0025599,25599,Train/vascular lesion/ISIC_0025599.jpg,ISIC_0025599.png,6,VASC,HAM_0004765,reviewed_novice_unet
+ISIC_0025601,25601,Train/basal cell carcinoma/ISIC_0025601.jpg,ISIC_0025601.png,2,BCC,HAM_0001528,reviewed_novice_unet
+ISIC_0025612,25612,Train/vascular lesion/ISIC_0025612.jpg,ISIC_0025612.png,6,VASC,HAM_0002177,reviewed_novice_unet
+ISIC_0025622,25622,Train/dermatofibroma/ISIC_0025622.jpg,ISIC_0025622.png,5,DF,HAM_0005362,reviewed_novice_unet
+ISIC_0025623,25623,Train/pigmented benign keratosis/ISIC_0025623.jpg,ISIC_0025623.png,4,BKL,HAM_0000821,reviewed_novice_unet
+ISIC_0025627,25627,Train/pigmented benign keratosis/ISIC_0025627.jpg,ISIC_0025627.png,4,BKL,HAM_0005335,reviewed_novice_unet
+ISIC_0025628,25628,Train/vascular lesion/ISIC_0025628.jpg,ISIC_0025628.png,6,VASC,HAM_0005475,reviewed_novice_unet
+ISIC_0025637,25637,Train/squamous cell carcinoma/ISIC_0025637.jpg,ISIC_0025637.png,7,SCC,HAM_0001460,reviewed_novice_unet
+ISIC_0025642,25642,Train/pigmented benign keratosis/ISIC_0025642.jpg,ISIC_0025642.png,4,BKL,HAM_0007409,reviewed_novice_unet
+ISIC_0025644,25644,Train/basal cell carcinoma/ISIC_0025644.jpg,ISIC_0025644.png,2,BCC,HAM_0004536,reviewed_novice_unet
+ISIC_0025650,25650,Train/basal cell carcinoma/ISIC_0025650.jpg,ISIC_0025650.png,2,BCC,HAM_0002312,reviewed_novice_unet
+ISIC_0025659,25659,Train/pigmented benign keratosis/ISIC_0025659.jpg,ISIC_0025659.png,4,BKL,HAM_0004988,reviewed_novice_unet
+ISIC_0025661,25661,Train/pigmented benign keratosis/ISIC_0025661.jpg,ISIC_0025661.png,4,BKL,HAM_0002730,reviewed_novice_unet
+ISIC_0025680,25680,Train/vascular lesion/ISIC_0025680.jpg,ISIC_0025680.png,6,VASC,HAM_0000415,reviewed_novice_unet
+ISIC_0025691,25691,Train/basal cell carcinoma/ISIC_0025691.jpg,ISIC_0025691.png,2,BCC,HAM_0000065,reviewed_novice_unet
+ISIC_0025693,25693,Train/pigmented benign keratosis/ISIC_0025693.jpg,ISIC_0025693.png,4,BKL,HAM_0002879,reviewed_novice_unet
+ISIC_0025696,25696,Train/squamous cell carcinoma/ISIC_0025696.jpg,ISIC_0025696.png,7,SCC,HAM_0002472,reviewed_novice_unet
+ISIC_0025699,25699,Train/pigmented benign keratosis/ISIC_0025699.jpg,ISIC_0025699.png,4,BKL,HAM_0005082,reviewed_novice_unet
+ISIC_0025700,25700,Train/basal cell carcinoma/ISIC_0025700.jpg,ISIC_0025700.png,2,BCC,HAM_0005058,reviewed_novice_unet
+ISIC_0025703,25703,Train/pigmented benign keratosis/ISIC_0025703.jpg,ISIC_0025703.png,4,BKL,HAM_0000110,reviewed_novice_unet
+ISIC_0025707,25707,Train/vascular lesion/ISIC_0025707.jpg,ISIC_0025707.png,6,VASC,HAM_0006796,reviewed_novice_unet
+ISIC_0025710,25710,Train/pigmented benign keratosis/ISIC_0025710.jpg,ISIC_0025710.png,4,BKL,HAM_0001529,reviewed_novice_unet
+ISIC_0025711,25711,Train/basal cell carcinoma/ISIC_0025711.jpg,ISIC_0025711.png,2,BCC,HAM_0005501,reviewed_novice_unet
+ISIC_0025712,25712,Train/squamous cell carcinoma/ISIC_0025712.jpg,ISIC_0025712.png,7,SCC,HAM_0005117,reviewed_novice_unet
+ISIC_0025718,25718,Train/basal cell carcinoma/ISIC_0025718.jpg,ISIC_0025718.png,2,BCC,HAM_0001884,reviewed_novice_unet
+ISIC_0025731,25731,Train/basal cell carcinoma/ISIC_0025731.jpg,ISIC_0025731.png,2,BCC,HAM_0003981,reviewed_novice_unet
+ISIC_0025746,25746,Train/pigmented benign keratosis/ISIC_0025746.jpg,ISIC_0025746.png,4,BKL,HAM_0005591,reviewed_novice_unet
+ISIC_0025753,25753,Train/pigmented benign keratosis/ISIC_0025753.jpg,ISIC_0025753.png,4,BKL,HAM_0004912,reviewed_novice_unet
+ISIC_0025758,25758,Train/pigmented benign keratosis/ISIC_0025758.jpg,ISIC_0025758.png,4,BKL,HAM_0005443,reviewed_novice_unet
+ISIC_0025767,25767,Train/pigmented benign keratosis/ISIC_0025767.jpg,ISIC_0025767.png,4,BKL,HAM_0001949,reviewed_novice_unet
+ISIC_0025771,25771,Train/dermatofibroma/ISIC_0025771.jpg,ISIC_0025771.png,5,DF,HAM_0001841,reviewed_novice_unet
+ISIC_0025777,25777,Train/pigmented benign keratosis/ISIC_0025777.jpg,ISIC_0025777.png,4,BKL,HAM_0002827,reviewed_novice_unet
+ISIC_0025781,25781,Train/pigmented benign keratosis/ISIC_0025781.jpg,ISIC_0025781.png,4,BKL,HAM_0005728,reviewed_novice_unet
+ISIC_0025793,25793,Train/basal cell carcinoma/ISIC_0025793.jpg,ISIC_0025793.png,2,BCC,HAM_0004603,reviewed_novice_unet
+ISIC_0025805,25805,Train/pigmented benign keratosis/ISIC_0025805.jpg,ISIC_0025805.png,4,BKL,HAM_0004691,reviewed_novice_unet
+ISIC_0025808,25808,Train/squamous cell carcinoma/ISIC_0025808.jpg,ISIC_0025808.png,7,SCC,HAM_0002261,reviewed_novice_unet
+ISIC_0025810,25810,Train/pigmented benign keratosis/ISIC_0025810.jpg,ISIC_0025810.png,4,BKL,HAM_0003559,reviewed_novice_unet
+ISIC_0025811,25811,Train/squamous cell carcinoma/ISIC_0025811.jpg,ISIC_0025811.png,7,SCC,HAM_0005255,reviewed_novice_unet
+ISIC_0025819,25819,Train/pigmented benign keratosis/ISIC_0025819.jpg,ISIC_0025819.png,4,BKL,HAM_0002299,reviewed_novice_unet
+ISIC_0025824,25824,Train/basal cell carcinoma/ISIC_0025824.jpg,ISIC_0025824.png,2,BCC,HAM_0001331,reviewed_novice_unet
+ISIC_0025825,25825,Train/actinic keratosis/ISIC_0025825.jpg,ISIC_0025825.png,3,AK,HAM_0002232,reviewed_novice_unet
+ISIC_0025826,25826,Train/basal cell carcinoma/ISIC_0025826.jpg,ISIC_0025826.png,2,BCC,HAM_0005585,reviewed_novice_unet
+ISIC_0025830,25830,Train/pigmented benign keratosis/ISIC_0025830.jpg,ISIC_0025830.png,4,BKL,HAM_0007232,reviewed_novice_unet
+ISIC_0025831,25831,Train/squamous cell carcinoma/ISIC_0025831.jpg,ISIC_0025831.png,7,SCC,HAM_0004012,reviewed_novice_unet
+ISIC_0025837,25837,Train/pigmented benign keratosis/ISIC_0025837.jpg,ISIC_0025837.png,4,BKL,HAM_0005132,reviewed_novice_unet
+ISIC_0025838,25838,Train/pigmented benign keratosis/ISIC_0025838.jpg,ISIC_0025838.png,4,BKL,HAM_0001362,reviewed_novice_unet
+ISIC_0025842,25842,Train/pigmented benign keratosis/ISIC_0025842.jpg,ISIC_0025842.png,4,BKL,HAM_0004274,reviewed_novice_unet
+ISIC_0025851,25851,Train/pigmented benign keratosis/ISIC_0025851.jpg,ISIC_0025851.png,4,BKL,HAM_0005845,reviewed_novice_unet
+ISIC_0025856,25856,Train/pigmented benign keratosis/ISIC_0025856.jpg,ISIC_0025856.png,4,BKL,HAM_0003165,reviewed_novice_unet
+ISIC_0025867,25867,Train/pigmented benign keratosis/ISIC_0025867.jpg,ISIC_0025867.png,4,BKL,HAM_0007220,reviewed_novice_unet
+ISIC_0025874,25874,Train/pigmented benign keratosis/ISIC_0025874.jpg,ISIC_0025874.png,4,BKL,HAM_0003689,reviewed_novice_unet
+ISIC_0025876,25876,Train/pigmented benign keratosis/ISIC_0025876.jpg,ISIC_0025876.png,4,BKL,HAM_0002957,reviewed_novice_unet
+ISIC_0025883,25883,Train/pigmented benign keratosis/ISIC_0025883.jpg,ISIC_0025883.png,4,BKL,HAM_0007607,reviewed_novice_unet
+ISIC_0025885,25885,Train/pigmented benign keratosis/ISIC_0025885.jpg,ISIC_0025885.png,4,BKL,HAM_0000582,reviewed_novice_unet
+ISIC_0025903,25903,Train/dermatofibroma/ISIC_0025903.jpg,ISIC_0025903.png,5,DF,HAM_0002129,reviewed_novice_unet
+ISIC_0025911,25911,Train/dermatofibroma/ISIC_0025911.jpg,ISIC_0025911.png,5,DF,HAM_0004648,reviewed_novice_unet
+ISIC_0025915,25915,Train/pigmented benign keratosis/ISIC_0025915.jpg,ISIC_0025915.png,4,BKL,HAM_0001601,reviewed_novice_unet
+ISIC_0025924,25924,Train/vascular lesion/ISIC_0025924.jpg,ISIC_0025924.png,6,VASC,HAM_0006748,reviewed_novice_unet
+ISIC_0025932,25932,Train/basal cell carcinoma/ISIC_0025932.jpg,ISIC_0025932.png,2,BCC,HAM_0007262,reviewed_novice_unet
+ISIC_0025937,25937,Train/pigmented benign keratosis/ISIC_0025937.jpg,ISIC_0025937.png,4,BKL,HAM_0004884,reviewed_novice_unet
+ISIC_0025939,25939,Train/pigmented benign keratosis/ISIC_0025939.jpg,ISIC_0025939.png,4,BKL,HAM_0006622,reviewed_novice_unet
+ISIC_0025940,25940,Train/basal cell carcinoma/ISIC_0025940.jpg,ISIC_0025940.png,2,BCC,HAM_0001503,reviewed_novice_unet
+ISIC_0025948,25948,Train/squamous cell carcinoma/ISIC_0025948.jpg,ISIC_0025948.png,7,SCC,HAM_0002672,reviewed_novice_unet
+ISIC_0025953,25953,Train/actinic keratosis/ISIC_0025953.jpg,ISIC_0025953.png,3,AK,HAM_0002461,reviewed_novice_unet
+ISIC_0025954,25954,Train/dermatofibroma/ISIC_0025954.jpg,ISIC_0025954.png,5,DF,HAM_0002706,reviewed_novice_unet
+ISIC_0025971,25971,Train/basal cell carcinoma/ISIC_0025971.jpg,ISIC_0025971.png,2,BCC,HAM_0000504,reviewed_novice_unet
+ISIC_0025973,25973,Train/pigmented benign keratosis/ISIC_0025973.jpg,ISIC_0025973.png,4,BKL,HAM_0003943,reviewed_novice_unet
+ISIC_0025975,25975,Train/basal cell carcinoma/ISIC_0025975.jpg,ISIC_0025975.png,2,BCC,HAM_0005835,reviewed_novice_unet
+ISIC_0025980,25980,Train/dermatofibroma/ISIC_0025980.jpg,ISIC_0025980.png,5,DF,HAM_0005529,reviewed_novice_unet
+ISIC_0025982,25982,Train/pigmented benign keratosis/ISIC_0025982.jpg,ISIC_0025982.png,4,BKL,HAM_0002839,reviewed_novice_unet
+ISIC_0025984,25984,Train/pigmented benign keratosis/ISIC_0025984.jpg,ISIC_0025984.png,4,BKL,HAM_0004234,reviewed_novice_unet
+ISIC_0025985,25985,Train/pigmented benign keratosis/ISIC_0025985.jpg,ISIC_0025985.png,4,BKL,HAM_0004545,reviewed_novice_unet
+ISIC_0025986,25986,Train/pigmented benign keratosis/ISIC_0025986.jpg,ISIC_0025986.png,4,BKL,HAM_0006123,reviewed_novice_unet
+ISIC_0025992,25992,Train/actinic keratosis/ISIC_0025992.jpg,ISIC_0025992.png,3,AK,HAM_0005480,reviewed_novice_unet
+ISIC_0026015,26015,Train/pigmented benign keratosis/ISIC_0026015.jpg,ISIC_0026015.png,4,BKL,HAM_0002350,reviewed_novice_unet
+ISIC_0026018,26018,Train/pigmented benign keratosis/ISIC_0026018.jpg,ISIC_0026018.png,4,BKL,HAM_0005883,reviewed_novice_unet
+ISIC_0026042,26042,Train/pigmented benign keratosis/ISIC_0026042.jpg,ISIC_0026042.png,4,BKL,HAM_0007000,reviewed_novice_unet
+ISIC_0026044,26044,Train/pigmented benign keratosis/ISIC_0026044.jpg,ISIC_0026044.png,4,BKL,HAM_0006945,reviewed_novice_unet
+ISIC_0026046,26046,Train/pigmented benign keratosis/ISIC_0026046.jpg,ISIC_0026046.png,4,BKL,HAM_0002190,reviewed_novice_unet
+ISIC_0026056,26056,Train/basal cell carcinoma/ISIC_0026056.jpg,ISIC_0026056.png,2,BCC,HAM_0005304,reviewed_novice_unet
+ISIC_0026068,26068,Train/vascular lesion/ISIC_0026068.jpg,ISIC_0026068.png,6,VASC,HAM_0004413,reviewed_novice_unet
+ISIC_0026069,26069,Train/pigmented benign keratosis/ISIC_0026069.jpg,ISIC_0026069.png,4,BKL,HAM_0000524,reviewed_novice_unet
+ISIC_0026070,26070,Train/pigmented benign keratosis/ISIC_0026070.jpg,ISIC_0026070.png,4,BKL,HAM_0002268,reviewed_novice_unet
+ISIC_0026072,26072,Train/pigmented benign keratosis/ISIC_0026072.jpg,ISIC_0026072.png,4,BKL,HAM_0006622,reviewed_novice_unet
+ISIC_0026074,26074,Train/basal cell carcinoma/ISIC_0026074.jpg,ISIC_0026074.png,2,BCC,HAM_0000968,reviewed_novice_unet
+ISIC_0026083,26083,Train/squamous cell carcinoma/ISIC_0026083.jpg,ISIC_0026083.png,7,SCC,HAM_0000552,reviewed_novice_unet
+ISIC_0026090,26090,Train/basal cell carcinoma/ISIC_0026090.jpg,ISIC_0026090.png,2,BCC,HAM_0004084,reviewed_novice_unet
+ISIC_0026091,26091,Train/basal cell carcinoma/ISIC_0026091.jpg,ISIC_0026091.png,2,BCC,HAM_0006572,reviewed_novice_unet
+ISIC_0026092,26092,Train/vascular lesion/ISIC_0026092.jpg,ISIC_0026092.png,6,VASC,HAM_0002914,reviewed_novice_unet
+ISIC_0026100,26100,Train/squamous cell carcinoma/ISIC_0026100.jpg,ISIC_0026100.png,7,SCC,HAM_0000954,reviewed_novice_unet
+ISIC_0026104,26104,Train/pigmented benign keratosis/ISIC_0026104.jpg,ISIC_0026104.png,4,BKL,HAM_0004569,reviewed_novice_unet
+ISIC_0026107,26107,Train/pigmented benign keratosis/ISIC_0026107.jpg,ISIC_0026107.png,4,BKL,HAM_0003265,reviewed_novice_unet
+ISIC_0026117,26117,Train/basal cell carcinoma/ISIC_0026117.jpg,ISIC_0026117.png,2,BCC,HAM_0005984,reviewed_novice_unet
+ISIC_0026118,26118,Train/basal cell carcinoma/ISIC_0026118.jpg,ISIC_0026118.png,2,BCC,HAM_0007627,reviewed_novice_unet
+ISIC_0026132,26132,Train/squamous cell carcinoma/ISIC_0026132.jpg,ISIC_0026132.png,7,SCC,HAM_0004992,reviewed_novice_unet
+ISIC_0026138,26138,Train/squamous cell carcinoma/ISIC_0026138.jpg,ISIC_0026138.png,7,SCC,HAM_0005027,reviewed_novice_unet
+ISIC_0026142,26142,Train/pigmented benign keratosis/ISIC_0026142.jpg,ISIC_0026142.png,4,BKL,HAM_0006945,reviewed_novice_unet
+ISIC_0026149,26149,Train/actinic keratosis/ISIC_0026149.jpg,ISIC_0026149.png,3,AK,HAM_0005480,reviewed_novice_unet
+ISIC_0026152,26152,Train/squamous cell carcinoma/ISIC_0026152.jpg,ISIC_0026152.png,7,SCC,HAM_0000549,reviewed_novice_unet
+ISIC_0026153,26153,Train/pigmented benign keratosis/ISIC_0026153.jpg,ISIC_0026153.png,4,BKL,HAM_0002957,reviewed_novice_unet
+ISIC_0026171,26171,Train/actinic keratosis/ISIC_0026171.jpg,ISIC_0026171.png,3,AK,HAM_0000356,reviewed_novice_unet
+ISIC_0026174,26174,Train/pigmented benign keratosis/ISIC_0026174.jpg,ISIC_0026174.png,4,BKL,HAM_0006009,reviewed_novice_unet
+ISIC_0026178,26178,Train/squamous cell carcinoma/ISIC_0026178.jpg,ISIC_0026178.png,7,SCC,HAM_0007349,reviewed_novice_unet
+ISIC_0026192,26192,Train/basal cell carcinoma/ISIC_0026192.jpg,ISIC_0026192.png,2,BCC,HAM_0002611,reviewed_novice_unet
+ISIC_0026194,26194,Train/actinic keratosis/ISIC_0026194.jpg,ISIC_0026194.png,3,AK,HAM_0003910,reviewed_novice_unet
+ISIC_0026203,26203,Train/squamous cell carcinoma/ISIC_0026203.jpg,ISIC_0026203.png,7,SCC,HAM_0003895,reviewed_novice_unet
+ISIC_0026206,26206,Train/squamous cell carcinoma/ISIC_0026206.jpg,ISIC_0026206.png,7,SCC,HAM_0000490,reviewed_novice_unet
+ISIC_0026213,26213,Train/basal cell carcinoma/ISIC_0026213.jpg,ISIC_0026213.png,2,BCC,HAM_0000953,reviewed_novice_unet
+ISIC_0026219,26219,Train/pigmented benign keratosis/ISIC_0026219.jpg,ISIC_0026219.png,4,BKL,HAM_0006399,reviewed_novice_unet
+ISIC_0026248,26248,Train/pigmented benign keratosis/ISIC_0026248.jpg,ISIC_0026248.png,4,BKL,HAM_0004224,reviewed_novice_unet
+ISIC_0026249,26249,Train/pigmented benign keratosis/ISIC_0026249.jpg,ISIC_0026249.png,4,BKL,HAM_0007315,reviewed_novice_unet
+ISIC_0026262,26262,Train/pigmented benign keratosis/ISIC_0026262.jpg,ISIC_0026262.png,4,BKL,HAM_0000974,reviewed_novice_unet
+ISIC_0026263,26263,Train/pigmented benign keratosis/ISIC_0026263.jpg,ISIC_0026263.png,4,BKL,HAM_0002042,reviewed_novice_unet
+ISIC_0026273,26273,Train/pigmented benign keratosis/ISIC_0026273.jpg,ISIC_0026273.png,4,BKL,HAM_0000164,reviewed_novice_unet
+ISIC_0026275,26275,Train/basal cell carcinoma/ISIC_0026275.jpg,ISIC_0026275.png,2,BCC,HAM_0005804,reviewed_novice_unet
+ISIC_0026276,26276,Train/pigmented benign keratosis/ISIC_0026276.jpg,ISIC_0026276.png,4,BKL,HAM_0000710,reviewed_novice_unet
+ISIC_0026277,26277,Train/pigmented benign keratosis/ISIC_0026277.jpg,ISIC_0026277.png,4,BKL,HAM_0000696,reviewed_novice_unet
+ISIC_0026280,26280,Train/pigmented benign keratosis/ISIC_0026280.jpg,ISIC_0026280.png,4,BKL,HAM_0006346,reviewed_novice_unet
+ISIC_0026282,26282,Train/basal cell carcinoma/ISIC_0026282.jpg,ISIC_0026282.png,2,BCC,HAM_0005309,reviewed_novice_unet
+ISIC_0026286,26286,Train/pigmented benign keratosis/ISIC_0026286.jpg,ISIC_0026286.png,4,BKL,HAM_0005157,reviewed_novice_unet
+ISIC_0026290,26290,Train/pigmented benign keratosis/ISIC_0026290.jpg,ISIC_0026290.png,4,BKL,HAM_0002350,reviewed_novice_unet
+ISIC_0026291,26291,Train/pigmented benign keratosis/ISIC_0026291.jpg,ISIC_0026291.png,4,BKL,HAM_0000685,reviewed_novice_unet
+ISIC_0026298,26298,Train/pigmented benign keratosis/ISIC_0026298.jpg,ISIC_0026298.png,4,BKL,HAM_0002529,reviewed_novice_unet
+ISIC_0026301,26301,Train/pigmented benign keratosis/ISIC_0026301.jpg,ISIC_0026301.png,4,BKL,HAM_0004917,reviewed_novice_unet
+ISIC_0026311,26311,Train/pigmented benign keratosis/ISIC_0026311.jpg,ISIC_0026311.png,4,BKL,HAM_0006099,reviewed_novice_unet
+ISIC_0026316,26316,Train/pigmented benign keratosis/ISIC_0026316.jpg,ISIC_0026316.png,4,BKL,HAM_0002400,reviewed_novice_unet
+ISIC_0026321,26321,Train/basal cell carcinoma/ISIC_0026321.jpg,ISIC_0026321.png,2,BCC,HAM_0006047,reviewed_novice_unet
+ISIC_0026324,26324,Train/basal cell carcinoma/ISIC_0026324.jpg,ISIC_0026324.png,2,BCC,HAM_0005058,reviewed_novice_unet
+ISIC_0026327,26327,Train/squamous cell carcinoma/ISIC_0026327.jpg,ISIC_0026327.png,7,SCC,HAM_0002012,reviewed_novice_unet
+ISIC_0026337,26337,Train/basal cell carcinoma/ISIC_0026337.jpg,ISIC_0026337.png,2,BCC,HAM_0000719,reviewed_novice_unet
+ISIC_0026343,26343,Train/basal cell carcinoma/ISIC_0026343.jpg,ISIC_0026343.png,2,BCC,HAM_0002346,reviewed_novice_unet
+ISIC_0026349,26349,Train/vascular lesion/ISIC_0026349.jpg,ISIC_0026349.png,6,VASC,HAM_0003829,reviewed_novice_unet
+ISIC_0026350,26350,Train/basal cell carcinoma/ISIC_0026350.jpg,ISIC_0026350.png,2,BCC,HAM_0003039,reviewed_novice_unet
+ISIC_0026362,26362,Train/squamous cell carcinoma/ISIC_0026362.jpg,ISIC_0026362.png,7,SCC,HAM_0005301,reviewed_novice_unet
+ISIC_0026365,26365,Train/pigmented benign keratosis/ISIC_0026365.jpg,ISIC_0026365.png,4,BKL,HAM_0006723,reviewed_novice_unet
+ISIC_0026378,26378,Train/pigmented benign keratosis/ISIC_0026378.jpg,ISIC_0026378.png,4,BKL,HAM_0004426,reviewed_novice_unet
+ISIC_0026409,26409,Train/pigmented benign keratosis/ISIC_0026409.jpg,ISIC_0026409.png,4,BKL,HAM_0000893,reviewed_novice_unet
+ISIC_0026411,26411,Train/squamous cell carcinoma/ISIC_0026411.jpg,ISIC_0026411.png,7,SCC,HAM_0004846,reviewed_novice_unet
+ISIC_0026416,26416,Train/pigmented benign keratosis/ISIC_0026416.jpg,ISIC_0026416.png,4,BKL,HAM_0003979,reviewed_novice_unet
+ISIC_0026422,26422,Train/pigmented benign keratosis/ISIC_0026422.jpg,ISIC_0026422.png,4,BKL,HAM_0003926,reviewed_novice_unet
+ISIC_0026433,26433,Train/basal cell carcinoma/ISIC_0026433.jpg,ISIC_0026433.png,2,BCC,HAM_0003826,reviewed_novice_unet
+ISIC_0026441,26441,Train/pigmented benign keratosis/ISIC_0026441.jpg,ISIC_0026441.png,4,BKL,HAM_0005993,reviewed_novice_unet
+ISIC_0026442,26442,Train/basal cell carcinoma/ISIC_0026442.jpg,ISIC_0026442.png,2,BCC,HAM_0000953,reviewed_novice_unet
+ISIC_0026443,26443,Train/pigmented benign keratosis/ISIC_0026443.jpg,ISIC_0026443.png,4,BKL,HAM_0002902,reviewed_novice_unet
+ISIC_0026444,26444,Train/pigmented benign keratosis/ISIC_0026444.jpg,ISIC_0026444.png,4,BKL,HAM_0001539,reviewed_novice_unet
+ISIC_0026446,26446,Train/pigmented benign keratosis/ISIC_0026446.jpg,ISIC_0026446.png,4,BKL,HAM_0002965,reviewed_novice_unet
+ISIC_0026453,26453,Train/basal cell carcinoma/ISIC_0026453.jpg,ISIC_0026453.png,2,BCC,HAM_0003328,reviewed_novice_unet
+ISIC_0026456,26456,Train/vascular lesion/ISIC_0026456.jpg,ISIC_0026456.png,6,VASC,HAM_0006203,reviewed_novice_unet
+ISIC_0026457,26457,Train/actinic keratosis/ISIC_0026457.jpg,ISIC_0026457.png,3,AK,HAM_0007303,reviewed_novice_unet
+ISIC_0026467,26467,Train/vascular lesion/ISIC_0026467.jpg,ISIC_0026467.png,6,VASC,HAM_0001537,reviewed_novice_unet
+ISIC_0026471,26471,Train/dermatofibroma/ISIC_0026471.jpg,ISIC_0026471.png,5,DF,HAM_0006787,reviewed_novice_unet
+ISIC_0026473,26473,Train/dermatofibroma/ISIC_0026473.jpg,ISIC_0026473.png,5,DF,HAM_0003110,reviewed_novice_unet
+ISIC_0026477,26477,Train/pigmented benign keratosis/ISIC_0026477.jpg,ISIC_0026477.png,4,BKL,HAM_0006563,reviewed_novice_unet
+ISIC_0026490,26490,Train/vascular lesion/ISIC_0026490.jpg,ISIC_0026490.png,6,VASC,HAM_0006291,reviewed_novice_unet
+ISIC_0026493,26493,Train/pigmented benign keratosis/ISIC_0026493.jpg,ISIC_0026493.png,4,BKL,HAM_0000259,reviewed_novice_unet
+ISIC_0026511,26511,Train/pigmented benign keratosis/ISIC_0026511.jpg,ISIC_0026511.png,4,BKL,HAM_0002242,reviewed_novice_unet
+ISIC_0026514,26514,Train/pigmented benign keratosis/ISIC_0026514.jpg,ISIC_0026514.png,4,BKL,HAM_0007598,reviewed_novice_unet
+ISIC_0026523,26523,Train/pigmented benign keratosis/ISIC_0026523.jpg,ISIC_0026523.png,4,BKL,HAM_0004338,reviewed_novice_unet
+ISIC_0026524,26524,Train/pigmented benign keratosis/ISIC_0026524.jpg,ISIC_0026524.png,4,BKL,HAM_0000524,reviewed_novice_unet
+ISIC_0026525,26525,Train/actinic keratosis/ISIC_0026525.jpg,ISIC_0026525.png,3,AK,HAM_0001048,reviewed_novice_unet
+ISIC_0026528,26528,Train/basal cell carcinoma/ISIC_0026528.jpg,ISIC_0026528.png,2,BCC,HAM_0007550,reviewed_novice_unet
+ISIC_0026532,26532,Train/pigmented benign keratosis/ISIC_0026532.jpg,ISIC_0026532.png,4,BKL,HAM_0000959,reviewed_novice_unet
+ISIC_0026538,26538,Train/pigmented benign keratosis/ISIC_0026538.jpg,ISIC_0026538.png,4,BKL,HAM_0003766,reviewed_novice_unet
+ISIC_0026539,26539,Train/pigmented benign keratosis/ISIC_0026539.jpg,ISIC_0026539.png,4,BKL,HAM_0004696,reviewed_novice_unet
+ISIC_0026549,26549,Train/squamous cell carcinoma/ISIC_0026549.jpg,ISIC_0026549.png,7,SCC,HAM_0002307,reviewed_novice_unet
+ISIC_0026553,26553,Train/pigmented benign keratosis/ISIC_0026553.jpg,ISIC_0026553.png,4,BKL,HAM_0007024,reviewed_novice_unet
+ISIC_0026556,26556,Train/pigmented benign keratosis/ISIC_0026556.jpg,ISIC_0026556.png,4,BKL,HAM_0002005,reviewed_novice_unet
+ISIC_0026566,26566,Train/pigmented benign keratosis/ISIC_0026566.jpg,ISIC_0026566.png,4,BKL,HAM_0004078,reviewed_novice_unet
+ISIC_0026567,26567,Train/pigmented benign keratosis/ISIC_0026567.jpg,ISIC_0026567.png,4,BKL,HAM_0000999,reviewed_novice_unet
+ISIC_0026574,26574,Train/basal cell carcinoma/ISIC_0026574.jpg,ISIC_0026574.png,2,BCC,HAM_0005660,reviewed_novice_unet
+ISIC_0026590,26590,Train/pigmented benign keratosis/ISIC_0026590.jpg,ISIC_0026590.png,4,BKL,HAM_0003317,reviewed_novice_unet
+ISIC_0026593,26593,Train/basal cell carcinoma/ISIC_0026593.jpg,ISIC_0026593.png,2,BCC,HAM_0004970,reviewed_novice_unet
+ISIC_0026606,26606,Train/pigmented benign keratosis/ISIC_0026606.jpg,ISIC_0026606.png,4,BKL,HAM_0006123,reviewed_novice_unet
+ISIC_0026607,26607,Train/pigmented benign keratosis/ISIC_0026607.jpg,ISIC_0026607.png,4,BKL,HAM_0007529,reviewed_novice_unet
+ISIC_0026614,26614,Train/pigmented benign keratosis/ISIC_0026614.jpg,ISIC_0026614.png,4,BKL,HAM_0001232,reviewed_novice_unet
+ISIC_0026623,26623,Train/pigmented benign keratosis/ISIC_0026623.jpg,ISIC_0026623.png,4,BKL,HAM_0003800,reviewed_novice_unet
+ISIC_0026625,26625,Train/actinic keratosis/ISIC_0026625.jpg,ISIC_0026625.png,3,AK,HAM_0005354,reviewed_novice_unet
+ISIC_0026626,26626,Train/actinic keratosis/ISIC_0026626.jpg,ISIC_0026626.png,3,AK,HAM_0005020,reviewed_novice_unet
+ISIC_0026631,26631,Train/pigmented benign keratosis/ISIC_0026631.jpg,ISIC_0026631.png,4,BKL,HAM_0000985,reviewed_novice_unet
+ISIC_0026634,26634,Train/pigmented benign keratosis/ISIC_0026634.jpg,ISIC_0026634.png,4,BKL,HAM_0003768,reviewed_novice_unet
+ISIC_0026637,26637,Train/pigmented benign keratosis/ISIC_0026637.jpg,ISIC_0026637.png,4,BKL,HAM_0001221,reviewed_novice_unet
+ISIC_0026643,26643,Train/basal cell carcinoma/ISIC_0026643.jpg,ISIC_0026643.png,2,BCC,HAM_0005469,reviewed_novice_unet
+ISIC_0026644,26644,Train/pigmented benign keratosis/ISIC_0026644.jpg,ISIC_0026644.png,4,BKL,HAM_0004259,reviewed_novice_unet
+ISIC_0026645,26645,Train/squamous cell carcinoma/ISIC_0026645.jpg,ISIC_0026645.png,7,SCC,HAM_0003136,reviewed_novice_unet
+ISIC_0026650,26650,Train/actinic keratosis/ISIC_0026650.jpg,ISIC_0026650.png,3,AK,HAM_0000545,reviewed_novice_unet
+ISIC_0026661,26661,Train/pigmented benign keratosis/ISIC_0026661.jpg,ISIC_0026661.png,4,BKL,HAM_0000992,reviewed_novice_unet
+ISIC_0026663,26663,Train/pigmented benign keratosis/ISIC_0026663.jpg,ISIC_0026663.png,4,BKL,HAM_0001815,reviewed_novice_unet
+ISIC_0026668,26668,Train/basal cell carcinoma/ISIC_0026668.jpg,ISIC_0026668.png,2,BCC,HAM_0001666,reviewed_novice_unet
+ISIC_0026675,26675,Train/pigmented benign keratosis/ISIC_0026675.jpg,ISIC_0026675.png,4,BKL,HAM_0003739,reviewed_novice_unet
+ISIC_0026679,26679,Train/pigmented benign keratosis/ISIC_0026679.jpg,ISIC_0026679.png,4,BKL,HAM_0005935,reviewed_novice_unet
+ISIC_0026687,26687,Train/basal cell carcinoma/ISIC_0026687.jpg,ISIC_0026687.png,2,BCC,HAM_0002689,reviewed_novice_unet
+ISIC_0026693,26693,Train/vascular lesion/ISIC_0026693.jpg,ISIC_0026693.png,6,VASC,HAM_0003839,reviewed_novice_unet
+ISIC_0026702,26702,Train/actinic keratosis/ISIC_0026702.jpg,ISIC_0026702.png,3,AK,HAM_0005228,reviewed_novice_unet
+ISIC_0026704,26704,Train/pigmented benign keratosis/ISIC_0026704.jpg,ISIC_0026704.png,4,BKL,HAM_0004338,reviewed_novice_unet
+ISIC_0026709,26709,Train/actinic keratosis/ISIC_0026709.jpg,ISIC_0026709.png,3,AK,HAM_0001565,reviewed_novice_unet
+ISIC_0026713,26713,Train/vascular lesion/ISIC_0026713.jpg,ISIC_0026713.png,6,VASC,HAM_0006138,reviewed_novice_unet
+ISIC_0026716,26716,Train/basal cell carcinoma/ISIC_0026716.jpg,ISIC_0026716.png,2,BCC,HAM_0000504,reviewed_novice_unet
+ISIC_0026717,26717,Train/pigmented benign keratosis/ISIC_0026717.jpg,ISIC_0026717.png,4,BKL,HAM_0002527,reviewed_novice_unet
+ISIC_0026720,26720,Train/squamous cell carcinoma/ISIC_0026720.jpg,ISIC_0026720.png,7,SCC,HAM_0000688,reviewed_novice_unet
+ISIC_0026728,26728,Train/pigmented benign keratosis/ISIC_0026728.jpg,ISIC_0026728.png,4,BKL,HAM_0000884,reviewed_novice_unet
+ISIC_0026729,26729,Train/actinic keratosis/ISIC_0026729.jpg,ISIC_0026729.png,3,AK,HAM_0006560,reviewed_novice_unet
+ISIC_0026737,26737,Train/pigmented benign keratosis/ISIC_0026737.jpg,ISIC_0026737.png,4,BKL,HAM_0004423,reviewed_novice_unet
+ISIC_0026744,26744,Train/pigmented benign keratosis/ISIC_0026744.jpg,ISIC_0026744.png,4,BKL,HAM_0001820,reviewed_novice_unet
+ISIC_0026760,26760,Train/basal cell carcinoma/ISIC_0026760.jpg,ISIC_0026760.png,2,BCC,HAM_0001884,reviewed_novice_unet
+ISIC_0026765,26765,Train/actinic keratosis/ISIC_0026765.jpg,ISIC_0026765.png,3,AK,HAM_0001474,reviewed_novice_unet
+ISIC_0026766,26766,Train/basal cell carcinoma/ISIC_0026766.jpg,ISIC_0026766.png,2,BCC,HAM_0005982,reviewed_novice_unet
+ISIC_0026769,26769,Train/pigmented benign keratosis/ISIC_0026769.jpg,ISIC_0026769.png,4,BKL,HAM_0002730,reviewed_novice_unet
+ISIC_0026775,26775,Train/pigmented benign keratosis/ISIC_0026775.jpg,ISIC_0026775.png,4,BKL,HAM_0001389,reviewed_novice_unet
+ISIC_0026787,26787,Train/pigmented benign keratosis/ISIC_0026787.jpg,ISIC_0026787.png,4,BKL,HAM_0000386,reviewed_novice_unet
+ISIC_0026789,26789,Train/dermatofibroma/ISIC_0026789.jpg,ISIC_0026789.png,5,DF,HAM_0003110,reviewed_novice_unet
+ISIC_0026790,26790,Train/pigmented benign keratosis/ISIC_0026790.jpg,ISIC_0026790.png,4,BKL,HAM_0005779,reviewed_novice_unet
+ISIC_0026798,26798,Train/basal cell carcinoma/ISIC_0026798.jpg,ISIC_0026798.png,2,BCC,HAM_0005536,reviewed_novice_unet
+ISIC_0026827,26827,Train/pigmented benign keratosis/ISIC_0026827.jpg,ISIC_0026827.png,4,BKL,HAM_0005465,reviewed_novice_unet
+ISIC_0026829,26829,Train/basal cell carcinoma/ISIC_0026829.jpg,ISIC_0026829.png,2,BCC,HAM_0007497,reviewed_novice_unet
+ISIC_0026831,26831,Train/basal cell carcinoma/ISIC_0026831.jpg,ISIC_0026831.png,2,BCC,HAM_0006387,reviewed_novice_unet
+ISIC_0026835,26835,Train/pigmented benign keratosis/ISIC_0026835.jpg,ISIC_0026835.png,4,BKL,HAM_0001480,reviewed_novice_unet
+ISIC_0026842,26842,Train/pigmented benign keratosis/ISIC_0026842.jpg,ISIC_0026842.png,4,BKL,HAM_0001536,reviewed_novice_unet
+ISIC_0026843,26843,Train/pigmented benign keratosis/ISIC_0026843.jpg,ISIC_0026843.png,4,BKL,HAM_0005082,reviewed_novice_unet
+ISIC_0026844,26844,Train/pigmented benign keratosis/ISIC_0026844.jpg,ISIC_0026844.png,4,BKL,HAM_0004114,reviewed_novice_unet
+ISIC_0026845,26845,Train/basal cell carcinoma/ISIC_0026845.jpg,ISIC_0026845.png,2,BCC,HAM_0001283,reviewed_novice_unet
+ISIC_0026846,26846,Train/pigmented benign keratosis/ISIC_0026846.jpg,ISIC_0026846.png,4,BKL,HAM_0003287,reviewed_novice_unet
+ISIC_0026848,26848,Train/actinic keratosis/ISIC_0026848.jpg,ISIC_0026848.png,3,AK,HAM_0007308,reviewed_novice_unet
+ISIC_0026849,26849,Train/pigmented benign keratosis/ISIC_0026849.jpg,ISIC_0026849.png,4,BKL,HAM_0004545,reviewed_novice_unet
+ISIC_0026855,26855,Train/basal cell carcinoma/ISIC_0026855.jpg,ISIC_0026855.png,2,BCC,HAM_0000457,reviewed_novice_unet
+ISIC_0026857,26857,Train/actinic keratosis/ISIC_0026857.jpg,ISIC_0026857.png,3,AK,HAM_0004363,reviewed_novice_unet
+ISIC_0026861,26861,Train/pigmented benign keratosis/ISIC_0026861.jpg,ISIC_0026861.png,4,BKL,HAM_0007110,reviewed_novice_unet
+ISIC_0026867,26867,Train/pigmented benign keratosis/ISIC_0026867.jpg,ISIC_0026867.png,4,BKL,HAM_0003973,reviewed_novice_unet
+ISIC_0026871,26871,Train/pigmented benign keratosis/ISIC_0026871.jpg,ISIC_0026871.png,4,BKL,HAM_0001240,reviewed_novice_unet
+ISIC_0026872,26872,Train/squamous cell carcinoma/ISIC_0026872.jpg,ISIC_0026872.png,7,SCC,HAM_0006746,reviewed_novice_unet
+ISIC_0026876,26876,Train/vascular lesion/ISIC_0026876.jpg,ISIC_0026876.png,6,VASC,HAM_0002610,reviewed_novice_unet
+ISIC_0026902,26902,Train/basal cell carcinoma/ISIC_0026902.jpg,ISIC_0026902.png,2,BCC,HAM_0000719,reviewed_novice_unet
+ISIC_0026905,26905,Train/actinic keratosis/ISIC_0026905.jpg,ISIC_0026905.png,3,AK,HAM_0006180,reviewed_novice_unet
+ISIC_0026907,26907,Train/pigmented benign keratosis/ISIC_0026907.jpg,ISIC_0026907.png,4,BKL,HAM_0005291,reviewed_novice_unet
+ISIC_0026912,26912,Train/pigmented benign keratosis/ISIC_0026912.jpg,ISIC_0026912.png,4,BKL,HAM_0007337,reviewed_novice_unet
+ISIC_0026923,26923,Train/pigmented benign keratosis/ISIC_0026923.jpg,ISIC_0026923.png,4,BKL,HAM_0000198,reviewed_novice_unet
+ISIC_0026927,26927,Train/squamous cell carcinoma/ISIC_0026927.jpg,ISIC_0026927.png,7,SCC,HAM_0003501,reviewed_novice_unet
+ISIC_0026940,26940,Train/basal cell carcinoma/ISIC_0026940.jpg,ISIC_0026940.png,2,BCC,HAM_0005973,reviewed_novice_unet
+ISIC_0026941,26941,Train/pigmented benign keratosis/ISIC_0026941.jpg,ISIC_0026941.png,4,BKL,HAM_0003715,reviewed_novice_unet
+ISIC_0026947,26947,Train/pigmented benign keratosis/ISIC_0026947.jpg,ISIC_0026947.png,4,BKL,HAM_0000425,reviewed_novice_unet
+ISIC_0026952,26952,Train/basal cell carcinoma/ISIC_0026952.jpg,ISIC_0026952.png,2,BCC,HAM_0002167,reviewed_novice_unet
+ISIC_0026955,26955,Train/pigmented benign keratosis/ISIC_0026955.jpg,ISIC_0026955.png,4,BKL,HAM_0003569,reviewed_novice_unet
+ISIC_0026958,26958,Train/pigmented benign keratosis/ISIC_0026958.jpg,ISIC_0026958.png,4,BKL,HAM_0001773,reviewed_novice_unet
+ISIC_0026959,26959,Train/pigmented benign keratosis/ISIC_0026959.jpg,ISIC_0026959.png,4,BKL,HAM_0003426,reviewed_novice_unet
+ISIC_0026961,26961,Train/pigmented benign keratosis/ISIC_0026961.jpg,ISIC_0026961.png,4,BKL,HAM_0006181,reviewed_novice_unet
+ISIC_0026967,26967,Train/pigmented benign keratosis/ISIC_0026967.jpg,ISIC_0026967.png,4,BKL,HAM_0007027,reviewed_novice_unet
+ISIC_0026978,26978,Train/basal cell carcinoma/ISIC_0026978.jpg,ISIC_0026978.png,2,BCC,HAM_0004042,reviewed_novice_unet
+ISIC_0026981,26981,Train/squamous cell carcinoma/ISIC_0026981.jpg,ISIC_0026981.png,7,SCC,HAM_0000909,reviewed_novice_unet
+ISIC_0026984,26984,Train/actinic keratosis/ISIC_0026984.jpg,ISIC_0026984.png,3,AK,HAM_0001903,reviewed_novice_unet
+ISIC_0026988,26988,Train/basal cell carcinoma/ISIC_0026988.jpg,ISIC_0026988.png,2,BCC,HAM_0004937,reviewed_novice_unet
+ISIC_0026992,26992,Train/squamous cell carcinoma/ISIC_0026992.jpg,ISIC_0026992.png,7,SCC,HAM_0003146,reviewed_novice_unet
+ISIC_0026995,26995,Train/basal cell carcinoma/ISIC_0026995.jpg,ISIC_0026995.png,2,BCC,HAM_0001693,reviewed_novice_unet
+ISIC_0027004,27004,Train/basal cell carcinoma/ISIC_0027004.jpg,ISIC_0027004.png,2,BCC,HAM_0003826,reviewed_novice_unet
+ISIC_0027017,27017,Train/pigmented benign keratosis/ISIC_0027017.jpg,ISIC_0027017.png,4,BKL,HAM_0003183,reviewed_novice_unet
+ISIC_0027018,27018,Train/pigmented benign keratosis/ISIC_0027018.jpg,ISIC_0027018.png,4,BKL,HAM_0006525,reviewed_novice_unet
+ISIC_0027023,27023,Train/pigmented benign keratosis/ISIC_0027023.jpg,ISIC_0027023.png,4,BKL,HAM_0000746,reviewed_novice_unet
+ISIC_0027025,27025,Train/pigmented benign keratosis/ISIC_0027025.jpg,ISIC_0027025.png,4,BKL,HAM_0000121,reviewed_novice_unet
+ISIC_0027027,27027,Train/pigmented benign keratosis/ISIC_0027027.jpg,ISIC_0027027.png,4,BKL,HAM_0007604,reviewed_novice_unet
+ISIC_0027037,27037,Train/pigmented benign keratosis/ISIC_0027037.jpg,ISIC_0027037.png,4,BKL,HAM_0003140,reviewed_novice_unet
+ISIC_0027038,27038,Train/basal cell carcinoma/ISIC_0027038.jpg,ISIC_0027038.png,2,BCC,HAM_0005985,reviewed_novice_unet
+ISIC_0027041,27041,Train/pigmented benign keratosis/ISIC_0027041.jpg,ISIC_0027041.png,4,BKL,HAM_0003049,reviewed_novice_unet
+ISIC_0027042,27042,Train/pigmented benign keratosis/ISIC_0027042.jpg,ISIC_0027042.png,4,BKL,HAM_0002078,reviewed_novice_unet
+ISIC_0027044,27044,Train/dermatofibroma/ISIC_0027044.jpg,ISIC_0027044.png,5,DF,HAM_0002871,reviewed_novice_unet
+ISIC_0027047,27047,Train/squamous cell carcinoma/ISIC_0027047.jpg,ISIC_0027047.png,7,SCC,HAM_0001786,reviewed_novice_unet
+ISIC_0027053,27053,Train/pigmented benign keratosis/ISIC_0027053.jpg,ISIC_0027053.png,4,BKL,HAM_0003847,reviewed_novice_unet
+ISIC_0027057,27057,Train/basal cell carcinoma/ISIC_0027057.jpg,ISIC_0027057.png,2,BCC,HAM_0002021,reviewed_novice_unet
+ISIC_0027058,27058,Train/basal cell carcinoma/ISIC_0027058.jpg,ISIC_0027058.png,2,BCC,HAM_0005998,reviewed_novice_unet
+ISIC_0027064,27064,Train/pigmented benign keratosis/ISIC_0027064.jpg,ISIC_0027064.png,4,BKL,HAM_0000398,reviewed_novice_unet
+ISIC_0027083,27083,Train/pigmented benign keratosis/ISIC_0027083.jpg,ISIC_0027083.png,4,BKL,HAM_0007381,reviewed_novice_unet
+ISIC_0027084,27084,Train/squamous cell carcinoma/ISIC_0027084.jpg,ISIC_0027084.png,7,SCC,HAM_0006893,reviewed_novice_unet
+ISIC_0027090,27090,Train/basal cell carcinoma/ISIC_0027090.jpg,ISIC_0027090.png,2,BCC,HAM_0001018,reviewed_novice_unet
+ISIC_0027107,27107,Train/dermatofibroma/ISIC_0027107.jpg,ISIC_0027107.png,5,DF,HAM_0004036,reviewed_novice_unet
+ISIC_0027117,27117,Train/basal cell carcinoma/ISIC_0027117.jpg,ISIC_0027117.png,2,BCC,HAM_0006351,reviewed_novice_unet
+ISIC_0027120,27120,Train/basal cell carcinoma/ISIC_0027120.jpg,ISIC_0027120.png,2,BCC,HAM_0003444,reviewed_novice_unet
+ISIC_0027135,27135,Train/basal cell carcinoma/ISIC_0027135.jpg,ISIC_0027135.png,2,BCC,HAM_0004388,reviewed_novice_unet
+ISIC_0027139,27139,Train/pigmented benign keratosis/ISIC_0027139.jpg,ISIC_0027139.png,4,BKL,HAM_0005440,reviewed_novice_unet
+ISIC_0027141,27141,Train/dermatofibroma/ISIC_0027141.jpg,ISIC_0027141.png,5,DF,HAM_0000024,reviewed_novice_unet
+ISIC_0027142,27142,Train/pigmented benign keratosis/ISIC_0027142.jpg,ISIC_0027142.png,4,BKL,HAM_0004322,reviewed_novice_unet
+ISIC_0027146,27146,Train/basal cell carcinoma/ISIC_0027146.jpg,ISIC_0027146.png,2,BCC,HAM_0007009,reviewed_novice_unet
+ISIC_0027154,27154,Train/pigmented benign keratosis/ISIC_0027154.jpg,ISIC_0027154.png,4,BKL,HAM_0005415,reviewed_novice_unet
+ISIC_0027159,27159,Train/vascular lesion/ISIC_0027159.jpg,ISIC_0027159.png,6,VASC,HAM_0004877,reviewed_novice_unet
+ISIC_0027162,27162,Train/pigmented benign keratosis/ISIC_0027162.jpg,ISIC_0027162.png,4,BKL,HAM_0004905,reviewed_novice_unet
+ISIC_0027167,27167,Train/pigmented benign keratosis/ISIC_0027167.jpg,ISIC_0027167.png,4,BKL,HAM_0003859,reviewed_novice_unet
+ISIC_0027178,27178,Train/squamous cell carcinoma/ISIC_0027178.jpg,ISIC_0027178.png,7,SCC,HAM_0002705,reviewed_novice_unet
+ISIC_0027184,27184,Train/squamous cell carcinoma/ISIC_0027184.jpg,ISIC_0027184.png,7,SCC,HAM_0007349,reviewed_novice_unet
+ISIC_0027189,27189,Train/basal cell carcinoma/ISIC_0027189.jpg,ISIC_0027189.png,2,BCC,HAM_0006708,reviewed_novice_unet
+ISIC_0027194,27194,Train/pigmented benign keratosis/ISIC_0027194.jpg,ISIC_0027194.png,4,BKL,HAM_0004224,reviewed_novice_unet
+ISIC_0027202,27202,Train/pigmented benign keratosis/ISIC_0027202.jpg,ISIC_0027202.png,4,BKL,HAM_0001011,reviewed_novice_unet
+ISIC_0027210,27210,Train/vascular lesion/ISIC_0027210.jpg,ISIC_0027210.png,6,VASC,HAM_0006748,reviewed_novice_unet
+ISIC_0027219,27219,Train/pigmented benign keratosis/ISIC_0027219.jpg,ISIC_0027219.png,4,BKL,HAM_0000202,reviewed_novice_unet
+ISIC_0027229,27229,Train/basal cell carcinoma/ISIC_0027229.jpg,ISIC_0027229.png,2,BCC,HAM_0003826,reviewed_novice_unet
+ISIC_0027231,27231,Train/squamous cell carcinoma/ISIC_0027231.jpg,ISIC_0027231.png,7,SCC,HAM_0005310,reviewed_novice_unet
+ISIC_0027254,27254,Train/actinic keratosis/ISIC_0027254.jpg,ISIC_0027254.png,3,AK,HAM_0003949,reviewed_novice_unet
+ISIC_0027275,27275,Train/pigmented benign keratosis/ISIC_0027275.jpg,ISIC_0027275.png,4,BKL,HAM_0002280,reviewed_novice_unet
+ISIC_0027279,27279,Train/pigmented benign keratosis/ISIC_0027279.jpg,ISIC_0027279.png,4,BKL,HAM_0006009,reviewed_novice_unet
+ISIC_0027281,27281,Train/basal cell carcinoma/ISIC_0027281.jpg,ISIC_0027281.png,2,BCC,HAM_0006904,reviewed_novice_unet
+ISIC_0027291,27291,Train/basal cell carcinoma/ISIC_0027291.jpg,ISIC_0027291.png,2,BCC,HAM_0006904,reviewed_novice_unet
+ISIC_0027295,27295,Train/pigmented benign keratosis/ISIC_0027295.jpg,ISIC_0027295.png,4,BKL,HAM_0003913,reviewed_novice_unet
+ISIC_0027297,27297,Train/basal cell carcinoma/ISIC_0027297.jpg,ISIC_0027297.png,2,BCC,HAM_0003186,reviewed_novice_unet
+ISIC_0027303,27303,Train/squamous cell carcinoma/ISIC_0027303.jpg,ISIC_0027303.png,7,SCC,HAM_0000490,reviewed_novice_unet
+ISIC_0027310,27310,Train/pigmented benign keratosis/ISIC_0027310.jpg,ISIC_0027310.png,4,BKL,HAM_0003301,reviewed_novice_unet
+ISIC_0027320,27320,Train/pigmented benign keratosis/ISIC_0027320.jpg,ISIC_0027320.png,4,BKL,HAM_0004506,reviewed_novice_unet
+ISIC_0027326,27326,Train/pigmented benign keratosis/ISIC_0027326.jpg,ISIC_0027326.png,4,BKL,HAM_0005874,reviewed_novice_unet
+ISIC_0027334,27334,Train/actinic keratosis/ISIC_0027334.jpg,ISIC_0027334.png,3,AK,HAM_0004462,reviewed_novice_unet
+ISIC_0027335,27335,Train/pigmented benign keratosis/ISIC_0027335.jpg,ISIC_0027335.png,4,BKL,HAM_0006670,reviewed_novice_unet
+ISIC_0027337,27337,Train/basal cell carcinoma/ISIC_0027337.jpg,ISIC_0027337.png,2,BCC,HAM_0003778,reviewed_novice_unet
+ISIC_0027344,27344,Train/pigmented benign keratosis/ISIC_0027344.jpg,ISIC_0027344.png,4,BKL,HAM_0003069,reviewed_novice_unet
+ISIC_0027354,27354,Train/pigmented benign keratosis/ISIC_0027354.jpg,ISIC_0027354.png,4,BKL,HAM_0007359,reviewed_novice_unet
+ISIC_0027355,27355,Train/pigmented benign keratosis/ISIC_0027355.jpg,ISIC_0027355.png,4,BKL,HAM_0005968,reviewed_novice_unet
+ISIC_0027367,27367,Train/pigmented benign keratosis/ISIC_0027367.jpg,ISIC_0027367.png,4,BKL,HAM_0005022,reviewed_novice_unet
+ISIC_0027370,27370,Train/pigmented benign keratosis/ISIC_0027370.jpg,ISIC_0027370.png,4,BKL,HAM_0004308,reviewed_novice_unet
+ISIC_0027374,27374,Train/pigmented benign keratosis/ISIC_0027374.jpg,ISIC_0027374.png,4,BKL,HAM_0004690,reviewed_novice_unet
+ISIC_0027385,27385,Train/vascular lesion/ISIC_0027385.jpg,ISIC_0027385.png,6,VASC,HAM_0004455,reviewed_novice_unet
+ISIC_0027388,27388,Train/pigmented benign keratosis/ISIC_0027388.jpg,ISIC_0027388.png,4,BKL,HAM_0002192,reviewed_novice_unet
+ISIC_0027394,27394,Train/pigmented benign keratosis/ISIC_0027394.jpg,ISIC_0027394.png,4,BKL,HAM_0006472,reviewed_novice_unet
+ISIC_0027419,27419,Train/pigmented benign keratosis/ISIC_0027419.jpg,ISIC_0027419.png,4,BKL,HAM_0000118,reviewed_novice_unet
+ISIC_0027433,27433,Train/basal cell carcinoma/ISIC_0027433.jpg,ISIC_0027433.png,2,BCC,HAM_0007002,reviewed_novice_unet
+ISIC_0027435,27435,Train/pigmented benign keratosis/ISIC_0027435.jpg,ISIC_0027435.png,4,BKL,HAM_0007500,reviewed_novice_unet
+ISIC_0027437,27437,Train/pigmented benign keratosis/ISIC_0027437.jpg,ISIC_0027437.png,4,BKL,HAM_0004125,reviewed_novice_unet
+ISIC_0027447,27447,Train/actinic keratosis/ISIC_0027447.jpg,ISIC_0027447.png,3,AK,HAM_0007601,reviewed_novice_unet
+ISIC_0027451,27451,Train/pigmented benign keratosis/ISIC_0027451.jpg,ISIC_0027451.png,4,BKL,HAM_0000207,reviewed_novice_unet
+ISIC_0027452,27452,Train/actinic keratosis/ISIC_0027452.jpg,ISIC_0027452.png,3,AK,HAM_0004033,reviewed_novice_unet
+ISIC_0027455,27455,Train/pigmented benign keratosis/ISIC_0027455.jpg,ISIC_0027455.png,4,BKL,HAM_0004673,reviewed_novice_unet
+ISIC_0027463,27463,Train/pigmented benign keratosis/ISIC_0027463.jpg,ISIC_0027463.png,4,BKL,HAM_0003559,reviewed_novice_unet
+ISIC_0027470,27470,Train/pigmented benign keratosis/ISIC_0027470.jpg,ISIC_0027470.png,4,BKL,HAM_0002548,reviewed_novice_unet
+ISIC_0027478,27478,Train/basal cell carcinoma/ISIC_0027478.jpg,ISIC_0027478.png,2,BCC,HAM_0003593,reviewed_novice_unet
+ISIC_0027488,27488,Train/dermatofibroma/ISIC_0027488.jpg,ISIC_0027488.png,5,DF,HAM_0003597,reviewed_novice_unet
+ISIC_0027506,27506,Train/squamous cell carcinoma/ISIC_0027506.jpg,ISIC_0027506.png,7,SCC,HAM_0006482,reviewed_novice_unet
+ISIC_0027509,27509,Train/pigmented benign keratosis/ISIC_0027509.jpg,ISIC_0027509.png,4,BKL,HAM_0001725,reviewed_novice_unet
+ISIC_0027513,27513,Train/pigmented benign keratosis/ISIC_0027513.jpg,ISIC_0027513.png,4,BKL,HAM_0004748,reviewed_novice_unet
+ISIC_0027522,27522,Train/vascular lesion/ISIC_0027522.jpg,ISIC_0027522.png,6,VASC,HAM_0007113,reviewed_novice_unet
+ISIC_0027525,27525,Train/basal cell carcinoma/ISIC_0027525.jpg,ISIC_0027525.png,2,BCC,HAM_0005721,reviewed_novice_unet
+ISIC_0027526,27526,Train/basal cell carcinoma/ISIC_0027526.jpg,ISIC_0027526.png,2,BCC,HAM_0006834,reviewed_novice_unet
+ISIC_0027527,27527,Train/pigmented benign keratosis/ISIC_0027527.jpg,ISIC_0027527.png,4,BKL,HAM_0001979,reviewed_novice_unet
+ISIC_0027533,27533,Train/pigmented benign keratosis/ISIC_0027533.jpg,ISIC_0027533.png,4,BKL,HAM_0001417,reviewed_novice_unet
+ISIC_0027536,27536,Train/actinic keratosis/ISIC_0027536.jpg,ISIC_0027536.png,3,AK,HAM_0007601,reviewed_novice_unet
+ISIC_0027544,27544,Train/basal cell carcinoma/ISIC_0027544.jpg,ISIC_0027544.png,2,BCC,HAM_0000998,reviewed_novice_unet
+ISIC_0027545,27545,Train/basal cell carcinoma/ISIC_0027545.jpg,ISIC_0027545.png,2,BCC,HAM_0000994,reviewed_novice_unet
+ISIC_0027546,27546,Train/basal cell carcinoma/ISIC_0027546.jpg,ISIC_0027546.png,2,BCC,HAM_0005617,reviewed_novice_unet
+ISIC_0027550,27550,Train/squamous cell carcinoma/ISIC_0027550.jpg,ISIC_0027550.png,7,SCC,HAM_0004297,reviewed_novice_unet
+ISIC_0027577,27577,Train/squamous cell carcinoma/ISIC_0027577.jpg,ISIC_0027577.png,7,SCC,HAM_0005958,reviewed_novice_unet
+ISIC_0027580,27580,Train/actinic keratosis/ISIC_0027580.jpg,ISIC_0027580.png,3,AK,HAM_0005648,reviewed_novice_unet
+ISIC_0027584,27584,Train/pigmented benign keratosis/ISIC_0027584.jpg,ISIC_0027584.png,4,BKL,HAM_0001546,reviewed_novice_unet
+ISIC_0027595,27595,Train/basal cell carcinoma/ISIC_0027595.jpg,ISIC_0027595.png,2,BCC,HAM_0006624,reviewed_novice_unet
+ISIC_0027608,27608,Train/pigmented benign keratosis/ISIC_0027608.jpg,ISIC_0027608.png,4,BKL,HAM_0005610,reviewed_novice_unet
+ISIC_0027609,27609,Train/basal cell carcinoma/ISIC_0027609.jpg,ISIC_0027609.png,2,BCC,HAM_0000994,reviewed_novice_unet
+ISIC_0027613,27613,Train/dermatofibroma/ISIC_0027613.jpg,ISIC_0027613.png,5,DF,HAM_0005684,reviewed_novice_unet
+ISIC_0027615,27615,Train/actinic keratosis/ISIC_0027615.jpg,ISIC_0027615.png,3,AK,HAM_0006180,reviewed_novice_unet
+ISIC_0027626,27626,Train/dermatofibroma/ISIC_0027626.jpg,ISIC_0027626.png,5,DF,HAM_0004371,reviewed_novice_unet
+ISIC_0027629,27629,Train/basal cell carcinoma/ISIC_0027629.jpg,ISIC_0027629.png,2,BCC,HAM_0002427,reviewed_novice_unet
+ISIC_0027631,27631,Train/basal cell carcinoma/ISIC_0027631.jpg,ISIC_0027631.png,2,BCC,HAM_0004440,reviewed_novice_unet
+ISIC_0027648,27648,Train/dermatofibroma/ISIC_0027648.jpg,ISIC_0027648.png,5,DF,HAM_0004036,reviewed_novice_unet
+ISIC_0027649,27649,Train/pigmented benign keratosis/ISIC_0027649.jpg,ISIC_0027649.png,4,BKL,HAM_0006987,reviewed_novice_unet
+ISIC_0027650,27650,Train/actinic keratosis/ISIC_0027650.jpg,ISIC_0027650.png,3,AK,HAM_0002648,reviewed_novice_unet
+ISIC_0027652,27652,Train/pigmented benign keratosis/ISIC_0027652.jpg,ISIC_0027652.png,4,BKL,HAM_0004958,reviewed_novice_unet
+ISIC_0027665,27665,Train/vascular lesion/ISIC_0027665.jpg,ISIC_0027665.png,6,VASC,HAM_0001860,reviewed_novice_unet
+ISIC_0027668,27668,Train/actinic keratosis/ISIC_0027668.jpg,ISIC_0027668.png,3,AK,HAM_0001386,reviewed_novice_unet
+ISIC_0027672,27672,Train/vascular lesion/ISIC_0027672.jpg,ISIC_0027672.png,6,VASC,HAM_0007614,reviewed_novice_unet
+ISIC_0027677,27677,Train/basal cell carcinoma/ISIC_0027677.jpg,ISIC_0027677.png,2,BCC,HAM_0005617,reviewed_novice_unet
+ISIC_0027678,27678,Train/squamous cell carcinoma/ISIC_0027678.jpg,ISIC_0027678.png,7,SCC,HAM_0003586,reviewed_novice_unet
+ISIC_0027680,27680,Train/pigmented benign keratosis/ISIC_0027680.jpg,ISIC_0027680.png,4,BKL,HAM_0004677,reviewed_novice_unet
+ISIC_0027681,27681,Train/pigmented benign keratosis/ISIC_0027681.jpg,ISIC_0027681.png,4,BKL,HAM_0006531,reviewed_novice_unet
+ISIC_0027700,27700,Train/squamous cell carcinoma/ISIC_0027700.jpg,ISIC_0027700.png,7,SCC,HAM_0001383,reviewed_novice_unet
+ISIC_0027706,27706,Train/pigmented benign keratosis/ISIC_0027706.jpg,ISIC_0027706.png,4,BKL,HAM_0005596,reviewed_novice_unet
+ISIC_0027708,27708,Train/squamous cell carcinoma/ISIC_0027708.jpg,ISIC_0027708.png,7,SCC,HAM_0005438,reviewed_novice_unet
+ISIC_0027710,27710,Train/pigmented benign keratosis/ISIC_0027710.jpg,ISIC_0027710.png,4,BKL,HAM_0001062,reviewed_novice_unet
+ISIC_0027719,27719,Train/squamous cell carcinoma/ISIC_0027719.jpg,ISIC_0027719.png,7,SCC,HAM_0007354,reviewed_novice_unet
+ISIC_0027722,27722,Train/basal cell carcinoma/ISIC_0027722.jpg,ISIC_0027722.png,2,BCC,HAM_0000987,reviewed_novice_unet
+ISIC_0027735,27735,Train/pigmented benign keratosis/ISIC_0027735.jpg,ISIC_0027735.png,4,BKL,HAM_0005896,reviewed_novice_unet
+ISIC_0027737,27737,Train/pigmented benign keratosis/ISIC_0027737.jpg,ISIC_0027737.png,4,BKL,HAM_0002903,reviewed_novice_unet
+ISIC_0027739,27739,Train/pigmented benign keratosis/ISIC_0027739.jpg,ISIC_0027739.png,4,BKL,HAM_0006325,reviewed_novice_unet
+ISIC_0027744,27744,Train/basal cell carcinoma/ISIC_0027744.jpg,ISIC_0027744.png,2,BCC,HAM_0005309,reviewed_novice_unet
+ISIC_0027747,27747,Train/pigmented benign keratosis/ISIC_0027747.jpg,ISIC_0027747.png,4,BKL,HAM_0005932,reviewed_novice_unet
+ISIC_0027759,27759,Train/basal cell carcinoma/ISIC_0027759.jpg,ISIC_0027759.png,2,BCC,HAM_0003198,reviewed_novice_unet
+ISIC_0027760,27760,Train/pigmented benign keratosis/ISIC_0027760.jpg,ISIC_0027760.png,4,BKL,HAM_0003766,reviewed_novice_unet
+ISIC_0027767,27767,Train/squamous cell carcinoma/ISIC_0027767.jpg,ISIC_0027767.png,7,SCC,HAM_0003934,reviewed_novice_unet
+ISIC_0027774,27774,Train/basal cell carcinoma/ISIC_0027774.jpg,ISIC_0027774.png,2,BCC,HAM_0004970,reviewed_novice_unet
+ISIC_0027780,27780,Train/pigmented benign keratosis/ISIC_0027780.jpg,ISIC_0027780.png,4,BKL,HAM_0007332,reviewed_novice_unet
+ISIC_0027786,27786,Train/basal cell carcinoma/ISIC_0027786.jpg,ISIC_0027786.png,2,BCC,HAM_0002334,reviewed_novice_unet
+ISIC_0027788,27788,Train/basal cell carcinoma/ISIC_0027788.jpg,ISIC_0027788.png,2,BCC,HAM_0002812,reviewed_novice_unet
+ISIC_0027795,27795,Train/squamous cell carcinoma/ISIC_0027795.jpg,ISIC_0027795.png,7,SCC,HAM_0001526,reviewed_novice_unet
+ISIC_0027796,27796,Train/pigmented benign keratosis/ISIC_0027796.jpg,ISIC_0027796.png,4,BKL,HAM_0000745,reviewed_novice_unet
+ISIC_0027801,27801,Train/pigmented benign keratosis/ISIC_0027801.jpg,ISIC_0027801.png,4,BKL,HAM_0003840,reviewed_novice_unet
+ISIC_0027802,27802,Train/actinic keratosis/ISIC_0027802.jpg,ISIC_0027802.png,3,AK,HAM_0006560,reviewed_novice_unet
+ISIC_0027811,27811,Train/pigmented benign keratosis/ISIC_0027811.jpg,ISIC_0027811.png,4,BKL,HAM_0006346,reviewed_novice_unet
+ISIC_0027814,27814,Train/basal cell carcinoma/ISIC_0027814.jpg,ISIC_0027814.png,2,BCC,HAM_0006631,reviewed_novice_unet
+ISIC_0027819,27819,Train/basal cell carcinoma/ISIC_0027819.jpg,ISIC_0027819.png,2,BCC,HAM_0004827,reviewed_novice_unet
+ISIC_0027820,27820,Train/pigmented benign keratosis/ISIC_0027820.jpg,ISIC_0027820.png,4,BKL,HAM_0001310,reviewed_novice_unet
+ISIC_0027825,27825,Train/basal cell carcinoma/ISIC_0027825.jpg,ISIC_0027825.png,2,BCC,HAM_0005268,reviewed_novice_unet
+ISIC_0027826,27826,Train/pigmented benign keratosis/ISIC_0027826.jpg,ISIC_0027826.png,4,BKL,HAM_0005278,reviewed_novice_unet
+ISIC_0027828,27828,Train/pigmented benign keratosis/ISIC_0027828.jpg,ISIC_0027828.png,4,BKL,HAM_0002521,reviewed_novice_unet
+ISIC_0027846,27846,Train/basal cell carcinoma/ISIC_0027846.jpg,ISIC_0027846.png,2,BCC,HAM_0001183,reviewed_novice_unet
+ISIC_0027851,27851,Train/basal cell carcinoma/ISIC_0027851.jpg,ISIC_0027851.png,2,BCC,HAM_0001078,reviewed_novice_unet
+ISIC_0027856,27856,Train/vascular lesion/ISIC_0027856.jpg,ISIC_0027856.png,6,VASC,HAM_0007118,reviewed_novice_unet
+ISIC_0027858,27858,Train/basal cell carcinoma/ISIC_0027858.jpg,ISIC_0027858.png,2,BCC,HAM_0003094,reviewed_novice_unet
+ISIC_0027859,27859,Train/pigmented benign keratosis/ISIC_0027859.jpg,ISIC_0027859.png,4,BKL,HAM_0000001,reviewed_novice_unet
+ISIC_0027865,27865,Train/basal cell carcinoma/ISIC_0027865.jpg,ISIC_0027865.png,2,BCC,HAM_0000393,reviewed_novice_unet
+ISIC_0027875,27875,Train/pigmented benign keratosis/ISIC_0027875.jpg,ISIC_0027875.png,4,BKL,HAM_0001429,reviewed_novice_unet
+ISIC_0027876,27876,Train/dermatofibroma/ISIC_0027876.jpg,ISIC_0027876.png,5,DF,HAM_0004960,reviewed_novice_unet
+ISIC_0027884,27884,Train/actinic keratosis/ISIC_0027884.jpg,ISIC_0027884.png,3,AK,HAM_0006024,reviewed_novice_unet
+ISIC_0027888,27888,Train/vascular lesion/ISIC_0027888.jpg,ISIC_0027888.png,6,VASC,HAM_0004409,reviewed_novice_unet
+ISIC_0027893,27893,Train/pigmented benign keratosis/ISIC_0027893.jpg,ISIC_0027893.png,4,BKL,HAM_0000237,reviewed_novice_unet
+ISIC_0027915,27915,Train/basal cell carcinoma/ISIC_0027915.jpg,ISIC_0027915.png,2,BCC,HAM_0000719,reviewed_novice_unet
+ISIC_0027930,27930,Train/squamous cell carcinoma/ISIC_0027930.jpg,ISIC_0027930.png,7,SCC,HAM_0004899,reviewed_novice_unet
+ISIC_0027950,27950,Train/actinic keratosis/ISIC_0027950.jpg,ISIC_0027950.png,3,AK,HAM_0000193,reviewed_novice_unet
+ISIC_0027953,27953,Train/pigmented benign keratosis/ISIC_0027953.jpg,ISIC_0027953.png,4,BKL,HAM_0006907,reviewed_novice_unet
+ISIC_0027954,27954,Train/pigmented benign keratosis/ISIC_0027954.jpg,ISIC_0027954.png,4,BKL,HAM_0002034,reviewed_novice_unet
+ISIC_0027957,27957,Train/pigmented benign keratosis/ISIC_0027957.jpg,ISIC_0027957.png,4,BKL,HAM_0001665,reviewed_novice_unet
+ISIC_0027960,27960,Train/pigmented benign keratosis/ISIC_0027960.jpg,ISIC_0027960.png,4,BKL,HAM_0003569,reviewed_novice_unet
+ISIC_0027969,27969,Train/pigmented benign keratosis/ISIC_0027969.jpg,ISIC_0027969.png,4,BKL,HAM_0006170,reviewed_novice_unet
+ISIC_0027973,27973,Train/pigmented benign keratosis/ISIC_0027973.jpg,ISIC_0027973.png,4,BKL,HAM_0002358,reviewed_novice_unet
+ISIC_0027976,27976,Train/basal cell carcinoma/ISIC_0027976.jpg,ISIC_0027976.png,2,BCC,HAM_0004342,reviewed_novice_unet
+ISIC_0027982,27982,Train/pigmented benign keratosis/ISIC_0027982.jpg,ISIC_0027982.png,4,BKL,HAM_0004423,reviewed_novice_unet
+ISIC_0027983,27983,Train/vascular lesion/ISIC_0027983.jpg,ISIC_0027983.png,6,VASC,HAM_0003839,reviewed_novice_unet
+ISIC_0027989,27989,Train/pigmented benign keratosis/ISIC_0027989.jpg,ISIC_0027989.png,4,BKL,HAM_0000113,reviewed_novice_unet
+ISIC_0027991,27991,Train/pigmented benign keratosis/ISIC_0027991.jpg,ISIC_0027991.png,4,BKL,HAM_0002722,reviewed_novice_unet
+ISIC_0027998,27998,Train/basal cell carcinoma/ISIC_0027998.jpg,ISIC_0027998.png,2,BCC,HAM_0005947,reviewed_novice_unet
+ISIC_0028020,28020,Train/pigmented benign keratosis/ISIC_0028020.jpg,ISIC_0028020.png,4,BKL,HAM_0003090,reviewed_novice_unet
+ISIC_0028035,28035,Train/basal cell carcinoma/ISIC_0028035.jpg,ISIC_0028035.png,2,BCC,HAM_0002577,reviewed_novice_unet
+ISIC_0028043,28043,Train/pigmented benign keratosis/ISIC_0028043.jpg,ISIC_0028043.png,4,BKL,HAM_0000979,reviewed_novice_unet
+ISIC_0028050,28050,Train/basal cell carcinoma/ISIC_0028050.jpg,ISIC_0028050.png,2,BCC,HAM_0003191,reviewed_novice_unet
+ISIC_0028052,28052,Train/pigmented benign keratosis/ISIC_0028052.jpg,ISIC_0028052.png,4,BKL,HAM_0000700,reviewed_novice_unet
+ISIC_0028059,28059,Train/basal cell carcinoma/ISIC_0028059.jpg,ISIC_0028059.png,2,BCC,HAM_0004273,reviewed_novice_unet
+ISIC_0028063,28063,Train/actinic keratosis/ISIC_0028063.jpg,ISIC_0028063.png,3,AK,HAM_0006560,reviewed_novice_unet
+ISIC_0028076,28076,Train/actinic keratosis/ISIC_0028076.jpg,ISIC_0028076.png,3,AK,HAM_0006434,reviewed_novice_unet
+ISIC_0028079,28079,Train/basal cell carcinoma/ISIC_0028079.jpg,ISIC_0028079.png,2,BCC,HAM_0005947,reviewed_novice_unet
+ISIC_0028080,28080,Train/pigmented benign keratosis/ISIC_0028080.jpg,ISIC_0028080.png,4,BKL,HAM_0003007,reviewed_novice_unet
+ISIC_0028085,28085,Train/basal cell carcinoma/ISIC_0028085.jpg,ISIC_0028085.png,2,BCC,HAM_0000065,reviewed_novice_unet
+ISIC_0028094,28094,Train/pigmented benign keratosis/ISIC_0028094.jpg,ISIC_0028094.png,4,BKL,HAM_0005404,reviewed_novice_unet
+ISIC_0028100,28100,Train/pigmented benign keratosis/ISIC_0028100.jpg,ISIC_0028100.png,4,BKL,HAM_0001510,reviewed_novice_unet
+ISIC_0028104,28104,Train/pigmented benign keratosis/ISIC_0028104.jpg,ISIC_0028104.png,4,BKL,HAM_0002424,reviewed_novice_unet
+ISIC_0028113,28113,Train/basal cell carcinoma/ISIC_0028113.jpg,ISIC_0028113.png,2,BCC,HAM_0003846,reviewed_novice_unet
+ISIC_0028120,28120,Train/pigmented benign keratosis/ISIC_0028120.jpg,ISIC_0028120.png,4,BKL,HAM_0001055,reviewed_novice_unet
+ISIC_0028123,28123,Train/pigmented benign keratosis/ISIC_0028123.jpg,ISIC_0028123.png,4,BKL,HAM_0004556,reviewed_novice_unet
+ISIC_0028124,28124,Train/pigmented benign keratosis/ISIC_0028124.jpg,ISIC_0028124.png,4,BKL,HAM_0001294,reviewed_novice_unet
+ISIC_0028132,28132,Train/squamous cell carcinoma/ISIC_0028132.jpg,ISIC_0028132.png,7,SCC,HAM_0005413,reviewed_novice_unet
+ISIC_0028146,28146,Train/vascular lesion/ISIC_0028146.jpg,ISIC_0028146.png,6,VASC,HAM_0005471,reviewed_novice_unet
+ISIC_0028147,28147,Train/basal cell carcinoma/ISIC_0028147.jpg,ISIC_0028147.png,2,BCC,HAM_0006053,reviewed_novice_unet
+ISIC_0028155,28155,Train/basal cell carcinoma/ISIC_0028155.jpg,ISIC_0028155.png,2,BCC,HAM_0000781,reviewed_novice_unet
+ISIC_0028158,28158,Train/squamous cell carcinoma/ISIC_0028158.jpg,ISIC_0028158.png,7,SCC,HAM_0002343,reviewed_novice_unet
+ISIC_0028165,28165,Train/pigmented benign keratosis/ISIC_0028165.jpg,ISIC_0028165.png,4,BKL,HAM_0001878,reviewed_novice_unet
+ISIC_0028180,28180,Train/pigmented benign keratosis/ISIC_0028180.jpg,ISIC_0028180.png,4,BKL,HAM_0007500,reviewed_novice_unet
+ISIC_0028188,28188,Train/vascular lesion/ISIC_0028188.jpg,ISIC_0028188.png,6,VASC,HAM_0004877,reviewed_novice_unet
+ISIC_0028190,28190,Train/actinic keratosis/ISIC_0028190.jpg,ISIC_0028190.png,3,AK,HAM_0002734,reviewed_novice_unet
+ISIC_0028200,28200,Train/pigmented benign keratosis/ISIC_0028200.jpg,ISIC_0028200.png,4,BKL,HAM_0005074,reviewed_novice_unet
+ISIC_0028201,28201,Train/pigmented benign keratosis/ISIC_0028201.jpg,ISIC_0028201.png,4,BKL,HAM_0005049,reviewed_novice_unet
+ISIC_0028209,28209,Train/pigmented benign keratosis/ISIC_0028209.jpg,ISIC_0028209.png,4,BKL,HAM_0002096,reviewed_novice_unet
+ISIC_0028223,28223,Train/pigmented benign keratosis/ISIC_0028223.jpg,ISIC_0028223.png,4,BKL,HAM_0006595,reviewed_novice_unet
+ISIC_0028224,28224,Train/squamous cell carcinoma/ISIC_0028224.jpg,ISIC_0028224.png,7,SCC,HAM_0001625,reviewed_novice_unet
+ISIC_0028229,28229,Train/pigmented benign keratosis/ISIC_0028229.jpg,ISIC_0028229.png,4,BKL,HAM_0004158,reviewed_novice_unet
+ISIC_0028231,28231,Train/squamous cell carcinoma/ISIC_0028231.jpg,ISIC_0028231.png,7,SCC,HAM_0003688,reviewed_novice_unet
+ISIC_0028232,28232,Train/squamous cell carcinoma/ISIC_0028232.jpg,ISIC_0028232.png,7,SCC,HAM_0003123,reviewed_novice_unet
+ISIC_0028233,28233,Train/pigmented benign keratosis/ISIC_0028233.jpg,ISIC_0028233.png,4,BKL,HAM_0002392,reviewed_novice_unet
+ISIC_0028236,28236,Train/pigmented benign keratosis/ISIC_0028236.jpg,ISIC_0028236.png,4,BKL,HAM_0002731,reviewed_novice_unet
+ISIC_0028237,28237,Train/pigmented benign keratosis/ISIC_0028237.jpg,ISIC_0028237.png,4,BKL,HAM_0006327,reviewed_novice_unet
+ISIC_0028238,28238,Train/basal cell carcinoma/ISIC_0028238.jpg,ISIC_0028238.png,2,BCC,HAM_0005776,reviewed_novice_unet
+ISIC_0028254,28254,Train/pigmented benign keratosis/ISIC_0028254.jpg,ISIC_0028254.png,4,BKL,HAM_0005935,reviewed_novice_unet
+ISIC_0028258,28258,Train/pigmented benign keratosis/ISIC_0028258.jpg,ISIC_0028258.png,4,BKL,HAM_0002757,reviewed_novice_unet
+ISIC_0028294,28294,Train/pigmented benign keratosis/ISIC_0028294.jpg,ISIC_0028294.png,4,BKL,HAM_0002042,reviewed_novice_unet
+ISIC_0028303,28303,Train/basal cell carcinoma/ISIC_0028303.jpg,ISIC_0028303.png,2,BCC,HAM_0005030,reviewed_novice_unet
+ISIC_0028314,28314,Train/actinic keratosis/ISIC_0028314.jpg,ISIC_0028314.png,3,AK,HAM_0006434,reviewed_novice_unet
+ISIC_0028316,28316,Train/basal cell carcinoma/ISIC_0028316.jpg,ISIC_0028316.png,2,BCC,HAM_0001296,reviewed_novice_unet
+ISIC_0028323,28323,Train/basal cell carcinoma/ISIC_0028323.jpg,ISIC_0028323.png,2,BCC,HAM_0001900,reviewed_novice_unet
+ISIC_0028329,28329,Train/basal cell carcinoma/ISIC_0028329.jpg,ISIC_0028329.png,2,BCC,HAM_0004624,reviewed_novice_unet
+ISIC_0028331,28331,Train/pigmented benign keratosis/ISIC_0028331.jpg,ISIC_0028331.png,4,BKL,HAM_0002962,reviewed_novice_unet
+ISIC_0028335,28335,Train/squamous cell carcinoma/ISIC_0028335.jpg,ISIC_0028335.png,7,SCC,HAM_0001219,reviewed_novice_unet
+ISIC_0028336,28336,Train/pigmented benign keratosis/ISIC_0028336.jpg,ISIC_0028336.png,4,BKL,HAM_0007260,reviewed_novice_unet
+ISIC_0028343,28343,Train/pigmented benign keratosis/ISIC_0028343.jpg,ISIC_0028343.png,4,BKL,HAM_0004343,reviewed_novice_unet
+ISIC_0028346,28346,Train/dermatofibroma/ISIC_0028346.jpg,ISIC_0028346.png,5,DF,HAM_0005861,reviewed_novice_unet
+ISIC_0028347,28347,Train/pigmented benign keratosis/ISIC_0028347.jpg,ISIC_0028347.png,4,BKL,HAM_0001991,reviewed_novice_unet
+ISIC_0028350,28350,Train/basal cell carcinoma/ISIC_0028350.jpg,ISIC_0028350.png,2,BCC,HAM_0003827,reviewed_novice_unet
+ISIC_0028354,28354,Train/pigmented benign keratosis/ISIC_0028354.jpg,ISIC_0028354.png,4,BKL,HAM_0000122,reviewed_novice_unet
+ISIC_0028370,28370,Train/actinic keratosis/ISIC_0028370.jpg,ISIC_0028370.png,3,AK,HAM_0005668,reviewed_novice_unet
+ISIC_0028372,28372,Train/squamous cell carcinoma/ISIC_0028372.jpg,ISIC_0028372.png,7,SCC,HAM_0006482,reviewed_novice_unet
+ISIC_0028381,28381,Train/squamous cell carcinoma/ISIC_0028381.jpg,ISIC_0028381.png,7,SCC,HAM_0004522,reviewed_novice_unet
+ISIC_0028386,28386,Train/pigmented benign keratosis/ISIC_0028386.jpg,ISIC_0028386.png,4,BKL,HAM_0005751,reviewed_novice_unet
+ISIC_0028388,28388,Train/pigmented benign keratosis/ISIC_0028388.jpg,ISIC_0028388.png,4,BKL,HAM_0005672,reviewed_novice_unet
+ISIC_0028389,28389,Train/pigmented benign keratosis/ISIC_0028389.jpg,ISIC_0028389.png,4,BKL,HAM_0005335,reviewed_novice_unet
+ISIC_0028393,28393,Train/actinic keratosis/ISIC_0028393.jpg,ISIC_0028393.png,3,AK,HAM_0005579,reviewed_novice_unet
+ISIC_0028404,28404,Train/pigmented benign keratosis/ISIC_0028404.jpg,ISIC_0028404.png,4,BKL,HAM_0000881,reviewed_novice_unet
+ISIC_0028411,28411,Train/pigmented benign keratosis/ISIC_0028411.jpg,ISIC_0028411.png,4,BKL,HAM_0005463,reviewed_novice_unet
+ISIC_0028414,28414,Train/pigmented benign keratosis/ISIC_0028414.jpg,ISIC_0028414.png,4,BKL,HAM_0001733,reviewed_novice_unet
+ISIC_0028419,28419,Train/basal cell carcinoma/ISIC_0028419.jpg,ISIC_0028419.png,2,BCC,HAM_0003941,reviewed_novice_unet
+ISIC_0028431,28431,Train/vascular lesion/ISIC_0028431.jpg,ISIC_0028431.png,6,VASC,HAM_0004653,reviewed_novice_unet
+ISIC_0028448,28448,Train/pigmented benign keratosis/ISIC_0028448.jpg,ISIC_0028448.png,4,BKL,HAM_0001167,reviewed_novice_unet
+ISIC_0028449,28449,Train/pigmented benign keratosis/ISIC_0028449.jpg,ISIC_0028449.png,4,BKL,HAM_0004556,reviewed_novice_unet
+ISIC_0028451,28451,Train/pigmented benign keratosis/ISIC_0028451.jpg,ISIC_0028451.png,4,BKL,HAM_0004338,reviewed_novice_unet
+ISIC_0028457,28457,Train/basal cell carcinoma/ISIC_0028457.jpg,ISIC_0028457.png,2,BCC,HAM_0007446,reviewed_novice_unet
+ISIC_0028479,28479,Train/pigmented benign keratosis/ISIC_0028479.jpg,ISIC_0028479.png,4,BKL,HAM_0002821,reviewed_novice_unet
+ISIC_0028490,28490,Train/pigmented benign keratosis/ISIC_0028490.jpg,ISIC_0028490.png,4,BKL,HAM_0001642,reviewed_novice_unet
+ISIC_0028496,28496,Train/pigmented benign keratosis/ISIC_0028496.jpg,ISIC_0028496.png,4,BKL,HAM_0003830,reviewed_novice_unet
+ISIC_0028497,28497,Train/pigmented benign keratosis/ISIC_0028497.jpg,ISIC_0028497.png,4,BKL,HAM_0006533,reviewed_novice_unet
+ISIC_0028499,28499,Train/squamous cell carcinoma/ISIC_0028499.jpg,ISIC_0028499.png,7,SCC,HAM_0004976,reviewed_novice_unet
+ISIC_0028503,28503,Train/pigmented benign keratosis/ISIC_0028503.jpg,ISIC_0028503.png,4,BKL,HAM_0003726,reviewed_novice_unet
+ISIC_0028525,28525,Train/pigmented benign keratosis/ISIC_0028525.jpg,ISIC_0028525.png,4,BKL,HAM_0005722,reviewed_novice_unet
+ISIC_0028542,28542,Train/basal cell carcinoma/ISIC_0028542.jpg,ISIC_0028542.png,2,BCC,HAM_0001573,reviewed_novice_unet
+ISIC_0028550,28550,Train/pigmented benign keratosis/ISIC_0028550.jpg,ISIC_0028550.png,4,BKL,HAM_0000259,reviewed_novice_unet
+ISIC_0028555,28555,Train/pigmented benign keratosis/ISIC_0028555.jpg,ISIC_0028555.png,4,BKL,HAM_0002301,reviewed_novice_unet
+ISIC_0028556,28556,Train/basal cell carcinoma/ISIC_0028556.jpg,ISIC_0028556.png,2,BCC,HAM_0002421,reviewed_novice_unet
+ISIC_0028558,28558,Train/actinic keratosis/ISIC_0028558.jpg,ISIC_0028558.png,3,AK,HAM_0002646,reviewed_novice_unet
+ISIC_0028560,28560,Train/pigmented benign keratosis/ISIC_0028560.jpg,ISIC_0028560.png,4,BKL,HAM_0003847,reviewed_novice_unet
+ISIC_0028568,28568,Train/basal cell carcinoma/ISIC_0028568.jpg,ISIC_0028568.png,2,BCC,HAM_0001434,reviewed_novice_unet
+ISIC_0028570,28570,Train/basal cell carcinoma/ISIC_0028570.jpg,ISIC_0028570.png,2,BCC,HAM_0002818,reviewed_novice_unet
+ISIC_0028577,28577,Train/basal cell carcinoma/ISIC_0028577.jpg,ISIC_0028577.png,2,BCC,HAM_0007139,reviewed_novice_unet
+ISIC_0028583,28583,Train/basal cell carcinoma/ISIC_0028583.jpg,ISIC_0028583.png,2,BCC,HAM_0004880,reviewed_novice_unet
+ISIC_0028587,28587,Train/pigmented benign keratosis/ISIC_0028587.jpg,ISIC_0028587.png,4,BKL,HAM_0001735,reviewed_novice_unet
+ISIC_0028593,28593,Train/pigmented benign keratosis/ISIC_0028593.jpg,ISIC_0028593.png,4,BKL,HAM_0003120,reviewed_novice_unet
+ISIC_0028607,28607,Train/pigmented benign keratosis/ISIC_0028607.jpg,ISIC_0028607.png,4,BKL,HAM_0000114,reviewed_novice_unet
+ISIC_0028615,28615,Train/pigmented benign keratosis/ISIC_0028615.jpg,ISIC_0028615.png,4,BKL,HAM_0007590,reviewed_novice_unet
+ISIC_0028622,28622,Train/pigmented benign keratosis/ISIC_0028622.jpg,ISIC_0028622.png,4,BKL,HAM_0000083,reviewed_novice_unet
+ISIC_0028623,28623,Train/pigmented benign keratosis/ISIC_0028623.jpg,ISIC_0028623.png,4,BKL,HAM_0001781,reviewed_novice_unet
+ISIC_0028640,28640,Train/pigmented benign keratosis/ISIC_0028640.jpg,ISIC_0028640.png,4,BKL,HAM_0005913,reviewed_novice_unet
+ISIC_0028646,28646,Train/pigmented benign keratosis/ISIC_0028646.jpg,ISIC_0028646.png,4,BKL,HAM_0005077,reviewed_novice_unet
+ISIC_0028650,28650,Train/pigmented benign keratosis/ISIC_0028650.jpg,ISIC_0028650.png,4,BKL,HAM_0002358,reviewed_novice_unet
+ISIC_0028653,28653,Train/basal cell carcinoma/ISIC_0028653.jpg,ISIC_0028653.png,2,BCC,HAM_0005837,reviewed_novice_unet
+ISIC_0028656,28656,Train/pigmented benign keratosis/ISIC_0028656.jpg,ISIC_0028656.png,4,BKL,HAM_0002548,reviewed_novice_unet
+ISIC_0028659,28659,Train/squamous cell carcinoma/ISIC_0028659.jpg,ISIC_0028659.png,7,SCC,HAM_0002070,reviewed_novice_unet
+ISIC_0028662,28662,Train/pigmented benign keratosis/ISIC_0028662.jpg,ISIC_0028662.png,4,BKL,HAM_0002042,reviewed_novice_unet
+ISIC_0028670,28670,Train/basal cell carcinoma/ISIC_0028670.jpg,ISIC_0028670.png,2,BCC,HAM_0003981,reviewed_novice_unet
+ISIC_0028671,28671,Train/basal cell carcinoma/ISIC_0028671.jpg,ISIC_0028671.png,2,BCC,HAM_0001713,reviewed_novice_unet
+ISIC_0028680,28680,Train/vascular lesion/ISIC_0028680.jpg,ISIC_0028680.png,6,VASC,HAM_0007150,reviewed_novice_unet
+ISIC_0028687,28687,Train/basal cell carcinoma/ISIC_0028687.jpg,ISIC_0028687.png,2,BCC,HAM_0003444,reviewed_novice_unet
+ISIC_0028688,28688,Train/basal cell carcinoma/ISIC_0028688.jpg,ISIC_0028688.png,2,BCC,HAM_0006844,reviewed_novice_unet
+ISIC_0028693,28693,Train/basal cell carcinoma/ISIC_0028693.jpg,ISIC_0028693.png,2,BCC,HAM_0001610,reviewed_novice_unet
+ISIC_0028714,28714,Train/vascular lesion/ISIC_0028714.jpg,ISIC_0028714.png,6,VASC,HAM_0005713,reviewed_novice_unet
+ISIC_0028719,28719,Train/basal cell carcinoma/ISIC_0028719.jpg,ISIC_0028719.png,2,BCC,HAM_0004365,reviewed_novice_unet
+ISIC_0028728,28728,Train/basal cell carcinoma/ISIC_0028728.jpg,ISIC_0028728.png,2,BCC,HAM_0005026,reviewed_novice_unet
+ISIC_0028730,28730,Train/squamous cell carcinoma/ISIC_0028730.jpg,ISIC_0028730.png,7,SCC,HAM_0005282,reviewed_novice_unet
+ISIC_0028739,28739,Train/basal cell carcinoma/ISIC_0028739.jpg,ISIC_0028739.png,2,BCC,HAM_0007313,reviewed_novice_unet
+ISIC_0028747,28747,Train/basal cell carcinoma/ISIC_0028747.jpg,ISIC_0028747.png,2,BCC,HAM_0007262,reviewed_novice_unet
+ISIC_0028763,28763,Train/squamous cell carcinoma/ISIC_0028763.jpg,ISIC_0028763.png,7,SCC,HAM_0000832,reviewed_novice_unet
+ISIC_0028765,28765,Train/basal cell carcinoma/ISIC_0028765.jpg,ISIC_0028765.png,2,BCC,HAM_0004511,reviewed_novice_unet
+ISIC_0028807,28807,Train/basal cell carcinoma/ISIC_0028807.jpg,ISIC_0028807.png,2,BCC,HAM_0003429,reviewed_novice_unet
+ISIC_0028814,28814,Train/basal cell carcinoma/ISIC_0028814.jpg,ISIC_0028814.png,2,BCC,HAM_0005375,reviewed_novice_unet
+ISIC_0028816,28816,Train/squamous cell carcinoma/ISIC_0028816.jpg,ISIC_0028816.png,7,SCC,HAM_0003123,reviewed_novice_unet
+ISIC_0028818,28818,Train/basal cell carcinoma/ISIC_0028818.jpg,ISIC_0028818.png,2,BCC,HAM_0003694,reviewed_novice_unet
+ISIC_0028820,28820,Train/actinic keratosis/ISIC_0028820.jpg,ISIC_0028820.png,3,AK,HAM_0000931,reviewed_novice_unet
+ISIC_0028854,28854,Train/actinic keratosis/ISIC_0028854.jpg,ISIC_0028854.png,3,AK,HAM_0005356,reviewed_novice_unet
+ISIC_0028858,28858,Train/basal cell carcinoma/ISIC_0028858.jpg,ISIC_0028858.png,2,BCC,HAM_0001078,reviewed_novice_unet
+ISIC_0028872,28872,Train/squamous cell carcinoma/ISIC_0028872.jpg,ISIC_0028872.png,7,SCC,HAM_0000552,reviewed_novice_unet
+ISIC_0028877,28877,Train/basal cell carcinoma/ISIC_0028877.jpg,ISIC_0028877.png,2,BCC,HAM_0003764,reviewed_novice_unet
+ISIC_0028880,28880,Train/dermatofibroma/ISIC_0028880.jpg,ISIC_0028880.png,5,DF,HAM_0004103,reviewed_novice_unet
+ISIC_0028885,28885,Train/vascular lesion/ISIC_0028885.jpg,ISIC_0028885.png,6,VASC,HAM_0005427,reviewed_novice_unet
+ISIC_0028926,28926,Train/dermatofibroma/ISIC_0028926.jpg,ISIC_0028926.png,5,DF,HAM_0000720,reviewed_novice_unet
+ISIC_0028928,28928,Train/basal cell carcinoma/ISIC_0028928.jpg,ISIC_0028928.png,2,BCC,HAM_0002998,reviewed_novice_unet
+ISIC_0028937,28937,Train/basal cell carcinoma/ISIC_0028937.jpg,ISIC_0028937.png,2,BCC,HAM_0003610,reviewed_novice_unet
+ISIC_0028941,28941,Train/actinic keratosis/ISIC_0028941.jpg,ISIC_0028941.png,3,AK,HAM_0001593,reviewed_novice_unet
+ISIC_0028964,28964,Train/basal cell carcinoma/ISIC_0028964.jpg,ISIC_0028964.png,2,BCC,HAM_0000092,reviewed_novice_unet
+ISIC_0028973,28973,Train/basal cell carcinoma/ISIC_0028973.jpg,ISIC_0028973.png,2,BCC,HAM_0005665,reviewed_novice_unet
+ISIC_0028978,28978,Train/basal cell carcinoma/ISIC_0028978.jpg,ISIC_0028978.png,2,BCC,HAM_0005026,reviewed_novice_unet
+ISIC_0028980,28980,Train/basal cell carcinoma/ISIC_0028980.jpg,ISIC_0028980.png,2,BCC,HAM_0003741,reviewed_novice_unet
+ISIC_0028989,28989,Train/basal cell carcinoma/ISIC_0028989.jpg,ISIC_0028989.png,2,BCC,HAM_0004487,reviewed_novice_unet
+ISIC_0028990,28990,Train/actinic keratosis/ISIC_0028990.jpg,ISIC_0028990.png,3,AK,HAM_0006180,reviewed_novice_unet
+ISIC_0028994,28994,Train/basal cell carcinoma/ISIC_0028994.jpg,ISIC_0028994.png,2,BCC,HAM_0000687,reviewed_novice_unet
+ISIC_0029002,29002,Train/squamous cell carcinoma/ISIC_0029002.jpg,ISIC_0029002.png,7,SCC,HAM_0003401,reviewed_novice_unet
+ISIC_0029020,29020,Train/basal cell carcinoma/ISIC_0029020.jpg,ISIC_0029020.png,2,BCC,HAM_0004873,reviewed_novice_unet
+ISIC_0029034,29034,Train/basal cell carcinoma/ISIC_0029034.jpg,ISIC_0029034.png,2,BCC,HAM_0005921,reviewed_novice_unet
+ISIC_0029035,29035,Train/basal cell carcinoma/ISIC_0029035.jpg,ISIC_0029035.png,2,BCC,HAM_0006386,reviewed_novice_unet
+ISIC_0029039,29039,Train/dermatofibroma/ISIC_0029039.jpg,ISIC_0029039.png,5,DF,HAM_0004317,reviewed_novice_unet
+ISIC_0029043,29043,Train/squamous cell carcinoma/ISIC_0029043.jpg,ISIC_0029043.png,7,SCC,HAM_0005231,reviewed_novice_unet
+ISIC_0029052,29052,Train/dermatofibroma/ISIC_0029052.jpg,ISIC_0029052.png,5,DF,HAM_0002463,reviewed_novice_unet
+ISIC_0029053,29053,Train/basal cell carcinoma/ISIC_0029053.jpg,ISIC_0029053.png,2,BCC,HAM_0002812,reviewed_novice_unet
+ISIC_0029059,29059,Train/squamous cell carcinoma/ISIC_0029059.jpg,ISIC_0029059.png,7,SCC,HAM_0002771,reviewed_novice_unet
+ISIC_0029067,29067,Train/squamous cell carcinoma/ISIC_0029067.jpg,ISIC_0029067.png,7,SCC,HAM_0000498,reviewed_novice_unet
+ISIC_0029082,29082,Train/basal cell carcinoma/ISIC_0029082.jpg,ISIC_0029082.png,2,BCC,HAM_0005665,reviewed_novice_unet
+ISIC_0029083,29083,Train/basal cell carcinoma/ISIC_0029083.jpg,ISIC_0029083.png,2,BCC,HAM_0002312,reviewed_novice_unet
+ISIC_0029099,29099,Train/vascular lesion/ISIC_0029099.jpg,ISIC_0029099.png,6,VASC,HAM_0000286,reviewed_novice_unet
+ISIC_0029130,29130,Train/dermatofibroma/ISIC_0029130.jpg,ISIC_0029130.png,5,DF,HAM_0000049,reviewed_novice_unet
+ISIC_0029133,29133,Train/actinic keratosis/ISIC_0029133.jpg,ISIC_0029133.png,3,AK,HAM_0000918,reviewed_novice_unet
+ISIC_0029141,29141,Train/actinic keratosis/ISIC_0029141.jpg,ISIC_0029141.png,3,AK,HAM_0004592,reviewed_novice_unet
+ISIC_0029177,29177,Train/dermatofibroma/ISIC_0029177.jpg,ISIC_0029177.png,5,DF,HAM_0005918,reviewed_novice_unet
+ISIC_0029192,29192,Train/basal cell carcinoma/ISIC_0029192.jpg,ISIC_0029192.png,2,BCC,HAM_0002397,reviewed_novice_unet
+ISIC_0029193,29193,Train/basal cell carcinoma/ISIC_0029193.jpg,ISIC_0029193.png,2,BCC,HAM_0006834,reviewed_novice_unet
+ISIC_0029210,29210,Train/actinic keratosis/ISIC_0029210.jpg,ISIC_0029210.png,3,AK,HAM_0004060,reviewed_novice_unet
+ISIC_0029220,29220,Train/basal cell carcinoma/ISIC_0029220.jpg,ISIC_0029220.png,2,BCC,HAM_0002258,reviewed_novice_unet
+ISIC_0029230,29230,Train/basal cell carcinoma/ISIC_0029230.jpg,ISIC_0029230.png,2,BCC,HAM_0007141,reviewed_novice_unet
+ISIC_0029248,29248,Train/dermatofibroma/ISIC_0029248.jpg,ISIC_0029248.png,5,DF,HAM_0004756,reviewed_novice_unet
+ISIC_0029263,29263,Train/basal cell carcinoma/ISIC_0029263.jpg,ISIC_0029263.png,2,BCC,HAM_0002689,reviewed_novice_unet
+ISIC_0029278,29278,Train/basal cell carcinoma/ISIC_0029278.jpg,ISIC_0029278.png,2,BCC,HAM_0002224,reviewed_novice_unet
+ISIC_0029297,29297,Train/dermatofibroma/ISIC_0029297.jpg,ISIC_0029297.png,5,DF,HAM_0002153,reviewed_novice_unet
+ISIC_0029309,29309,Train/actinic keratosis/ISIC_0029309.jpg,ISIC_0029309.png,3,AK,HAM_0005579,reviewed_novice_unet
+ISIC_0029315,29315,Train/squamous cell carcinoma/ISIC_0029315.jpg,ISIC_0029315.png,7,SCC,HAM_0004780,reviewed_novice_unet
+ISIC_0029323,29323,Train/basal cell carcinoma/ISIC_0029323.jpg,ISIC_0029323.png,2,BCC,HAM_0000872,reviewed_novice_unet
+ISIC_0029331,29331,Train/basal cell carcinoma/ISIC_0029331.jpg,ISIC_0029331.png,2,BCC,HAM_0002069,reviewed_novice_unet
+ISIC_0029341,29341,Train/basal cell carcinoma/ISIC_0029341.jpg,ISIC_0029341.png,2,BCC,HAM_0002346,reviewed_novice_unet
+ISIC_0029342,29342,Train/basal cell carcinoma/ISIC_0029342.jpg,ISIC_0029342.png,2,BCC,HAM_0007139,reviewed_novice_unet
+ISIC_0029352,29352,Train/basal cell carcinoma/ISIC_0029352.jpg,ISIC_0029352.png,2,BCC,HAM_0006765,reviewed_novice_unet
+ISIC_0029362,29362,Train/squamous cell carcinoma/ISIC_0029362.jpg,ISIC_0029362.png,7,SCC,HAM_0005413,reviewed_novice_unet
+ISIC_0029371,29371,Train/squamous cell carcinoma/ISIC_0029371.jpg,ISIC_0029371.png,7,SCC,HAM_0005264,reviewed_novice_unet
+ISIC_0029391,29391,Train/basal cell carcinoma/ISIC_0029391.jpg,ISIC_0029391.png,2,BCC,HAM_0006575,reviewed_novice_unet
+ISIC_0029404,29404,Train/vascular lesion/ISIC_0029404.jpg,ISIC_0029404.png,6,VASC,HAM_0002692,reviewed_novice_unet
+ISIC_0029448,29448,Train/vascular lesion/ISIC_0029448.jpg,ISIC_0029448.png,6,VASC,HAM_0002218,reviewed_novice_unet
+ISIC_0029460,29460,Train/actinic keratosis/ISIC_0029460.jpg,ISIC_0029460.png,3,AK,HAM_0000545,reviewed_novice_unet
+ISIC_0029462,29462,Train/squamous cell carcinoma/ISIC_0029462.jpg,ISIC_0029462.png,7,SCC,HAM_0007349,reviewed_novice_unet
+ISIC_0029466,29466,Train/basal cell carcinoma/ISIC_0029466.jpg,ISIC_0029466.png,2,BCC,HAM_0002021,reviewed_novice_unet
+ISIC_0029486,29486,Train/vascular lesion/ISIC_0029486.jpg,ISIC_0029486.png,6,VASC,HAM_0001920,reviewed_novice_unet
+ISIC_0029500,29500,Train/actinic keratosis/ISIC_0029500.jpg,ISIC_0029500.png,3,AK,HAM_0006887,reviewed_novice_unet
+ISIC_0029501,29501,Train/basal cell carcinoma/ISIC_0029501.jpg,ISIC_0029501.png,2,BCC,HAM_0002018,reviewed_novice_unet
+ISIC_0029514,29514,Train/vascular lesion/ISIC_0029514.jpg,ISIC_0029514.png,6,VASC,HAM_0007614,reviewed_novice_unet
+ISIC_0029515,29515,Train/basal cell carcinoma/ISIC_0029515.jpg,ISIC_0029515.png,2,BCC,HAM_0007002,reviewed_novice_unet
+ISIC_0029524,29524,Train/basal cell carcinoma/ISIC_0029524.jpg,ISIC_0029524.png,2,BCC,HAM_0003191,reviewed_novice_unet
+ISIC_0029541,29541,Train/squamous cell carcinoma/ISIC_0029541.jpg,ISIC_0029541.png,7,SCC,HAM_0004636,reviewed_novice_unet
+ISIC_0029545,29545,Train/basal cell carcinoma/ISIC_0029545.jpg,ISIC_0029545.png,2,BCC,HAM_0000496,reviewed_novice_unet
+ISIC_0029546,29546,Train/basal cell carcinoma/ISIC_0029546.jpg,ISIC_0029546.png,2,BCC,HAM_0005482,reviewed_novice_unet
+ISIC_0029549,29549,Train/squamous cell carcinoma/ISIC_0029549.jpg,ISIC_0029549.png,7,SCC,HAM_0005718,reviewed_novice_unet
+ISIC_0029563,29563,Train/squamous cell carcinoma/ISIC_0029563.jpg,ISIC_0029563.png,7,SCC,HAM_0003146,reviewed_novice_unet
+ISIC_0029564,29564,Train/basal cell carcinoma/ISIC_0029564.jpg,ISIC_0029564.png,2,BCC,HAM_0004515,reviewed_novice_unet
+ISIC_0029567,29567,Train/squamous cell carcinoma/ISIC_0029567.jpg,ISIC_0029567.png,7,SCC,HAM_0000954,reviewed_novice_unet
+ISIC_0029573,29573,Train/squamous cell carcinoma/ISIC_0029573.jpg,ISIC_0029573.png,7,SCC,HAM_0006879,reviewed_novice_unet
+ISIC_0029582,29582,Train/squamous cell carcinoma/ISIC_0029582.jpg,ISIC_0029582.png,7,SCC,HAM_0003501,reviewed_novice_unet
+ISIC_0029598,29598,Train/squamous cell carcinoma/ISIC_0029598.jpg,ISIC_0029598.png,7,SCC,HAM_0003401,reviewed_novice_unet
+ISIC_0029608,29608,Train/vascular lesion/ISIC_0029608.jpg,ISIC_0029608.png,6,VASC,HAM_0000502,reviewed_novice_unet
+ISIC_0029634,29634,Train/squamous cell carcinoma/ISIC_0029634.jpg,ISIC_0029634.png,7,SCC,HAM_0003971,reviewed_novice_unet
+ISIC_0029644,29644,Train/basal cell carcinoma/ISIC_0029644.jpg,ISIC_0029644.png,2,BCC,HAM_0005184,reviewed_novice_unet
+ISIC_0029647,29647,Train/basal cell carcinoma/ISIC_0029647.jpg,ISIC_0029647.png,2,BCC,HAM_0003094,reviewed_novice_unet
+ISIC_0029655,29655,Train/basal cell carcinoma/ISIC_0029655.jpg,ISIC_0029655.png,2,BCC,HAM_0006727,reviewed_novice_unet
+ISIC_0029659,29659,Train/actinic keratosis/ISIC_0029659.jpg,ISIC_0029659.png,3,AK,HAM_0000673,reviewed_novice_unet
+ISIC_0029669,29669,Train/basal cell carcinoma/ISIC_0029669.jpg,ISIC_0029669.png,2,BCC,HAM_0001616,reviewed_novice_unet
+ISIC_0029713,29713,Train/actinic keratosis/ISIC_0029713.jpg,ISIC_0029713.png,3,AK,HAM_0006036,reviewed_novice_unet
+ISIC_0029742,29742,Train/vascular lesion/ISIC_0029742.jpg,ISIC_0029742.png,6,VASC,HAM_0002650,reviewed_novice_unet
+ISIC_0029745,29745,Train/basal cell carcinoma/ISIC_0029745.jpg,ISIC_0029745.png,2,BCC,HAM_0003941,reviewed_novice_unet
+ISIC_0029747,29747,Train/basal cell carcinoma/ISIC_0029747.jpg,ISIC_0029747.png,2,BCC,HAM_0006800,reviewed_novice_unet
+ISIC_0029755,29755,Train/basal cell carcinoma/ISIC_0029755.jpg,ISIC_0029755.png,2,BCC,HAM_0005776,reviewed_novice_unet
+ISIC_0029781,29781,Train/actinic keratosis/ISIC_0029781.jpg,ISIC_0029781.png,3,AK,HAM_0002646,reviewed_novice_unet
+ISIC_0029783,29783,Train/dermatofibroma/ISIC_0029783.jpg,ISIC_0029783.png,5,DF,HAM_0002706,reviewed_novice_unet
+ISIC_0029805,29805,Train/basal cell carcinoma/ISIC_0029805.jpg,ISIC_0029805.png,2,BCC,HAM_0005575,reviewed_novice_unet
+ISIC_0029811,29811,Train/squamous cell carcinoma/ISIC_0029811.jpg,ISIC_0029811.png,7,SCC,HAM_0003157,reviewed_novice_unet
+ISIC_0029820,29820,Train/basal cell carcinoma/ISIC_0029820.jpg,ISIC_0029820.png,2,BCC,HAM_0007627,reviewed_novice_unet
+ISIC_0029824,29824,Train/dermatofibroma/ISIC_0029824.jpg,ISIC_0029824.png,5,DF,HAM_0005362,reviewed_novice_unet
+ISIC_0029830,29830,Train/actinic keratosis/ISIC_0029830.jpg,ISIC_0029830.png,3,AK,HAM_0006024,reviewed_novice_unet
+ISIC_0029840,29840,Train/actinic keratosis/ISIC_0029840.jpg,ISIC_0029840.png,3,AK,HAM_0004809,reviewed_novice_unet
+ISIC_0029847,29847,Train/basal cell carcinoma/ISIC_0029847.jpg,ISIC_0029847.png,2,BCC,HAM_0002791,reviewed_novice_unet
+ISIC_0029856,29856,Train/basal cell carcinoma/ISIC_0029856.jpg,ISIC_0029856.png,2,BCC,HAM_0001457,reviewed_novice_unet
+ISIC_0029857,29857,Train/basal cell carcinoma/ISIC_0029857.jpg,ISIC_0029857.png,2,BCC,HAM_0005856,reviewed_novice_unet
+ISIC_0029860,29860,Train/squamous cell carcinoma/ISIC_0029860.jpg,ISIC_0029860.png,7,SCC,HAM_0001967,reviewed_novice_unet
+ISIC_0029877,29877,Train/vascular lesion/ISIC_0029877.jpg,ISIC_0029877.png,6,VASC,HAM_0006193,reviewed_novice_unet
+ISIC_0029889,29889,Train/vascular lesion/ISIC_0029889.jpg,ISIC_0029889.png,6,VASC,HAM_0006324,reviewed_novice_unet
+ISIC_0029915,29915,Train/actinic keratosis/ISIC_0029915.jpg,ISIC_0029915.png,3,AK,HAM_0006002,reviewed_novice_unet
+ISIC_0029917,29917,Train/basal cell carcinoma/ISIC_0029917.jpg,ISIC_0029917.png,2,BCC,HAM_0007364,reviewed_novice_unet
+ISIC_0029919,29919,Train/basal cell carcinoma/ISIC_0029919.jpg,ISIC_0029919.png,2,BCC,HAM_0005721,reviewed_novice_unet
+ISIC_0029951,29951,Train/basal cell carcinoma/ISIC_0029951.jpg,ISIC_0029951.png,2,BCC,HAM_0005973,reviewed_novice_unet
+ISIC_0029962,29962,Train/dermatofibroma/ISIC_0029962.jpg,ISIC_0029962.png,5,DF,HAM_0007410,reviewed_novice_unet
+ISIC_0029967,29967,Train/dermatofibroma/ISIC_0029967.jpg,ISIC_0029967.png,5,DF,HAM_0004960,reviewed_novice_unet
+ISIC_0029973,29973,Train/dermatofibroma/ISIC_0029973.jpg,ISIC_0029973.png,5,DF,HAM_0002045,reviewed_novice_unet
+ISIC_0029974,29974,Train/basal cell carcinoma/ISIC_0029974.jpg,ISIC_0029974.png,2,BCC,HAM_0004627,reviewed_novice_unet
+ISIC_0030010,30010,Train/basal cell carcinoma/ISIC_0030010.jpg,ISIC_0030010.png,2,BCC,HAM_0006548,reviewed_novice_unet
+ISIC_0030011,30011,Train/dermatofibroma/ISIC_0030011.jpg,ISIC_0030011.png,5,DF,HAM_0004371,reviewed_novice_unet
+ISIC_0030021,30021,Train/dermatofibroma/ISIC_0030021.jpg,ISIC_0030021.png,5,DF,HAM_0001164,reviewed_novice_unet
+ISIC_0030036,30036,Train/actinic keratosis/ISIC_0030036.jpg,ISIC_0030036.png,3,AK,HAM_0007008,reviewed_novice_unet
+ISIC_0030070,30070,Train/vascular lesion/ISIC_0030070.jpg,ISIC_0030070.png,6,VASC,HAM_0007020,reviewed_novice_unet
+ISIC_0030076,30076,Train/squamous cell carcinoma/ISIC_0030076.jpg,ISIC_0030076.png,7,SCC,HAM_0007085,reviewed_novice_unet
+ISIC_0030094,30094,Train/basal cell carcinoma/ISIC_0030094.jpg,ISIC_0030094.png,2,BCC,HAM_0003101,reviewed_novice_unet
+ISIC_0030096,30096,Train/basal cell carcinoma/ISIC_0030096.jpg,ISIC_0030096.png,2,BCC,HAM_0003669,reviewed_novice_unet
+ISIC_0030114,30114,Train/basal cell carcinoma/ISIC_0030114.jpg,ISIC_0030114.png,2,BCC,HAM_0005998,reviewed_novice_unet
+ISIC_0030133,30133,Train/actinic keratosis/ISIC_0030133.jpg,ISIC_0030133.png,3,AK,HAM_0001152,reviewed_novice_unet
+ISIC_0030142,30142,Train/actinic keratosis/ISIC_0030142.jpg,ISIC_0030142.png,3,AK,HAM_0006434,reviewed_novice_unet
+ISIC_0030143,30143,Train/actinic keratosis/ISIC_0030143.jpg,ISIC_0030143.png,3,AK,HAM_0005978,reviewed_novice_unet
+ISIC_0030145,30145,Train/basal cell carcinoma/ISIC_0030145.jpg,ISIC_0030145.png,2,BCC,HAM_0001326,reviewed_novice_unet
+ISIC_0030158,30158,Train/squamous cell carcinoma/ISIC_0030158.jpg,ISIC_0030158.png,7,SCC,HAM_0005255,reviewed_novice_unet
+ISIC_0030175,30175,Train/squamous cell carcinoma/ISIC_0030175.jpg,ISIC_0030175.png,7,SCC,HAM_0003051,reviewed_novice_unet
+ISIC_0030177,30177,Train/basal cell carcinoma/ISIC_0030177.jpg,ISIC_0030177.png,2,BCC,HAM_0000463,reviewed_novice_unet
+ISIC_0030181,30181,Train/basal cell carcinoma/ISIC_0030181.jpg,ISIC_0030181.png,2,BCC,HAM_0005985,reviewed_novice_unet
+ISIC_0030191,30191,Train/squamous cell carcinoma/ISIC_0030191.jpg,ISIC_0030191.png,7,SCC,HAM_0003161,reviewed_novice_unet
+ISIC_0030197,30197,Train/basal cell carcinoma/ISIC_0030197.jpg,ISIC_0030197.png,2,BCC,HAM_0006727,reviewed_novice_unet
+ISIC_0030230,30230,Train/basal cell carcinoma/ISIC_0030230.jpg,ISIC_0030230.png,2,BCC,HAM_0007588,reviewed_novice_unet
+ISIC_0030233,30233,Train/basal cell carcinoma/ISIC_0030233.jpg,ISIC_0030233.png,2,BCC,HAM_0003112,reviewed_novice_unet
+ISIC_0030245,30245,Train/squamous cell carcinoma/ISIC_0030245.jpg,ISIC_0030245.png,7,SCC,HAM_0004780,reviewed_novice_unet
+ISIC_0030249,30249,Train/basal cell carcinoma/ISIC_0030249.jpg,ISIC_0030249.png,2,BCC,HAM_0003444,reviewed_novice_unet
+ISIC_0030271,30271,Train/basal cell carcinoma/ISIC_0030271.jpg,ISIC_0030271.png,2,BCC,HAM_0005469,reviewed_novice_unet
+ISIC_0030275,30275,Train/vascular lesion/ISIC_0030275.jpg,ISIC_0030275.png,6,VASC,HAM_0002692,reviewed_novice_unet
+ISIC_0030280,30280,Train/squamous cell carcinoma/ISIC_0030280.jpg,ISIC_0030280.png,7,SCC,HAM_0003633,reviewed_novice_unet
+ISIC_0030283,30283,Train/vascular lesion/ISIC_0030283.jpg,ISIC_0030283.png,6,VASC,HAM_0007372,reviewed_novice_unet
+ISIC_0030297,30297,Train/squamous cell carcinoma/ISIC_0030297.jpg,ISIC_0030297.png,7,SCC,HAM_0001621,reviewed_novice_unet
+ISIC_0030314,30314,Train/basal cell carcinoma/ISIC_0030314.jpg,ISIC_0030314.png,2,BCC,HAM_0004536,reviewed_novice_unet
+ISIC_0030321,30321,Train/dermatofibroma/ISIC_0030321.jpg,ISIC_0030321.png,5,DF,HAM_0003555,reviewed_novice_unet
+ISIC_0030335,30335,Train/basal cell carcinoma/ISIC_0030335.jpg,ISIC_0030335.png,2,BCC,HAM_0004603,reviewed_novice_unet
+ISIC_0030339,30339,Train/basal cell carcinoma/ISIC_0030339.jpg,ISIC_0030339.png,2,BCC,HAM_0000915,reviewed_novice_unet
+ISIC_0030341,30341,Train/squamous cell carcinoma/ISIC_0030341.jpg,ISIC_0030341.png,7,SCC,HAM_0004558,reviewed_novice_unet
+ISIC_0030344,30344,Train/actinic keratosis/ISIC_0030344.jpg,ISIC_0030344.png,3,AK,HAM_0007199,reviewed_novice_unet
+ISIC_0030349,30349,Train/basal cell carcinoma/ISIC_0030349.jpg,ISIC_0030349.png,2,BCC,HAM_0006572,reviewed_novice_unet
+ISIC_0030352,30352,Train/basal cell carcinoma/ISIC_0030352.jpg,ISIC_0030352.png,2,BCC,HAM_0001129,reviewed_novice_unet
+ISIC_0030375,30375,Train/squamous cell carcinoma/ISIC_0030375.jpg,ISIC_0030375.png,7,SCC,HAM_0007037,reviewed_novice_unet
+ISIC_0030408,30408,Train/actinic keratosis/ISIC_0030408.jpg,ISIC_0030408.png,3,AK,HAM_0002061,reviewed_novice_unet
+ISIC_0030427,30427,Train/dermatofibroma/ISIC_0030427.jpg,ISIC_0030427.png,5,DF,HAM_0004371,reviewed_novice_unet
+ISIC_0030442,30442,Train/dermatofibroma/ISIC_0030442.jpg,ISIC_0030442.png,5,DF,HAM_0004756,reviewed_novice_unet
+ISIC_0030463,30463,Train/actinic keratosis/ISIC_0030463.jpg,ISIC_0030463.png,3,AK,HAM_0004655,reviewed_novice_unet
+ISIC_0030487,30487,Train/squamous cell carcinoma/ISIC_0030487.jpg,ISIC_0030487.png,7,SCC,HAM_0000688,reviewed_novice_unet
+ISIC_0030549,30549,Train/squamous cell carcinoma/ISIC_0030549.jpg,ISIC_0030549.png,7,SCC,HAM_0002094,reviewed_novice_unet
+ISIC_0030555,30555,Train/dermatofibroma/ISIC_0030555.jpg,ISIC_0030555.png,5,DF,HAM_0004330,reviewed_novice_unet
+ISIC_0030579,30579,Train/dermatofibroma/ISIC_0030579.jpg,ISIC_0030579.png,5,DF,HAM_0002546,reviewed_novice_unet
+ISIC_0030594,30594,Train/basal cell carcinoma/ISIC_0030594.jpg,ISIC_0030594.png,2,BCC,HAM_0002736,reviewed_novice_unet
+ISIC_0030602,30602,Train/squamous cell carcinoma/ISIC_0030602.jpg,ISIC_0030602.png,7,SCC,HAM_0007555,reviewed_novice_unet
+ISIC_0030606,30606,Train/vascular lesion/ISIC_0030606.jpg,ISIC_0030606.png,6,VASC,HAM_0002610,reviewed_novice_unet
+ISIC_0030644,30644,Train/basal cell carcinoma/ISIC_0030644.jpg,ISIC_0030644.png,2,BCC,HAM_0003853,reviewed_novice_unet
+ISIC_0030655,30655,Train/actinic keratosis/ISIC_0030655.jpg,ISIC_0030655.png,3,AK,HAM_0000356,reviewed_novice_unet
+ISIC_0030665,30665,Train/dermatofibroma/ISIC_0030665.jpg,ISIC_0030665.png,5,DF,HAM_0005359,reviewed_novice_unet
+ISIC_0030690,30690,Train/basal cell carcinoma/ISIC_0030690.jpg,ISIC_0030690.png,2,BCC,HAM_0004514,reviewed_novice_unet
+ISIC_0030712,30712,Train/basal cell carcinoma/ISIC_0030712.jpg,ISIC_0030712.png,2,BCC,HAM_0007248,reviewed_novice_unet
+ISIC_0030714,30714,Train/squamous cell carcinoma/ISIC_0030714.jpg,ISIC_0030714.png,7,SCC,HAM_0003989,reviewed_novice_unet
+ISIC_0030722,30722,Train/vascular lesion/ISIC_0030722.jpg,ISIC_0030722.png,6,VASC,HAM_0004820,reviewed_novice_unet
+ISIC_0030730,30730,Train/actinic keratosis/ISIC_0030730.jpg,ISIC_0030730.png,3,AK,HAM_0004592,reviewed_novice_unet
+ISIC_0030737,30737,Train/basal cell carcinoma/ISIC_0030737.jpg,ISIC_0030737.png,2,BCC,HAM_0003119,reviewed_novice_unet
+ISIC_0030757,30757,Train/dermatofibroma/ISIC_0030757.jpg,ISIC_0030757.png,5,DF,HAM_0003290,reviewed_novice_unet
+ISIC_0030766,30766,Train/basal cell carcinoma/ISIC_0030766.jpg,ISIC_0030766.png,2,BCC,HAM_0006351,reviewed_novice_unet
+ISIC_0030767,30767,Train/basal cell carcinoma/ISIC_0030767.jpg,ISIC_0030767.png,2,BCC,HAM_0004685,reviewed_novice_unet
+ISIC_0030778,30778,Train/basal cell carcinoma/ISIC_0030778.jpg,ISIC_0030778.png,2,BCC,HAM_0006800,reviewed_novice_unet
+ISIC_0030785,30785,Train/squamous cell carcinoma/ISIC_0030785.jpg,ISIC_0030785.png,7,SCC,HAM_0004609,reviewed_novice_unet
+ISIC_0030794,30794,Train/squamous cell carcinoma/ISIC_0030794.jpg,ISIC_0030794.png,7,SCC,HAM_0002185,reviewed_novice_unet
+ISIC_0030800,30800,Train/basal cell carcinoma/ISIC_0030800.jpg,ISIC_0030800.png,2,BCC,HAM_0005921,reviewed_novice_unet
+ISIC_0030803,30803,Train/squamous cell carcinoma/ISIC_0030803.jpg,ISIC_0030803.png,7,SCC,HAM_0004012,reviewed_novice_unet
+ISIC_0030813,30813,Train/basal cell carcinoma/ISIC_0030813.jpg,ISIC_0030813.png,2,BCC,HAM_0006465,reviewed_novice_unet
+ISIC_0030821,30821,Train/squamous cell carcinoma/ISIC_0030821.jpg,ISIC_0030821.png,7,SCC,HAM_0006604,reviewed_novice_unet
+ISIC_0030825,30825,Train/actinic keratosis/ISIC_0030825.jpg,ISIC_0030825.png,3,AK,HAM_0004060,reviewed_novice_unet
+ISIC_0030827,30827,Train/squamous cell carcinoma/ISIC_0030827.jpg,ISIC_0030827.png,7,SCC,HAM_0001173,reviewed_novice_unet
+ISIC_0030830,30830,Train/dermatofibroma/ISIC_0030830.jpg,ISIC_0030830.png,5,DF,HAM_0006794,reviewed_novice_unet
+ISIC_0030844,30844,Train/squamous cell carcinoma/ISIC_0030844.jpg,ISIC_0030844.png,7,SCC,HAM_0003107,reviewed_novice_unet
+ISIC_0030868,30868,Train/basal cell carcinoma/ISIC_0030868.jpg,ISIC_0030868.png,2,BCC,HAM_0001693,reviewed_novice_unet
+ISIC_0030870,30870,Train/dermatofibroma/ISIC_0030870.jpg,ISIC_0030870.png,5,DF,HAM_0006707,reviewed_novice_unet
+ISIC_0030877,30877,Train/actinic keratosis/ISIC_0030877.jpg,ISIC_0030877.png,3,AK,HAM_0000193,reviewed_novice_unet
+ISIC_0030882,30882,Train/vascular lesion/ISIC_0030882.jpg,ISIC_0030882.png,6,VASC,HAM_0004455,reviewed_novice_unet
+ISIC_0030893,30893,Train/basal cell carcinoma/ISIC_0030893.jpg,ISIC_0030893.png,2,BCC,HAM_0002467,reviewed_novice_unet
+ISIC_0030915,30915,Train/basal cell carcinoma/ISIC_0030915.jpg,ISIC_0030915.png,2,BCC,HAM_0003043,reviewed_novice_unet
+ISIC_0030954,30954,Train/basal cell carcinoma/ISIC_0030954.jpg,ISIC_0030954.png,2,BCC,HAM_0003115,reviewed_novice_unet
+ISIC_0030956,30956,Train/vascular lesion/ISIC_0030956.jpg,ISIC_0030956.png,6,VASC,HAM_0005713,reviewed_novice_unet
+ISIC_0030964,30964,Train/basal cell carcinoma/ISIC_0030964.jpg,ISIC_0030964.png,2,BCC,HAM_0007557,reviewed_novice_unet
+ISIC_0030986,30986,Train/squamous cell carcinoma/ISIC_0030986.jpg,ISIC_0030986.png,7,SCC,HAM_0004439,reviewed_novice_unet
+ISIC_0030991,30991,Train/squamous cell carcinoma/ISIC_0030991.jpg,ISIC_0030991.png,7,SCC,HAM_0001453,reviewed_novice_unet
+ISIC_0031009,31009,Train/basal cell carcinoma/ISIC_0031009.jpg,ISIC_0031009.png,2,BCC,HAM_0001434,reviewed_novice_unet
+ISIC_0031026,31026,Train/basal cell carcinoma/ISIC_0031026.jpg,ISIC_0031026.png,2,BCC,HAM_0001640,reviewed_novice_unet
+ISIC_0031043,31043,Train/squamous cell carcinoma/ISIC_0031043.jpg,ISIC_0031043.png,7,SCC,HAM_0006217,reviewed_novice_unet
+ISIC_0031044,31044,Train/squamous cell carcinoma/ISIC_0031044.jpg,ISIC_0031044.png,7,SCC,HAM_0006135,reviewed_novice_unet
+ISIC_0031062,31062,Train/basal cell carcinoma/ISIC_0031062.jpg,ISIC_0031062.png,2,BCC,HAM_0001183,reviewed_novice_unet
+ISIC_0031063,31063,Train/basal cell carcinoma/ISIC_0031063.jpg,ISIC_0031063.png,2,BCC,HAM_0003764,reviewed_novice_unet
+ISIC_0031065,31065,Train/vascular lesion/ISIC_0031065.jpg,ISIC_0031065.png,6,VASC,HAM_0000109,reviewed_novice_unet
+ISIC_0031090,31090,Train/vascular lesion/ISIC_0031090.jpg,ISIC_0031090.png,6,VASC,HAM_0001719,reviewed_novice_unet
+ISIC_0031093,31093,Train/vascular lesion/ISIC_0031093.jpg,ISIC_0031093.png,6,VASC,HAM_0000502,reviewed_novice_unet
+ISIC_0031095,31095,Train/basal cell carcinoma/ISIC_0031095.jpg,ISIC_0031095.png,2,BCC,HAM_0005798,reviewed_novice_unet
+ISIC_0031103,31103,Train/vascular lesion/ISIC_0031103.jpg,ISIC_0031103.png,6,VASC,HAM_0001372,reviewed_novice_unet
+ISIC_0031108,31108,Train/actinic keratosis/ISIC_0031108.jpg,ISIC_0031108.png,3,AK,HAM_0004809,reviewed_novice_unet
+ISIC_0031119,31119,Train/squamous cell carcinoma/ISIC_0031119.jpg,ISIC_0031119.png,7,SCC,HAM_0004243,reviewed_novice_unet
+ISIC_0031122,31122,Train/basal cell carcinoma/ISIC_0031122.jpg,ISIC_0031122.png,2,BCC,HAM_0003389,reviewed_novice_unet
+ISIC_0031140,31140,Train/basal cell carcinoma/ISIC_0031140.jpg,ISIC_0031140.png,2,BCC,HAM_0003229,reviewed_novice_unet
+ISIC_0031166,31166,Train/basal cell carcinoma/ISIC_0031166.jpg,ISIC_0031166.png,2,BCC,HAM_0001610,reviewed_novice_unet
+ISIC_0031169,31169,Train/basal cell carcinoma/ISIC_0031169.jpg,ISIC_0031169.png,2,BCC,HAM_0001616,reviewed_novice_unet
+ISIC_0031171,31171,Train/basal cell carcinoma/ISIC_0031171.jpg,ISIC_0031171.png,2,BCC,HAM_0000872,reviewed_novice_unet
+ISIC_0031191,31191,Train/squamous cell carcinoma/ISIC_0031191.jpg,ISIC_0031191.png,7,SCC,HAM_0005931,reviewed_novice_unet
+ISIC_0031197,31197,Train/vascular lesion/ISIC_0031197.jpg,ISIC_0031197.png,6,VASC,HAM_0006889,reviewed_novice_unet
+ISIC_0031198,31198,Train/squamous cell carcinoma/ISIC_0031198.jpg,ISIC_0031198.png,7,SCC,HAM_0003422,reviewed_novice_unet
+ISIC_0031201,31201,Train/vascular lesion/ISIC_0031201.jpg,ISIC_0031201.png,6,VASC,HAM_0004549,reviewed_novice_unet
+ISIC_0031211,31211,Train/squamous cell carcinoma/ISIC_0031211.jpg,ISIC_0031211.png,7,SCC,HAM_0004563,reviewed_novice_unet
+ISIC_0031215,31215,Train/vascular lesion/ISIC_0031215.jpg,ISIC_0031215.png,6,VASC,HAM_0005885,reviewed_novice_unet
+ISIC_0031217,31217,Train/vascular lesion/ISIC_0031217.jpg,ISIC_0031217.png,6,VASC,HAM_0004765,reviewed_novice_unet
+ISIC_0031225,31225,Train/basal cell carcinoma/ISIC_0031225.jpg,ISIC_0031225.png,2,BCC,HAM_0000352,reviewed_novice_unet
+ISIC_0031236,31236,Train/basal cell carcinoma/ISIC_0031236.jpg,ISIC_0031236.png,2,BCC,HAM_0002744,reviewed_novice_unet
+ISIC_0031243,31243,Train/basal cell carcinoma/ISIC_0031243.jpg,ISIC_0031243.png,2,BCC,HAM_0003738,reviewed_novice_unet
+ISIC_0031245,31245,Train/basal cell carcinoma/ISIC_0031245.jpg,ISIC_0031245.png,2,BCC,HAM_0005901,reviewed_novice_unet
+ISIC_0031266,31266,Train/basal cell carcinoma/ISIC_0031266.jpg,ISIC_0031266.png,2,BCC,HAM_0006609,reviewed_novice_unet
+ISIC_0031270,31270,Train/vascular lesion/ISIC_0031270.jpg,ISIC_0031270.png,6,VASC,HAM_0006889,reviewed_novice_unet
+ISIC_0031271,31271,Train/dermatofibroma/ISIC_0031271.jpg,ISIC_0031271.png,5,DF,HAM_0004090,reviewed_novice_unet
+ISIC_0031272,31272,Train/basal cell carcinoma/ISIC_0031272.jpg,ISIC_0031272.png,2,BCC,HAM_0006384,reviewed_novice_unet
+ISIC_0031276,31276,Train/vascular lesion/ISIC_0031276.jpg,ISIC_0031276.png,6,VASC,HAM_0006447,reviewed_novice_unet
+ISIC_0031284,31284,Train/basal cell carcinoma/ISIC_0031284.jpg,ISIC_0031284.png,2,BCC,HAM_0002717,reviewed_novice_unet
+ISIC_0031286,31286,Train/squamous cell carcinoma/ISIC_0031286.jpg,ISIC_0031286.png,7,SCC,HAM_0000909,reviewed_novice_unet
+ISIC_0031292,31292,Train/actinic keratosis/ISIC_0031292.jpg,ISIC_0031292.png,3,AK,HAM_0007008,reviewed_novice_unet
+ISIC_0031294,31294,Train/basal cell carcinoma/ISIC_0031294.jpg,ISIC_0031294.png,2,BCC,HAM_0004365,reviewed_novice_unet
+ISIC_0031298,31298,Train/basal cell carcinoma/ISIC_0031298.jpg,ISIC_0031298.png,2,BCC,HAM_0005334,reviewed_novice_unet
+ISIC_0031309,31309,Train/dermatofibroma/ISIC_0031309.jpg,ISIC_0031309.png,5,DF,HAM_0004103,reviewed_novice_unet
+ISIC_0031318,31318,Train/basal cell carcinoma/ISIC_0031318.jpg,ISIC_0031318.png,2,BCC,HAM_0001424,reviewed_novice_unet
+ISIC_0031335,31335,Train/actinic keratosis/ISIC_0031335.jpg,ISIC_0031335.png,3,AK,HAM_0000501,reviewed_novice_unet
+ISIC_0031344,31344,Train/dermatofibroma/ISIC_0031344.jpg,ISIC_0031344.png,5,DF,HAM_0005861,reviewed_novice_unet
+ISIC_0031346,31346,Train/vascular lesion/ISIC_0031346.jpg,ISIC_0031346.png,6,VASC,HAM_0001566,reviewed_novice_unet
+ISIC_0031351,31351,Train/basal cell carcinoma/ISIC_0031351.jpg,ISIC_0031351.png,2,BCC,HAM_0006274,reviewed_novice_unet
+ISIC_0031358,31358,Train/dermatofibroma/ISIC_0031358.jpg,ISIC_0031358.png,5,DF,HAM_0003290,reviewed_novice_unet
+ISIC_0031378,31378,Train/basal cell carcinoma/ISIC_0031378.jpg,ISIC_0031378.png,2,BCC,HAM_0002998,reviewed_novice_unet
+ISIC_0031384,31384,Train/basal cell carcinoma/ISIC_0031384.jpg,ISIC_0031384.png,2,BCC,HAM_0002427,reviewed_novice_unet
+ISIC_0031400,31400,Train/basal cell carcinoma/ISIC_0031400.jpg,ISIC_0031400.png,2,BCC,HAM_0001331,reviewed_novice_unet
+ISIC_0031413,31413,Train/basal cell carcinoma/ISIC_0031413.jpg,ISIC_0031413.png,2,BCC,HAM_0004521,reviewed_novice_unet
+ISIC_0031421,31421,Train/squamous cell carcinoma/ISIC_0031421.jpg,ISIC_0031421.png,7,SCC,HAM_0004976,reviewed_novice_unet
+ISIC_0031429,31429,Train/dermatofibroma/ISIC_0031429.jpg,ISIC_0031429.png,5,DF,HAM_0007225,reviewed_novice_unet
+ISIC_0031431,31431,Train/squamous cell carcinoma/ISIC_0031431.jpg,ISIC_0031431.png,7,SCC,HAM_0004439,reviewed_novice_unet
+ISIC_0031442,31442,Train/basal cell carcinoma/ISIC_0031442.jpg,ISIC_0031442.png,2,BCC,HAM_0005982,reviewed_novice_unet
+ISIC_0031443,31443,Train/dermatofibroma/ISIC_0031443.jpg,ISIC_0031443.png,5,DF,HAM_0000827,reviewed_novice_unet
+ISIC_0031450,31450,Train/basal cell carcinoma/ISIC_0031450.jpg,ISIC_0031450.png,2,BCC,HAM_0003373,reviewed_novice_unet
+ISIC_0031457,31457,Train/dermatofibroma/ISIC_0031457.jpg,ISIC_0031457.png,5,DF,HAM_0007410,reviewed_novice_unet
+ISIC_0031470,31470,Train/basal cell carcinoma/ISIC_0031470.jpg,ISIC_0031470.png,2,BCC,HAM_0001424,reviewed_novice_unet
+ISIC_0031489,31489,Train/basal cell carcinoma/ISIC_0031489.jpg,ISIC_0031489.png,2,BCC,HAM_0003328,reviewed_novice_unet
+ISIC_0031506,31506,Train/actinic keratosis/ISIC_0031506.jpg,ISIC_0031506.png,3,AK,HAM_0006902,reviewed_novice_unet
+ISIC_0031513,31513,Train/basal cell carcinoma/ISIC_0031513.jpg,ISIC_0031513.png,2,BCC,HAM_0007141,reviewed_novice_unet
+ISIC_0031520,31520,Train/basal cell carcinoma/ISIC_0031520.jpg,ISIC_0031520.png,2,BCC,HAM_0000872,reviewed_novice_unet
+ISIC_0031526,31526,Train/basal cell carcinoma/ISIC_0031526.jpg,ISIC_0031526.png,2,BCC,HAM_0007588,reviewed_novice_unet
+ISIC_0031531,31531,Train/basal cell carcinoma/ISIC_0031531.jpg,ISIC_0031531.png,2,BCC,HAM_0001215,reviewed_novice_unet
+ISIC_0031539,31539,Train/basal cell carcinoma/ISIC_0031539.jpg,ISIC_0031539.png,2,BCC,HAM_0005302,reviewed_novice_unet
+ISIC_0031552,31552,Train/basal cell carcinoma/ISIC_0031552.jpg,ISIC_0031552.png,2,BCC,HAM_0006588,reviewed_novice_unet
+ISIC_0031569,31569,Train/basal cell carcinoma/ISIC_0031569.jpg,ISIC_0031569.png,2,BCC,HAM_0003039,reviewed_novice_unet
+ISIC_0031570,31570,Train/squamous cell carcinoma/ISIC_0031570.jpg,ISIC_0031570.png,7,SCC,HAM_0001178,reviewed_novice_unet
+ISIC_0031578,31578,Train/squamous cell carcinoma/ISIC_0031578.jpg,ISIC_0031578.png,7,SCC,HAM_0003157,reviewed_novice_unet
+ISIC_0031585,31585,Train/basal cell carcinoma/ISIC_0031585.jpg,ISIC_0031585.png,2,BCC,HAM_0004219,reviewed_novice_unet
+ISIC_0031597,31597,Train/basal cell carcinoma/ISIC_0031597.jpg,ISIC_0031597.png,2,BCC,HAM_0004627,reviewed_novice_unet
+ISIC_0031609,31609,Train/actinic keratosis/ISIC_0031609.jpg,ISIC_0031609.png,3,AK,HAM_0004363,reviewed_novice_unet
+ISIC_0031659,31659,Train/squamous cell carcinoma/ISIC_0031659.jpg,ISIC_0031659.png,7,SCC,HAM_0005264,reviewed_novice_unet
+ISIC_0031672,31672,Train/squamous cell carcinoma/ISIC_0031672.jpg,ISIC_0031672.png,7,SCC,HAM_0004439,reviewed_novice_unet
+ISIC_0031692,31692,Train/squamous cell carcinoma/ISIC_0031692.jpg,ISIC_0031692.png,7,SCC,HAM_0007131,reviewed_novice_unet
+ISIC_0031719,31719,Train/vascular lesion/ISIC_0031719.jpg,ISIC_0031719.png,6,VASC,HAM_0007020,reviewed_novice_unet
+ISIC_0031735,31735,Train/dermatofibroma/ISIC_0031735.jpg,ISIC_0031735.png,5,DF,HAM_0003290,reviewed_novice_unet
+ISIC_0031738,31738,Train/squamous cell carcinoma/ISIC_0031738.jpg,ISIC_0031738.png,7,SCC,HAM_0005766,reviewed_novice_unet
+ISIC_0031759,31759,Train/vascular lesion/ISIC_0031759.jpg,ISIC_0031759.png,6,VASC,HAM_0003925,reviewed_novice_unet
+ISIC_0031827,31827,Train/dermatofibroma/ISIC_0031827.jpg,ISIC_0031827.png,5,DF,HAM_0007526,reviewed_novice_unet
+ISIC_0031852,31852,Train/squamous cell carcinoma/ISIC_0031852.jpg,ISIC_0031852.png,7,SCC,HAM_0004441,reviewed_novice_unet
+ISIC_0031874,31874,Train/squamous cell carcinoma/ISIC_0031874.jpg,ISIC_0031874.png,7,SCC,HAM_0001922,reviewed_novice_unet
+ISIC_0031901,31901,Train/vascular lesion/ISIC_0031901.jpg,ISIC_0031901.png,6,VASC,HAM_0001920,reviewed_novice_unet
+ISIC_0031927,31927,Train/squamous cell carcinoma/ISIC_0031927.jpg,ISIC_0031927.png,7,SCC,HAM_0001277,reviewed_novice_unet
+ISIC_0031929,31929,Train/squamous cell carcinoma/ISIC_0031929.jpg,ISIC_0031929.png,7,SCC,HAM_0001499,reviewed_novice_unet
+ISIC_0031940,31940,Train/squamous cell carcinoma/ISIC_0031940.jpg,ISIC_0031940.png,7,SCC,HAM_0001234,reviewed_novice_unet
+ISIC_0031950,31950,Train/vascular lesion/ISIC_0031950.jpg,ISIC_0031950.png,6,VASC,HAM_0005158,reviewed_novice_unet
+ISIC_0031955,31955,Train/vascular lesion/ISIC_0031955.jpg,ISIC_0031955.png,6,VASC,HAM_0001091,reviewed_novice_unet
+ISIC_0031993,31993,Train/actinic keratosis/ISIC_0031993.jpg,ISIC_0031993.png,3,AK,HAM_0006887,reviewed_novice_unet
+ISIC_0031996,31996,Train/vascular lesion/ISIC_0031996.jpg,ISIC_0031996.png,6,VASC,HAM_0003480,reviewed_novice_unet
+ISIC_0032014,32014,Train/squamous cell carcinoma/ISIC_0032014.jpg,ISIC_0032014.png,7,SCC,HAM_0007349,reviewed_novice_unet
+ISIC_0032057,32057,Train/vascular lesion/ISIC_0032057.jpg,ISIC_0032057.png,6,VASC,HAM_0004862,reviewed_novice_unet
+ISIC_0032076,32076,Train/vascular lesion/ISIC_0032076.jpg,ISIC_0032076.png,6,VASC,HAM_0005155,reviewed_novice_unet
+ISIC_0032114,32114,Train/dermatofibroma/ISIC_0032114.jpg,ISIC_0032114.png,5,DF,HAM_0003110,reviewed_novice_unet
+ISIC_0032135,32135,Train/actinic keratosis/ISIC_0032135.jpg,ISIC_0032135.png,3,AK,HAM_0003144,reviewed_novice_unet
+ISIC_0032138,32138,Train/dermatofibroma/ISIC_0032138.jpg,ISIC_0032138.png,5,DF,HAM_0005492,reviewed_novice_unet
+ISIC_0032154,32154,Train/squamous cell carcinoma/ISIC_0032154.jpg,ISIC_0032154.png,7,SCC,HAM_0002307,reviewed_novice_unet
+ISIC_0032173,32173,Train/squamous cell carcinoma/ISIC_0032173.jpg,ISIC_0032173.png,7,SCC,HAM_0001694,reviewed_novice_unet
+ISIC_0032199,32199,Train/actinic keratosis/ISIC_0032199.jpg,ISIC_0032199.png,3,AK,HAM_0000361,reviewed_novice_unet
+ISIC_0032203,32203,Train/squamous cell carcinoma/ISIC_0032203.jpg,ISIC_0032203.png,7,SCC,HAM_0005954,reviewed_novice_unet
+ISIC_0032206,32206,Train/actinic keratosis/ISIC_0032206.jpg,ISIC_0032206.png,3,AK,HAM_0001302,reviewed_novice_unet
+ISIC_0032238,32238,Train/squamous cell carcinoma/ISIC_0032238.jpg,ISIC_0032238.png,7,SCC,HAM_0000688,reviewed_novice_unet
+ISIC_0032247,32247,Train/dermatofibroma/ISIC_0032247.jpg,ISIC_0032247.png,5,DF,HAM_0007225,reviewed_novice_unet
+ISIC_0032277,32277,Train/squamous cell carcinoma/ISIC_0032277.jpg,ISIC_0032277.png,7,SCC,HAM_0001624,reviewed_novice_unet
+ISIC_0032329,32329,Train/squamous cell carcinoma/ISIC_0032329.jpg,ISIC_0032329.png,7,SCC,HAM_0005027,reviewed_novice_unet
+ISIC_0032349,32349,Train/squamous cell carcinoma/ISIC_0032349.jpg,ISIC_0032349.png,7,SCC,HAM_0003086,reviewed_novice_unet
+ISIC_0032371,32371,Train/squamous cell carcinoma/ISIC_0032371.jpg,ISIC_0032371.png,7,SCC,HAM_0006483,reviewed_novice_unet
+ISIC_0032404,32404,Train/actinic keratosis/ISIC_0032404.jpg,ISIC_0032404.png,3,AK,HAM_0007038,reviewed_novice_unet
+ISIC_0032409,32409,Train/vascular lesion/ISIC_0032409.jpg,ISIC_0032409.png,6,VASC,HAM_0001238,reviewed_novice_unet
+ISIC_0032437,32437,Train/actinic keratosis/ISIC_0032437.jpg,ISIC_0032437.png,3,AK,HAM_0007601,reviewed_novice_unet
+ISIC_0032468,32468,Train/dermatofibroma/ISIC_0032468.jpg,ISIC_0032468.png,5,DF,HAM_0005684,reviewed_novice_unet
+ISIC_0032538,32538,Train/vascular lesion/ISIC_0032538.jpg,ISIC_0032538.png,6,VASC,HAM_0004791,reviewed_novice_unet
+ISIC_0032545,32545,Train/vascular lesion/ISIC_0032545.jpg,ISIC_0032545.png,6,VASC,HAM_0004776,reviewed_novice_unet
+ISIC_0032613,32613,Train/dermatofibroma/ISIC_0032613.jpg,ISIC_0032613.png,5,DF,HAM_0005584,reviewed_novice_unet
+ISIC_0032614,32614,Train/vascular lesion/ISIC_0032614.jpg,ISIC_0032614.png,6,VASC,HAM_0006946,reviewed_novice_unet
+ISIC_0032642,32642,Train/dermatofibroma/ISIC_0032642.jpg,ISIC_0032642.png,5,DF,HAM_0002909,reviewed_novice_unet
+ISIC_0032692,32692,Train/vascular lesion/ISIC_0032692.jpg,ISIC_0032692.png,6,VASC,HAM_0000940,reviewed_novice_unet
+ISIC_0032715,32715,Train/vascular lesion/ISIC_0032715.jpg,ISIC_0032715.png,6,VASC,HAM_0006852,reviewed_novice_unet
+ISIC_0032775,32775,Train/vascular lesion/ISIC_0032775.jpg,ISIC_0032775.png,6,VASC,HAM_0003862,reviewed_novice_unet
+ISIC_0032839,32839,Train/vascular lesion/ISIC_0032839.jpg,ISIC_0032839.png,6,VASC,HAM_0002498,reviewed_novice_unet
+ISIC_0032866,32866,Train/vascular lesion/ISIC_0032866.jpg,ISIC_0032866.png,6,VASC,HAM_0006946,reviewed_novice_unet
+ISIC_0032867,32867,Train/vascular lesion/ISIC_0032867.jpg,ISIC_0032867.png,6,VASC,HAM_0004776,reviewed_novice_unet
+ISIC_0032890,32890,Train/vascular lesion/ISIC_0032890.jpg,ISIC_0032890.png,6,VASC,HAM_0003480,reviewed_novice_unet
+ISIC_0032897,32897,Train/squamous cell carcinoma/ISIC_0032897.jpg,ISIC_0032897.png,7,SCC,HAM_0000462,reviewed_novice_unet
+ISIC_0032919,32919,Train/vascular lesion/ISIC_0032919.jpg,ISIC_0032919.png,6,VASC,HAM_0006946,reviewed_novice_unet
+ISIC_0032932,32932,Train/vascular lesion/ISIC_0032932.jpg,ISIC_0032932.png,6,VASC,HAM_0002498,reviewed_novice_unet
+ISIC_0032947,32947,Train/squamous cell carcinoma/ISIC_0032947.jpg,ISIC_0032947.png,7,SCC,HAM_0006442,reviewed_novice_unet
+ISIC_0033000,33000,Train/squamous cell carcinoma/ISIC_0033000.jpg,ISIC_0033000.png,7,SCC,HAM_0006442,reviewed_novice_unet
+ISIC_0033005,33005,Train/dermatofibroma/ISIC_0033005.jpg,ISIC_0033005.png,5,DF,HAM_0000349,reviewed_novice_unet
+ISIC_0033031,33031,Train/vascular lesion/ISIC_0033031.jpg,ISIC_0033031.png,6,VASC,HAM_0003862,reviewed_novice_unet
+ISIC_0033084,33084,Train/squamous cell carcinoma/ISIC_0033084.jpg,ISIC_0033084.png,7,SCC,HAM_0002867,reviewed_novice_unet
+ISIC_0033135,33135,Train/vascular lesion/ISIC_0033135.jpg,ISIC_0033135.png,6,VASC,HAM_0004791,reviewed_novice_unet
+ISIC_0033151,33151,Train/actinic keratosis/ISIC_0033151.jpg,ISIC_0033151.png,3,AK,HAM_0004282,reviewed_novice_unet
+ISIC_0033158,33158,Train/vascular lesion/ISIC_0033158.jpg,ISIC_0033158.png,6,VASC,HAM_0004776,reviewed_novice_unet
+ISIC_0033230,33230,Train/vascular lesion/ISIC_0033230.jpg,ISIC_0033230.png,6,VASC,HAM_0007097,reviewed_novice_unet
+ISIC_0033254,33254,Train/vascular lesion/ISIC_0033254.jpg,ISIC_0033254.png,6,VASC,HAM_0005878,reviewed_novice_unet
+ISIC_0033295,33295,Train/squamous cell carcinoma/ISIC_0033295.jpg,ISIC_0033295.png,7,SCC,HAM_0006442,reviewed_novice_unet
+ISIC_0033349,33349,Train/vascular lesion/ISIC_0033349.jpg,ISIC_0033349.png,6,VASC,HAM_0006946,reviewed_novice_unet
+ISIC_0033358,33358,Train/actinic keratosis/ISIC_0033358.jpg,ISIC_0033358.png,3,AK,HAM_0004282,reviewed_novice_unet
+ISIC_0033413,33413,Train/actinic keratosis/ISIC_0033413.jpg,ISIC_0033413.png,3,AK,HAM_0002615,reviewed_novice_unet
+ISIC_0033450,33450,Train/vascular lesion/ISIC_0033450.jpg,ISIC_0033450.png,6,VASC,HAM_0005878,reviewed_novice_unet
+ISIC_0033456,33456,Train/actinic keratosis/ISIC_0033456.jpg,ISIC_0033456.png,3,AK,HAM_0002615,reviewed_novice_unet
+ISIC_0033458,33458,Train/vascular lesion/ISIC_0033458.jpg,ISIC_0033458.png,6,VASC,HAM_0003862,reviewed_novice_unet
+ISIC_0033494,33494,Train/actinic keratosis/ISIC_0033494.jpg,ISIC_0033494.png,3,AK,HAM_0002615,reviewed_novice_unet
+ISIC_0033536,33536,Train/squamous cell carcinoma/ISIC_0033536.jpg,ISIC_0033536.png,7,SCC,HAM_0002867,reviewed_novice_unet
+ISIC_0033554,33554,Train/dermatofibroma/ISIC_0033554.jpg,ISIC_0033554.png,5,DF,HAM_0007396,reviewed_novice_unet
+ISIC_0033591,33591,Train/vascular lesion/ISIC_0033591.jpg,ISIC_0033591.png,6,VASC,HAM_0004791,reviewed_novice_unet
+ISIC_0033608,33608,Train/vascular lesion/ISIC_0033608.jpg,ISIC_0033608.png,6,VASC,HAM_0000940,reviewed_novice_unet
+ISIC_0033675,33675,Train/dermatofibroma/ISIC_0033675.jpg,ISIC_0033675.png,5,DF,HAM_0002909,reviewed_novice_unet
+ISIC_0033695,33695,Train/dermatofibroma/ISIC_0033695.jpg,ISIC_0033695.png,5,DF,HAM_0000349,reviewed_novice_unet
+ISIC_0033705,33705,Train/actinic keratosis/ISIC_0033705.jpg,ISIC_0033705.png,3,AK,HAM_0001576,reviewed_novice_unet
+ISIC_0033749,33749,Train/vascular lesion/ISIC_0033749.jpg,ISIC_0033749.png,6,VASC,HAM_0001852,reviewed_novice_unet
+ISIC_0033762,33762,Train/vascular lesion/ISIC_0033762.jpg,ISIC_0033762.png,6,VASC,HAM_0007097,reviewed_novice_unet
+ISIC_0033790,33790,Train/dermatofibroma/ISIC_0033790.jpg,ISIC_0033790.png,5,DF,HAM_0002909,reviewed_novice_unet
+ISIC_0033810,33810,Train/dermatofibroma/ISIC_0033810.jpg,ISIC_0033810.png,5,DF,HAM_0007396,reviewed_novice_unet
+ISIC_0033811,33811,Train/actinic keratosis/ISIC_0033811.jpg,ISIC_0033811.png,3,AK,HAM_0004282,reviewed_novice_unet
+ISIC_0033817,33817,Train/vascular lesion/ISIC_0033817.jpg,ISIC_0033817.png,6,VASC,HAM_0001249,reviewed_novice_unet
+ISIC_0033844,33844,Train/vascular lesion/ISIC_0033844.jpg,ISIC_0033844.png,6,VASC,HAM_0003480,reviewed_novice_unet
+ISIC_0033869,33869,Train/squamous cell carcinoma/ISIC_0033869.jpg,ISIC_0033869.png,7,SCC,HAM_0000462,reviewed_novice_unet
+ISIC_0033891,33891,Train/dermatofibroma/ISIC_0033891.jpg,ISIC_0033891.png,5,DF,HAM_0007396,reviewed_novice_unet
+ISIC_0033969,33969,Train/vascular lesion/ISIC_0033969.jpg,ISIC_0033969.png,6,VASC,HAM_0000940,reviewed_novice_unet
+ISIC_0033991,33991,Train/vascular lesion/ISIC_0033991.jpg,ISIC_0033991.png,6,VASC,HAM_0006852,reviewed_novice_unet
+ISIC_0034196,34196,Train/vascular lesion/ISIC_0034196.jpg,ISIC_0034196.png,6,VASC,HAM_0001852,reviewed_novice_unet
+ISIC_0034214,34214,Train/vascular lesion/ISIC_0034214.jpg,ISIC_0034214.png,6,VASC,HAM_0007097,reviewed_novice_unet

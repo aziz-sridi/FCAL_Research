@@ -1,1 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Jupyter and editors
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Experiment artifacts
+outputs/
+cache/
+data/
+reports/
+/archive/
+/scripts/
+*.pt
 *.pth
+*.ckpt
+*.npz
+*.npy
+*.tex
+
+# Local logs and temporary files
+*.log
+*.tmp
+tmp/
+
+# LaTeX build output
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.out
+*.synctex.gz
