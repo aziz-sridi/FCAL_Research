@@ -72,6 +72,26 @@ foreground.
 These examples explain the mechanism; the aggregate claims above come from
 every test image, not from the selected gallery.
 
+## Background-distortion stress tests
+
+Here the bird pixels are preserved exactly while only the background is
+changed. The suite includes blur, color jitter, Gaussian noise, grayscale,
+solid-mean replacement, random-solid color, and random RGB noise. Each row is a
+held-out rescue where the distorted background makes CE predict the wrong bird
+but FCAL V2 remains correct.
+
+### ResNet-50 CNN
+
+![ResNet-50 background-distortion tests where CE is wrong and FCAL V2 is correct](assets/result_showcases/cub/background_distortion_cnn_rescues.png)
+
+### ViT-Base/16
+
+![ViT-Base background-distortion tests where CE is wrong and FCAL V2 is correct](assets/result_showcases/cub/background_distortion_vit_rescues.png)
+
+These montages are selected qualitative rescues. The **+5.19 pp mean** and
+**+20.38 pp worst-case** ResNet-50 improvements reported above are calculated
+over all 5,794 test images and all 13 background variants.
+
 ## Results that matter
 
 | Dataset | Main result | What to conclude |

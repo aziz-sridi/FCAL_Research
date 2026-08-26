@@ -11,6 +11,7 @@
 | `result_showcases/<dataset>/readme_*_rescues.png` | One CE-wrong → V2-correct example per architecture |
 | `result_showcases/<dataset>/*_test_cases.png` | Three examples per model for the executed notebook |
 | `result_showcases/<dataset>/examples.csv` | Frozen IDs, predictions, correctness, confidence, and inside-foreground CAM mass |
+| `result_showcases/cub/background_distortion_*_rescues.png` | CNN and ViT CE-wrong → V2-correct examples across background corruption families |
 
 The scientific galleries were generated from real best-validation checkpoints.
 They compare each method on the exact same center-cropped test image. CAMs are
