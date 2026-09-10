@@ -6,7 +6,6 @@ import pytest
 from fcal_study.config import load_config
 from fcal_study.data import OxfordPetDataset, dataset_from_config
 
-
 ROOT = Path(__file__).resolve().parents[1]
 SPLITS = ROOT / "splits" / "oxford_pet_seed42_val0.2"
 

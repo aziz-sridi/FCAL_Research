@@ -7,33 +7,71 @@ class-specific evidence from background shortcuts onto the annotated object.
 It changes training only: deployed models keep the same parameters, latency,
 and prediction API.
 
-**3 datasets · 6 architectures · 60 matched runs · no inference overhead**
+**3 datasets · 6 architectures · complete 30-view tests · no inference overhead**
+
+## Paper
+
+The current 13-page manuscript presents FCAL as a single fixed training method
+and reports its replicated evidence, matched baselines, computational cost,
+architecture effects, and transfer limits.
+
+**[Read the paper (PDF)](paper/FCAL_manuscript.pdf)**
+
+This is a research manuscript, with the strongest replicated evidence on CUB
+ResNet-50. It is not a claim of journal acceptance or clinical effectiveness.
 
 ## Improvements at a glance
 
-The strongest complete result is CUB ResNet-50. FCAL V2 improves the clean
-prediction and becomes substantially harder to break when only the background
-is distorted:
+The strongest result is now replicated across three independent CUB ResNet-50
+training seeds. Values are mean ± sample SD; every FCAL run resumes its paired
+CE run's exact epoch-5 branch.
 
-| CUB ResNet-50 test metric | CE | FCAL V2 | Improvement |
+| CUB ResNet-50 test metric | CE | FCAL V2 | Paired V2−CE change |
 |---|---:|---:|---:|
-| Clean accuracy | 77.29% | **78.49%** | **+1.20 pp** |
-| Mean accuracy across 13 background distortions | 66.92% | **72.11%** | **+5.19 pp** |
-| Worst background-distortion accuracy | 28.48% | **48.86%** | **+20.38 pp** |
-| Foreground-only accuracy | 68.57% | **72.76%** | **+4.19 pp** |
-| Strict attention leakage ↓ | 0.569 | **0.282** | **50.5% lower** |
+| Clean accuracy | 77.44 ± 0.13% | **78.49 ± 0.16%** | **+1.05 ± 0.19 pp** |
+| Mean of 13 background distortions | 68.75 ± 1.70% | **72.40 ± 0.38%** | **+3.65 ± 1.37 pp** |
+| Worst background distortion | 38.90 ± 9.81% | **51.67 ± 4.00%** | **+12.77 ± 6.63 pp** |
+| Foreground only | 68.63 ± 0.34% | **72.51 ± 0.87%** | **+3.87 ± 0.57 pp** |
+| Strict leakage ↓ | 0.571 ± 0.003 | **0.281 ± 0.003** | **50.8% lower at the means** |
 
-The broader results retain the background and foreground stress tests rather
-than reducing the project to clean accuracy:
+The completed six-architecture matrices keep all regional tests visible:
 
-| Benchmark | Clean | Background distortions | Foreground evidence | Leakage |
-|---|---:|---:|---:|---:|
-| CUB ViT-Base/16, V2 vs CE | **+0.93 pp** | mean **+0.75 pp**, worst **+2.07 pp** | foreground-only **+1.21 pp** | **76.7% lower** |
-| Oxford Pet, six-model V2 mean vs CE | **+0.50 pp** | mean **+0.67 pp** | mean FG distortions **+0.61 pp**, foreground-only **+2.35 pp** | **34.6% lower** |
-| Oxford Pet, six-model Universal mean vs CE | **+0.42 pp** | mean **+0.62 pp** | mean FG distortions **+0.74 pp**, foreground-only **+2.18 pp** | approximately flat |
+| Dataset, V2 vs CE | Clean | BG mean / worst | FG mean / only | Background only | Leakage |
+|---|---:|---:|---:|---:|---:|
+| CUB | +0.57 pp | +1.21 / +4.65 pp | -0.36 / +0.93 pp | -0.75 pp | 30.9% lower |
+| Oxford Pet | +0.50 pp | +0.67 / +1.30 pp | +0.61 / +2.36 pp | -0.49 pp | 34.6% lower |
+| ISIC subset | -1.67 pp | +0.17 / -1.00 pp | -1.24 / +3.67 pp | -1.67 pp | 41.6% lower |
 
-These are single-seed results. Architecture-level gains and six-model means are
-identified explicitly rather than mixed into one headline number.
+The main matrices use one seed; only CUB ResNet-50 has three. ISIC is a
+100-image, non-clinical subset and remains a negative classification result.
+
+### Fixed and validation-tuned explanation-supervision baselines
+
+The matched CUB comparison is complete for FCAL V2, RRR, GAIN-ext, and CAMAL
+on all six architectures; Selective Faster-ISNet is audited on ResNet-50 only.
+In the fixed/default arm, FCAL has higher clean accuracy than CAMAL and RRR on
+all six architectures and than GAIN-ext on five, while CAMAL and GAIN-ext often
+have lower strict leakage. The separate equal-dimensional validation-only
+search completed 200/200 jobs with zero failures and consumed 21.604 allocated
+GPU-hours before 25 winners were frozen and evaluated once on test.
+
+The tuned six-architecture means are:
+
+| Method | Clean | BG mean | BG worst | Foreground only | Strict leakage |
+|---|---:|---:|---:|---:|---:|
+| **FCAL V2** | **79.92%** | **73.19%** | 52.50% | **72.98%** | 0.466 |
+| CAMAL | 79.33% | 73.16% | 56.96% | 71.28% | 0.437 |
+| GAIN-ext | 76.06% | 68.29% | 45.38% | 68.14% | **0.303** |
+| RRR | 76.66% | 72.48% | **60.61%** | 72.38% | 0.672 |
+
+Tuning is not uniformly beneficial: FCAL's tuned setting is lower than its
+fixed setting on clean, BG mean/worst, and foreground-only accuracy on five of
+six architectures, whereas RRR improves broadly. On the common 500-image CAM
+faithfulness subset, CAMAL leads mean mask IoU and GAIN-ext leads mean removal
+AUC; FCAL therefore supports an accuracy--robustness--efficiency trade-off
+claim, not a universal localization win. [Fixed evidence](results/baseline_fixed/cub/FIXED_EVIDENCE_SUMMARY.md),
+[tuned provenance](results/tuned/cub/PROVENANCE.md), and
+[faithfulness report](results/faithfulness/cub/fixed-and-tuned-test/REPORT.md).
 
 ## The problem in two pictures
 
@@ -88,17 +126,38 @@ but FCAL V2 remains correct.
 
 ![ViT-Base background-distortion tests where CE is wrong and FCAL V2 is correct](assets/result_showcases/cub/background_distortion_vit_rescues.png)
 
-These montages are selected qualitative rescues. The **+5.19 pp mean** and
-**+20.38 pp worst-case** ResNet-50 improvements reported above are calculated
-over all 5,794 test images and all 13 background variants.
+These montages are selected qualitative rescues from the seed-42 pair. For
+that pair, the corresponding full evaluation gives **+5.19 pp mean** and
+**+20.38 pp worst-case** background-intervention improvements over all 5,794
+test images and all 13 background variants. The headline table reports the
+more conservative mean across three training seeds.
+
+### Dataset-tailored background tests
+
+The common 30-view suite is supplemented by controlled scenarios that match
+each dataset. The untouched region is copied exactly.
+
+| Six-model mean scenario | CE | FCAL V2 | Result |
+|---|---:|---:|---|
+| CUB twilight background | 76.36% | **77.12%** | +0.76 pp |
+| CUB camouflage background | 72.03% | **73.70%** | +1.66 pp |
+| Pet warm-light background | 89.19% | **89.80%** | +0.61 pp |
+| Pet checkerboard background | 87.23% | **87.73%** | +0.50 pp |
+| ISIC hair outside lesion | **56.83%** | 56.33% | -0.50 pp |
+| ISIC ruler outside lesion | **63.17%** | 62.17% | -1.00 pp |
+
+These are deterministic simulations, not natural-shift or clinical claims.
+Their mixed outcomes are intentional evidence: V2 is stronger on the CUB/Pet
+background tests but does not solve ISIC acquisition-artifact sensitivity.
+[Read the exact scenario definitions](docs/STRESS_TESTS.md).
 
 ## Results that matter
 
 | Dataset | Main result | What to conclude |
 |---|---|---|
-| [CUB-200-2011](results/cub/README.md) | ResNet-50 V2: **+1.20 pp clean**, **+5.19 pp mean background**, **+20.38 pp worst background**, **+4.19 pp foreground-only**, **50.5% lower leakage** | Strongest end-to-end accuracy and robustness result |
-| [Oxford-IIIT Pet](results/oxford_pet/README.md) | Six-model V2 mean: **+0.50 pp clean**, **+0.67 pp mean background**, **+0.61 pp mean foreground distortions**, leakage **0.292 → 0.191** | Broadest and most consistent benchmark |
-| [ISIC](results/isic/README.md) | Six-model V2 mean leakage **0.441 → 0.257**, but clean accuracy **66.50% → 64.83%** | Stronger focus does not automatically mean higher accuracy |
+| [CUB-200-2011](results/cub/README.md) | Three-seed ResNet-50 V2: **+1.05 ± 0.19 pp clean**, **+3.65 ± 1.37 pp BG mean**, **+12.77 ± 6.63 pp BG worst**, **+3.87 ± 0.57 pp foreground-only** | Strongest replicated accuracy and background-robustness result |
+| [Oxford-IIIT Pet](results/oxford_pet/README.md) | Six-model V2 mean: **+0.50 pp clean**, **+0.67 pp BG mean**, **+1.30 pp BG worst**, **+0.61 pp FG mean**, leakage **0.292 → 0.191** | Broadest one-seed benchmark |
+| [ISIC](results/isic/README.md) | Leakage **0.441 → 0.257**, but clean **-1.67 pp**, BG worst **-1.00 pp**, and hair/ruler scenarios do not improve | Negative classification result; not clinical evidence |
 | [Universal FCAL](results/universal/README.md) | Pet mean clean **+0.42 pp** and best mean foreground-corruption score; ISIC pilot is mixed | Working architecture-independent controller, still experimental |
 
 The qualitative galleries are backed by frozen manifests and real checkpoint
@@ -120,6 +179,21 @@ notebooks show three per model:
 CNN galleries use exact final-feature class activation maps. The ViTs use
 average-pooled patch tokens, so their class-specific patch CAMs decompose the
 actual class score instead of substituting a generic attention visualization.
+
+### What the corrected component ablation shows
+
+A provenance audit found that the old Fixed-3 row could not establish whether
+`3` meant input pixels or evidence-map cells. The ablation has now been fully
+regenerated from an archived seed-42 epoch-5 branch with explicit
+`fixed_tolerance_cells: 3` semantics and the original 50-epoch parent cosine
+schedule.
+
+The corrected result strengthens the V2 design argument. Relative to literal
+three-cell dilation, full V2 improves mean background accuracy by 1.08 pp,
+worst-background accuracy by 8.25 pp, foreground-corruption mean by 0.77 pp,
+and strict leakage by 0.072 at essentially identical clean accuracy. Against
+tolerance-only, signed support adds 8.63 pp to worst-background accuracy for a
+0.64 pp clean trade-off. [Full corrected table and run IDs](results/cub/RESULTS.md#v2-component-ablation).
 
 ## Why the comparison is fair
 
@@ -143,7 +217,9 @@ FCAL/
 ├── configs/                 matched CUB, ISIC, and Oxford Pet experiments
 ├── docs/                    methods and reproduction notes
 ├── notebooks/               executed visual test audits
+├── paper/                   current research paper PDF
 ├── results/                 dataset landing pages, full tables, and CSVs
+├── scripts/                 experiment and showcase automation
 ├── splits/                  frozen train/validation/test manifests
 ├── src/
 │   ├── fcal_study/          data, CAM adapters, training, and evaluation
@@ -215,10 +291,22 @@ total, weighted_fcal, weight = budgeted_objective(
 The model adapter only needs to return one or more signed evidence maps shaped
 `[batch, height, width]`.
 
-## Limits and research status
+## Research scope and next steps
 
-- Every completed benchmark currently uses one training seed. Image-level
-  paired tests do not replace multi-seed training uncertainty.
+- CUB ResNet-50 now uses three training seeds; the remaining architecture and
+  dataset matrix still uses one. Image-level paired tests do not replace
+  training-seed uncertainty.
+- RRR, GAIN-ext, and Selective Faster ISNet/LRP-Flex now have matched seed-7
+  runs. Expanding these comparisons to multiple seeds and architectures is the
+  next statistical step.
+- ISNet requires FP32 because LRP-Flex creates and differentiates gradients
+  inside the forward pass. The original failure was a YAML/autocast and
+  resume-backend bug, not a ResNet-50 incompatibility; the corrected run keeps
+  non-finite gradients as a hard error and uses no gradient sanitization.
+- CAMAL is a directly relevant 2026 attention-supervision method and is now
+  included in the matched fixed and validation-tuned comparisons. Replicating
+  the architecture-level method comparisons across more training seeds is the
+  next statistical step.
 - The ISIC sealed test has 100 images and very small rare classes. These results
   do not establish clinical effectiveness.
 - Better CAM localization does not guarantee better classification; ISIC and

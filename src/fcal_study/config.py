@@ -7,7 +7,6 @@ from pathlib import Path
 
 import yaml
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 
@@ -16,7 +15,8 @@ def load_config(path: str | Path) -> dict:
     config = yaml.safe_load(path.read_text(encoding="utf-8"))
     config["_config_path"] = str(path)
     for key in (
-        "cub_root", "isic_root", "pet_root", "medmnist_root", "segmentation_root", "split_dir",
+        "cub_root", "isic_root", "pet_root", "medmnist_root", "cardiac_root",
+        "segmentation_root", "split_dir",
         "evaluation_cache",
     ):
         if key not in config["data"]:

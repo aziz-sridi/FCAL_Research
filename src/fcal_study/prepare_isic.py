@@ -13,7 +13,6 @@ import pandas as pd
 from PIL import Image
 from sklearn.model_selection import StratifiedGroupKFold
 
-
 CLASS_ORDER = ("MEL", "NV", "BCC", "AK", "BKL", "DF", "VASC", "SCC")
 CLASS_TO_INDEX = {name: index for index, name in enumerate(CLASS_ORDER)}
 FOLDER_TO_CLASS = {
@@ -143,7 +142,7 @@ def _resolve_candidates(
             continue
         matching = [item for item in options if not official_class or item.class_code == official_class]
         if matching:
-            resolved.append(sorted(matching, key=lambda item: str(item.image_path))[0])
+            resolved.append(min(matching, key=lambda item: str(item.image_path)))
             continue
         classes = {item.class_code for item in options}
         if official_class:
@@ -151,7 +150,7 @@ def _resolve_candidates(
         elif len(classes) > 1:
             audit["ambiguous_folder_labels_excluded"] += 1
         else:
-            resolved.append(sorted(options, key=lambda item: str(item.image_path))[0])
+            resolved.append(min(options, key=lambda item: str(item.image_path)))
     return resolved
 
 

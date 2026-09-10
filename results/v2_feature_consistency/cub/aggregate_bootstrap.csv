@@ -1,0 +1,7 @@
+seed,reference,candidate,metric,difference,ci_low,ci_high,bootstrap_samples
+42,v2,v2_feature_consistency,background_mean_accuracy,0.0009615384615385,-0.0101923076923077,0.0117948717948718,10000
+42,v2,v2_feature_consistency,deterministic_background_mean_accuracy,0.0041666666666668,-0.0098333333333334,0.0180000000000000,10000
+42,v2,v2_feature_consistency,background_worst_accuracy,-0.0175000000000000,-0.0408333333333334,0.0066666666666667,10000
+7,v2,v2_feature_consistency,background_mean_accuracy,-0.0039102564102563,-0.0154487179487179,0.0076282051282052,10000
+7,v2,v2_feature_consistency,deterministic_background_mean_accuracy,-0.0001666666666666,-0.0145000000000000,0.0143333333333333,10000
+7,v2,v2_feature_consistency,background_worst_accuracy,0.0000000000000000,-0.0249999999999999,0.0241666666666667,10000

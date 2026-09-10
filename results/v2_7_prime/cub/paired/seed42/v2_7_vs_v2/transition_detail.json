@@ -1,0 +1,362 @@
+{
+  "bg_blur_s1": {
+    "baseline_clean_to_variant": {
+      "true_to_true": 911,
+      "true_to_false": 50,
+      "false_to_true": 23,
+      "false_to_false": 216
+    },
+    "fcal_clean_to_variant": {
+      "true_to_true": 912,
+      "true_to_false": 48,
+      "false_to_true": 30,
+      "false_to_false": 210
+    },
+    "cross_method_variant": {
+      "baseline_false_fcal_true": 68,
+      "baseline_true_fcal_false": 60,
+      "both_true": 874,
+      "both_false": 198
+    },
+    "strict_robustness": {
+      "fcal_rescues": 23,
+      "fcal_harms": 29
+    }
+  },
+  "bg_blur_s2": {
+    "baseline_clean_to_variant": {
+      "true_to_true": 884,
+      "true_to_false": 77,
+      "false_to_true": 29,
+      "false_to_false": 210
+    },
+    "fcal_clean_to_variant": {
+      "true_to_true": 894,
+      "true_to_false": 66,
+      "false_to_true": 35,
+      "false_to_false": 205
+    },
+    "cross_method_variant": {
+      "baseline_false_fcal_true": 82,
+      "baseline_true_fcal_false": 66,
+      "both_true": 847,
+      "both_false": 205
+    },
+    "strict_robustness": {
+      "fcal_rescues": 36,
+      "fcal_harms": 31
+    }
+  },
+  "bg_blur_s3": {
+    "baseline_clean_to_variant": {
+      "true_to_true": 870,
+      "true_to_false": 91,
+      "false_to_true": 35,
+      "false_to_false": 204
+    },
+    "fcal_clean_to_variant": {
+      "true_to_true": 872,
+      "true_to_false": 88,
+      "false_to_true": 36,
+      "false_to_false": 204
+    },
+    "cross_method_variant": {
+      "baseline_false_fcal_true": 67,
+      "baseline_true_fcal_false": 64,
+      "both_true": 841,
+      "both_false": 228
+    },
+    "strict_robustness": {
+      "fcal_rescues": 31,
+      "fcal_harms": 32
+    }
+  },
+  "bg_color_jitter_s1": {
+    "baseline_clean_to_variant": {
+      "true_to_true": 931,
+      "true_to_false": 30,
+      "false_to_true": 13,
+      "false_to_false": 226
+    },
+    "fcal_clean_to_variant": {
+      "true_to_true": 939,
+      "true_to_false": 21,
+      "false_to_true": 15,
+      "false_to_false": 225
+    },
+    "cross_method_variant": {
+      "baseline_false_fcal_true": 66,
+      "baseline_true_fcal_false": 56,
+      "both_true": 888,
+      "both_false": 190
+    },
+    "strict_robustness": {
+      "fcal_rescues": 15,
+      "fcal_harms": 11
+    }
+  },
+  "bg_color_jitter_s2": {
+    "baseline_clean_to_variant": {
+      "true_to_true": 915,
+      "true_to_false": 46,
+      "false_to_true": 16,
+      "false_to_false": 223
+    },
+    "fcal_clean_to_variant": {
+      "true_to_true": 912,
+      "true_to_false": 48,
+      "false_to_true": 20,
+      "false_to_false": 220
+    },
+    "cross_method_variant": {
+      "baseline_false_fcal_true": 67,
+      "baseline_true_fcal_false": 66,
+      "both_true": 865,
+      "both_false": 202
+    },
+    "strict_robustness": {
+      "fcal_rescues": 27,
+      "fcal_harms": 22
+    }
+  },
+  "bg_color_jitter_s3": {
+    "baseline_clean_to_variant": {
+      "true_to_true": 880,
+      "true_to_false": 81,
+      "false_to_true": 22,
+      "false_to_false": 217
+    },
+    "fcal_clean_to_variant": {
+      "true_to_true": 889,
+      "true_to_false": 71,
+      "false_to_true": 30,
+      "false_to_false": 210
+    },
+    "cross_method_variant": {
+      "baseline_false_fcal_true": 77,
+      "baseline_true_fcal_false": 60,
+      "both_true": 842,
+      "both_false": 221
+    },
+    "strict_robustness": {
+      "fcal_rescues": 34,
+      "fcal_harms": 29
+    }
+  },
+  "bg_gaussian_noise_s1": {
+    "baseline_clean_to_variant": {
+      "true_to_true": 894,
+      "true_to_false": 67,
+      "false_to_true": 22,
+      "false_to_false": 217
+    },
+    "fcal_clean_to_variant": {
+      "true_to_true": 903,
+      "true_to_false": 57,
+      "false_to_true": 29,
+      "false_to_false": 211
+    },
+    "cross_method_variant": {
+      "baseline_false_fcal_true": 71,
+      "baseline_true_fcal_false": 55,
+      "both_true": 861,
+      "both_false": 213
+    },
+    "strict_robustness": {
+      "fcal_rescues": 26,
+      "fcal_harms": 20
+    }
+  },
+  "bg_gaussian_noise_s2": {
+    "baseline_clean_to_variant": {
+      "true_to_true": 843,
+      "true_to_false": 118,
+      "false_to_true": 29,
+      "false_to_false": 210
+    },
+    "fcal_clean_to_variant": {
+      "true_to_true": 849,
+      "true_to_false": 111,
+      "false_to_true": 31,
+      "false_to_false": 209
+    },
+    "cross_method_variant": {
+      "baseline_false_fcal_true": 84,
+      "baseline_true_fcal_false": 76,
+      "both_true": 796,
+      "both_false": 244
+    },
+    "strict_robustness": {
+      "fcal_rescues": 47,
+      "fcal_harms": 45
+    }
+  },
+  "bg_gaussian_noise_s3": {
+    "baseline_clean_to_variant": {
+      "true_to_true": 735,
+      "true_to_false": 226,
+      "false_to_true": 32,
+      "false_to_false": 207
+    },
+    "fcal_clean_to_variant": {
+      "true_to_true": 732,
+      "true_to_false": 228,
+      "false_to_true": 34,
+      "false_to_false": 206
+    },
+    "cross_method_variant": {
+      "baseline_false_fcal_true": 93,
+      "baseline_true_fcal_false": 94,
+      "both_true": 673,
+      "both_false": 340
+    },
+    "strict_robustness": {
+      "fcal_rescues": 65,
+      "fcal_harms": 72
+    }
+  },
+  "bg_grayscale_s1": {
+    "baseline_clean_to_variant": {
+      "true_to_true": 888,
+      "true_to_false": 73,
+      "false_to_true": 33,
+      "false_to_false": 206
+    },
+    "fcal_clean_to_variant": {
+      "true_to_true": 893,
+      "true_to_false": 67,
+      "false_to_true": 35,
+      "false_to_false": 205
+    },
+    "cross_method_variant": {
+      "baseline_false_fcal_true": 60,
+      "baseline_true_fcal_false": 53,
+      "both_true": 868,
+      "both_false": 219
+    },
+    "strict_robustness": {
+      "fcal_rescues": 24,
+      "fcal_harms": 23
+    }
+  },
+  "bg_random_rgb_s1": {
+    "baseline_clean_to_variant": {
+      "true_to_true": 568,
+      "true_to_false": 393,
+      "false_to_true": 26,
+      "false_to_false": 213
+    },
+    "fcal_clean_to_variant": {
+      "true_to_true": 599,
+      "true_to_false": 361,
+      "false_to_true": 34,
+      "false_to_false": 206
+    },
+    "cross_method_variant": {
+      "baseline_false_fcal_true": 131,
+      "baseline_true_fcal_false": 92,
+      "both_true": 502,
+      "both_false": 475
+    },
+    "strict_robustness": {
+      "fcal_rescues": 100,
+      "fcal_harms": 80
+    }
+  },
+  "bg_random_solid_s1": {
+    "baseline_clean_to_variant": {
+      "true_to_true": 758,
+      "true_to_false": 203,
+      "false_to_true": 33,
+      "false_to_false": 206
+    },
+    "fcal_clean_to_variant": {
+      "true_to_true": 775,
+      "true_to_false": 185,
+      "false_to_true": 37,
+      "false_to_false": 203
+    },
+    "cross_method_variant": {
+      "baseline_false_fcal_true": 93,
+      "baseline_true_fcal_false": 72,
+      "both_true": 719,
+      "both_false": 316
+    },
+    "strict_robustness": {
+      "fcal_rescues": 61,
+      "fcal_harms": 53
+    }
+  },
+  "bg_solid_mean_s1": {
+    "baseline_clean_to_variant": {
+      "true_to_true": 822,
+      "true_to_false": 139,
+      "false_to_true": 38,
+      "false_to_false": 201
+    },
+    "fcal_clean_to_variant": {
+      "true_to_true": 842,
+      "true_to_false": 118,
+      "false_to_true": 39,
+      "false_to_false": 201
+    },
+    "cross_method_variant": {
+      "baseline_false_fcal_true": 89,
+      "baseline_true_fcal_false": 68,
+      "both_true": 792,
+      "both_false": 251
+    },
+    "strict_robustness": {
+      "fcal_rescues": 51,
+      "fcal_harms": 37
+    }
+  },
+  "clean": {
+    "baseline_clean_to_variant": {
+      "true_to_true": 961,
+      "true_to_false": 0,
+      "false_to_true": 0,
+      "false_to_false": 239
+    },
+    "fcal_clean_to_variant": {
+      "true_to_true": 960,
+      "true_to_false": 0,
+      "false_to_true": 0,
+      "false_to_false": 240
+    },
+    "cross_method_variant": {
+      "baseline_false_fcal_true": 58,
+      "baseline_true_fcal_false": 59,
+      "both_true": 902,
+      "both_false": 181
+    },
+    "strict_robustness": {
+      "fcal_rescues": 0,
+      "fcal_harms": 0
+    }
+  },
+  "foreground_only": {
+    "baseline_clean_to_variant": {
+      "true_to_true": 822,
+      "true_to_false": 139,
+      "false_to_true": 38,
+      "false_to_false": 201
+    },
+    "fcal_clean_to_variant": {
+      "true_to_true": 842,
+      "true_to_false": 118,
+      "false_to_true": 39,
+      "false_to_false": 201
+    },
+    "cross_method_variant": {
+      "baseline_false_fcal_true": 89,
+      "baseline_true_fcal_false": 68,
+      "both_true": 792,
+      "both_false": 251
+    },
+    "strict_robustness": {
+      "fcal_rescues": 51,
+      "fcal_harms": 37
+    }
+  }
+}

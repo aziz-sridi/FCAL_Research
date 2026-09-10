@@ -1,0 +1,134 @@
+version: 1
+study_id: cub-v2-equal-budget-validation-only-v1
+
+selection:
+  split: validation
+  metric: accuracy
+  checkpoint_rule: best-validation.pt
+  seed: 42
+
+compute:
+  accelerator: NVIDIA RTX 5070 Ti
+  gpus_per_job: 1
+  max_concurrent_jobs: 1
+  gpu_hour_accounting: allocated_wall_clock
+
+successive_halving:
+  initial_trials: 5
+  max_attempts_per_job: 2
+  promotion_mode: restart_each_fidelity_from_same_fixed_epoch_5_parent
+  tie_break: lower_trial_index
+  rungs:
+    - total_epochs: 10
+      survivors: 2
+    - total_epochs: 25
+      survivors: 1
+    - total_epochs: 50
+      survivors: 1
+
+fixed_parent_split: ../archive/legacy_projects/adaptive_fcal_study/splits/cub200_2011_seed42_val0.2
+
+architectures:
+  resnet50:
+    fixed_parent_checkpoint: ../archive/legacy_projects/adaptive_fcal_study/outputs/resnet50-ce-seed42/epoch-005-branch.pt
+  densenet121:
+    fixed_parent_checkpoint: ../archive/legacy_projects/adaptive_fcal_study/outputs/densenet121-ce-seed42/epoch-005-branch.pt
+  efficientnet-b0:
+    fixed_parent_checkpoint: ../archive/legacy_projects/adaptive_fcal_study/outputs/efficientnet-b0-ce-seed42/epoch-005-branch.pt
+  vit-tiny-p16-avg:
+    fixed_parent_checkpoint: ../archive/legacy_projects/adaptive_fcal_study/outputs/vit-tiny-p16-avg-ce-seed42/epoch-005-branch.pt
+  vit-small-p16-avg:
+    fixed_parent_checkpoint: ../archive/legacy_projects/adaptive_fcal_study/outputs/vit-small-p16-avg-ce-seed42/epoch-005-branch.pt
+  vit-base-p16-avg:
+    fixed_parent_checkpoint: ../archive/legacy_projects/adaptive_fcal_study/outputs/vit-base-p16-avg-ce-seed42/epoch-005-branch.pt
+
+methods:
+  fcal_v2:
+    display_name: FCAL V2
+    coefficient: fcal_v2.support_weight
+    values: [0.0125, 0.025, 0.05, 0.1, 0.2]
+    supported_architectures: &all_architectures
+      - resnet50
+      - densenet121
+      - efficientnet-b0
+      - vit-tiny-p16-avg
+      - vit-small-p16-avg
+      - vit-base-p16-avg
+    template_by_architecture:
+      resnet50: configs/cub/resnet50_fcal_v2.yaml
+      densenet121: configs/cub/densenet121_fcal_v2.yaml
+      efficientnet-b0: configs/cub/efficientnet_b0_fcal_v2.yaml
+      vit-tiny-p16-avg: configs/cub/vit_tiny_avg_fcal_v2.yaml
+      vit-small-p16-avg: configs/cub/vit_small_avg_fcal_v2.yaml
+      vit-base-p16-avg: configs/cub/vit_base_avg_fcal_v2.yaml
+    fixed_baseline_summary_by_architecture:
+      resnet50: ../archive/legacy_projects/adaptive_fcal_study/outputs/resnet50-fcal-v5-seed42/summary.json
+      densenet121: ../archive/legacy_projects/adaptive_fcal_study/outputs/densenet121-fcal-v5-seed42/summary.json
+      efficientnet-b0: ../archive/legacy_projects/adaptive_fcal_study/outputs/efficientnet-b0-fcal-v5-seed42/summary.json
+      vit-tiny-p16-avg: ../archive/legacy_projects/adaptive_fcal_study/outputs/vit-tiny-p16-avg-fcal-v5-seed42/summary.json
+      vit-small-p16-avg: ../archive/legacy_projects/adaptive_fcal_study/outputs/vit-small-p16-avg-fcal-v5-seed42/summary.json
+      vit-base-p16-avg: ../archive/legacy_projects/adaptive_fcal_study/outputs/vit-base-p16-avg-fcal-v5-seed42/summary.json
+    range_basis: Current RMS-normalized support loss uses 0.05; sweep two powers of two around it.
+
+  rrr:
+    display_name: RRR
+    coefficient: rrr.lambda
+    values: [0.00001, 0.0000316228, 0.0001, 0.000316228, 0.001]
+    supported_architectures: *all_architectures
+    template: configs/cub/baseline_fixed/{architecture}_rrr_fixed_seed42.yaml
+    fixed_baseline_summary: outputs/baseline-fixed/cub/{architecture}-rrr-seed42/summary.json
+    range_basis: Log sweep centered on the current exact-loss fixed recipe; the paper requires scale balancing rather than transferring its MLP coefficient.
+
+  gain_ext:
+    display_name: GAIN-ext
+    coefficient: gain.supervision_weight
+    values: [1.0, 3.16228, 10.0, 31.6228, 100.0]
+    supported_architectures: *all_architectures
+    template: configs/cub/baseline_fixed/{architecture}_gain-ext_fixed_seed42.yaml
+    fixed_baseline_summary: outputs/baseline-fixed/cub/{architecture}-gain-ext-seed42/summary.json
+    range_basis: Paper value 10 bracketed logarithmically; 100 is also reported for dog-breed bias mitigation.
+
+  camal:
+    display_name: CAMAL
+    coefficient: camal.coefficient
+    values: [0.1, 0.316228, 1.0, 3.16228, 10.0]
+    supported_architectures: *all_architectures
+    template: configs/cub/baseline_fixed/{architecture}_camal_fixed_seed42.yaml
+    fixed_baseline_summary: outputs/baseline-fixed/cub/{architecture}-camal-seed42/summary.json
+    range_basis: Paper coefficient 1 bracketed by one decade for the current normalized CAM loss.
+
+  selective_faster_isnet:
+    display_name: Selective Faster-ISNet
+    coefficient: isnet.heatmap_weight
+    values: [0.5, 0.7, 0.8, 0.9, 0.95]
+    supported_architectures:
+      - resnet50
+    template: configs/cub/baseline_fixed/resnet50_isnet_fixed_seed42.yaml
+    fixed_baseline_summary: outputs/baseline-fixed/cub/resnet50-isnet-seed42/summary.json
+    range_basis: Convex-loss P values centered on the current 0.7 recipe and the Faster-ISNet paper's 0.8-0.95 applications.
+
+test_seal:
+  evaluation_during_tuning: false
+  forbidden_inputs:
+    - data.evaluation_cache
+    - test evaluation summaries
+    - test metrics
+  unseal_after: one_winner_per_supported_method_architecture_frozen
+
+comparison_strata:
+  five_method_resnet50:
+    architectures: [resnet50]
+    methods: [fcal_v2, rrr, gain_ext, camal, selective_faster_isnet]
+  four_method_architecture_matrix:
+    architectures: *all_architectures
+    methods: [fcal_v2, rrr, gain_ext, camal]
+  reporting_rule: Never impute or relabel unsupported Selective Faster-ISNet architecture cells.
+
+primary_sources:
+  successive_halving: https://www.jmlr.org/papers/v18/16-558.html
+  rrr_paper: https://arxiv.org/abs/1703.03717
+  rrr_code: https://github.com/dtak/rrr
+  gain_ext_paper: https://openaccess.thecvf.com/content_cvpr_2018/html/Li_Tell_Me_Where_CVPR_2018_paper.html
+  camal_paper: https://arxiv.org/abs/2605.08325
+  faster_isnet_paper: https://arxiv.org/abs/2401.08409
+  faster_isnet_code: https://github.com/PedroRASB/FasterISNet

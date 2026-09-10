@@ -1,56 +1,74 @@
-# ISIC: constraining evidence to the lesion
+# ISIC subset: focus improves, classification does not
 
-ISIC is the clearest example of why this project reports localization and
-classification separately. Across six architectures, FCAL V2 reduces mean
-strict outside-lesion CAM leakage from **0.441 to 0.257** (41.6% relative), but
-mean clean accuracy changes from **66.50% to 64.83%**. The result is a strong
-focus improvement, not a universal clinical-accuracy claim.
+This curated 100-image test set is the clearest counterexample to an overbroad
+FCAL claim. Across six architectures, V2 strongly reduces outside-lesion CAM
+leakage and improves foreground-only accuracy, but it lowers clean accuracy and
+does not improve the tailored background-artifact simulations.
 
-Every panel below uses the same held-out dermoscopic image across methods.
-Green/red text marks a correct/incorrect class prediction, the white contour is
-the lesion mask, and `inside` is the fraction of positive predicted-class CAM
-mass inside it. CAM colors are normalized per panel using `jet`: blue is low
-evidence and red is high evidence.
+## Unified six-architecture means
 
-## CNN examples
+| Test metric | CE | FCAL V1 | FCAL V2 | V2 vs CE |
+|---|---:|---:|---:|---:|
+| Clean accuracy | **66.50%** | 64.67% | 64.83% | -1.67 pp |
+| Balanced accuracy | **69.52%** | 67.97% | 67.66% | -1.86 pp |
+| BG mean (13 tests) | 49.65% | 48.86% | **49.82%** | +0.17 pp |
+| BG worst (13 tests) | **34.83%** | 32.33% | 33.83% | -1.00 pp |
+| FG mean (13 tests) | **37.00%** | 35.60% | 35.76% | -1.24 pp |
+| FG worst (13 tests) | **15.83%** | 13.00% | 15.33% | -0.50 pp |
+| Foreground only | 42.50% | 42.83% | **46.17%** | **+3.67 pp** |
+| Background only | 23.33% | **21.50%** | 21.67% | -1.67 pp |
+| Strict leakage (lower is better) | 0.441 | 0.385 | **0.257** | **41.6% lower** |
 
-One frozen test example per CNN architecture:
+One prediction changes clean accuracy by one percentage point, and the rarest
+class has only three test images. These numbers describe model behavior on this
+subset; they are not evidence of clinical effectiveness.
+
+## Skin-imaging scenarios
+
+| Six-model mean | CE | FCAL V1 | FCAL V2 | V2 vs CE |
+|---|---:|---:|---:|---:|
+| Hair outside lesion | **56.83%** | 57.83% | 56.33% | -0.50 pp |
+| Ruler outside lesion | **63.17%** | 63.00% | 62.17% | -1.00 pp |
+| Low-contrast lesion | 35.00% | 34.83% | **36.67%** | +1.67 pp |
+
+The first two simulations change only surrounding skin; the lesion is copied
+exactly. The low-contrast test changes only the lesion and preserves every
+background pixel. Hair is a plausible acquisition artifact, while the ruler
+and strong contrast reduction are deliberately severe. The mixed result is
+reported as a failure to demonstrate background-artifact robustness here.
+
+## Prediction and CAM examples
+
+Green/red titles mark correct/incorrect predictions. The white contour is the
+lesion mask and `inside` is positive predicted-class CAM mass inside it. Every
+CNN and ViT panel uses `jet` (blue low, red high).
+
+### CNN examples
 
 ![ISIC CNN prediction and CAM comparison](../../assets/result_showcases/isic/readme_cnn.png)
 
-## Vision Transformer examples
-
-One frozen test example per ViT architecture:
+### Vision Transformer examples
 
 ![ISIC ViT prediction and CAM comparison](../../assets/result_showcases/isic/readme_vit.png)
 
-## Classification rescues: CE wrong, FCAL V2 correct
+## CE wrong, FCAL V2 correct
 
-The next galleries add one held-out rescue per architecture. They are selected
-qualitative examples; the full 100-image table below remains the basis for
-quantitative claims.
+These are selected qualitative rescues, not a prevalence estimate.
 
 ![ISIC CNN cases where CE is wrong and FCAL V2 is correct](../../assets/result_showcases/isic/readme_cnn_rescues.png)
 
 ![ISIC ViT cases where CE is wrong and FCAL V2 is correct](../../assets/result_showcases/isic/readme_vit_rescues.png)
 
-## What the full benchmark says
+## Files
 
-| Six-model mean | CE | FCAL V1 | FCAL V2 |
-|---|---:|---:|---:|
-| Clean accuracy | **66.50%** | 64.67% | 64.83% |
-| Macro-F1 | **66.79%** | 64.21% | 65.47% |
-| Strict leakage ↓ | 0.441 | 0.385 | **0.257** |
-| Foreground-only accuracy | 42.50% | 42.83% | **46.17%** |
+- [Executed test notebook](../../notebooks/isic_test_showcase.ipynb)
+- [Complete per-model metrics](complete_metrics.csv)
+- [Unified six-model means](method_means_complete.csv)
+- [Tailored scenario results](tailored_scenarios.csv)
+- [Stress-test definitions](../../docs/STRESS_TESTS.md)
+- [Full results and limitations](RESULTS.md)
+- [Universal FCAL ResNet-50 pilot](../universal/isic/RESULTS.md)
 
-V2 reduces leakage on every architecture and is more accurate than V1 on three
-of six. ViT-Small is the strongest classification case (69% V2 versus 67% CE),
-but this sealed test contains only 100 images, including just three VASC cases.
-
-- [Open the executed test showcase](../../notebooks/isic_test_showcase.ipynb) — three cases per architecture.
-- [Read the complete result tables and limitations](RESULTS.md).
-- [Inspect the machine-readable metrics](primary_metrics.csv).
-- [Read the Universal FCAL ResNet-50 pilot](../universal/isic/RESULTS.md).
-
-These are model-behavior experiments on a curated subset, not evidence of
-clinical effectiveness. All completed runs use seed 42.
+All runs use one training seed and a leakage-free, lesion-grouped split. Masks
+mix expert challenge boundaries with reviewed novice U-Net boundaries, which
+adds another source of uncertainty.

@@ -1,0 +1,117 @@
+{
+  "protocol": "v2_7_resnet50_seed7_triage",
+  "stage": "triage",
+  "decision": "stop",
+  "candidate": {
+    "clean_accuracy": 0.7875,
+    "background_probe_accuracy": 0.5633333333333334,
+    "foreground_only_accuracy": 0.7116666666666667,
+    "strict_leakage": 0.2678671181201935,
+    "post_branch_seconds": 539.262840799991,
+    "peak_cuda_memory_bytes": 1875995136
+  },
+  "anchor": {
+    "clean_accuracy": 0.7983333333333333,
+    "background_probe_accuracy": 0.57,
+    "foreground_only_accuracy": 0.7025,
+    "strict_leakage": 0.27196136116981506,
+    "post_branch_seconds": 524.3072205999999,
+    "peak_cuda_memory_bytes": 1873875456
+  },
+  "references": {
+    "CE": {
+      "clean_accuracy": 0.7833333333333333,
+      "background_probe_accuracy": 0.47333333333333333,
+      "foreground_only_accuracy": 0.6866666666666666,
+      "strict_leakage": 0.5652646422386169,
+      "post_branch_seconds": 300.0417458999989,
+      "peak_cuda_memory_bytes": 1811451904
+    },
+    "FCAL V2+": {
+      "clean_accuracy": 0.8041666666666667,
+      "background_probe_accuracy": 0.5366666666666666,
+      "foreground_only_accuracy": 0.7266666666666667,
+      "strict_leakage": 0.2530592679977417,
+      "post_branch_seconds": 360.45516389998556,
+      "peak_cuda_memory_bytes": 1875992064
+    },
+    "GAIN-ext": {
+      "clean_accuracy": 0.7583333333333333,
+      "background_probe_accuracy": 0.5741666666666667,
+      "foreground_only_accuracy": 0.6991666666666667,
+      "strict_leakage": 0.12597934901714325,
+      "post_branch_seconds": 674.2035532999835,
+      "peak_cuda_memory_bytes": 3316390912
+    },
+    "RRR": {
+      "clean_accuracy": 0.7533333333333333,
+      "background_probe_accuracy": 0.5758333333333333,
+      "foreground_only_accuracy": 0.6941666666666667,
+      "strict_leakage": 0.5148342251777649,
+      "post_branch_seconds": 1991.9791292000027,
+      "peak_cuda_memory_bytes": 3716114432
+    },
+    "Faster-ISNet": {
+      "clean_accuracy": 0.7325,
+      "background_probe_accuracy": 0.5383333333333333,
+      "foreground_only_accuracy": 0.665,
+      "strict_leakage": 0.5325849652290344,
+      "post_branch_seconds": 3500.805438600002,
+      "peak_cuda_memory_bytes": 11549075456
+    }
+  },
+  "hard_gates": {
+    "clean_accuracy": {
+      "value": 0.7875,
+      "minimum": 0.7958333333333334,
+      "passed": false
+    },
+    "background_probe_accuracy": {
+      "value": 0.5633333333333334,
+      "minimum": 0.57,
+      "passed": false
+    },
+    "foreground_only_accuracy": {
+      "value": 0.7116666666666667,
+      "minimum": 0.7025,
+      "passed": true
+    },
+    "strict_leakage": {
+      "value": 0.2678671181201935,
+      "maximum": 0.27196136116981506,
+      "passed": true
+    },
+    "post_branch_seconds": {
+      "value": 539.262840799991,
+      "maximum": 602.9533036899999,
+      "passed": true
+    },
+    "peak_cuda_memory_bytes": {
+      "value": 1875995136,
+      "maximum": 2061263002,
+      "passed": true
+    }
+  },
+  "failed_hard_gates": [
+    "clean_accuracy",
+    "background_probe_accuracy"
+  ],
+  "material_improvements": {
+    "clean_accuracy": false,
+    "background_probe_accuracy": false,
+    "foreground_only_accuracy": true,
+    "strict_leakage": false
+  },
+  "material_improvement_count": 1,
+  "required_material_improvement_passed": false,
+  "dominated_by": [],
+  "strict_wins": {
+    "FCAL V2": 2,
+    "CE": 4,
+    "FCAL V2+": 1,
+    "GAIN-ext": 2,
+    "RRR": 3,
+    "Faster-ISNet": 4
+  },
+  "failed_strict_wins": []
+}

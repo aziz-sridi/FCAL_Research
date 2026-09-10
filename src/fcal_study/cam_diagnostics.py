@@ -10,11 +10,14 @@ from torch.nn import functional as F
 
 from .config import PROJECT_ROOT
 from .data import make_multi_variant_loader
-from .losses import article_tolerance_mask, normalized_attention, smooth_normalized_attention
+from .losses import (
+    article_tolerance_mask,
+    normalized_attention,
+    smooth_normalized_attention,
+)
 from .models import ResNet50CAM, create_model
 from .utils import atomic_json
 from .variants import parse_variant
-
 
 DEFAULT_CAM_VARIANTS = [
     "clean",
@@ -97,7 +100,7 @@ def run(checkpoint_path: str, variants: list[str]) -> Path:
         np.savez_compressed(output / f"{spec.key}.npz", **payload)
         summary = {
             "variant": spec.key,
-            "samples": int(len(payload["image_id"])),
+            "samples": len(payload["image_id"]),
             "accuracy": float((payload["prediction"] == payload["label"]).mean()),
             "true_cam_zero_fraction": float(1.0 - payload["true_cam_nonzero"].mean()),
             "predicted_cam_zero_fraction": float(1.0 - payload["predicted_cam_nonzero"].mean()),

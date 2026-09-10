@@ -1,0 +1,108 @@
+{
+  "protocol": "relative_pooled_margin_stage1",
+  "stage": "triage",
+  "decision": "stop",
+  "candidate": {
+    "clean_accuracy": 0.8,
+    "background_probe_accuracy": 0.42083333333333334,
+    "foreground_only_accuracy": 0.715,
+    "strict_leakage": 0.25638723373413086,
+    "post_branch_seconds": 551.876468100003,
+    "peak_cuda_memory_bytes": 1876014080
+  },
+  "anchor": {
+    "clean_accuracy": 0.8008333333333333,
+    "background_probe_accuracy": 0.4891666666666667,
+    "foreground_only_accuracy": 0.7166666666666667,
+    "strict_leakage": 0.2662138342857361,
+    "post_branch_seconds": 325.1696247000002,
+    "peak_cuda_memory_bytes": 1875970560
+  },
+  "references": {
+    "CE": {
+      "clean_accuracy": 0.8091666666666667,
+      "background_probe_accuracy": 0.2758333333333333,
+      "foreground_only_accuracy": 0.7033333333333334,
+      "strict_leakage": 0.5613882541656494,
+      "post_branch_seconds": 349.576919600011,
+      "peak_cuda_memory_bytes": 1869544960
+    },
+    "CAMAL": {
+      "clean_accuracy": 0.7891666666666667,
+      "background_probe_accuracy": 0.6033333333333334,
+      "foreground_only_accuracy": 0.735,
+      "strict_leakage": 0.31566813588142395,
+      "post_branch_seconds": 373.8591626999896,
+      "peak_cuda_memory_bytes": 1873877504
+    },
+    "GAIN-ext": {
+      "clean_accuracy": 0.7041666666666667,
+      "background_probe_accuracy": 0.43333333333333335,
+      "foreground_only_accuracy": 0.6391666666666667,
+      "strict_leakage": 0.14864954352378845,
+      "post_branch_seconds": 615.6322345000026,
+      "peak_cuda_memory_bytes": 3316391936
+    },
+    "RRR": {
+      "clean_accuracy": 0.6791666666666667,
+      "background_probe_accuracy": 0.4716666666666667,
+      "foreground_only_accuracy": 0.6316666666666667,
+      "strict_leakage": 0.4656364321708679,
+      "post_branch_seconds": 1822.0136471999976,
+      "peak_cuda_memory_bytes": 3716115456
+    },
+    "Faster-ISNet": {
+      "clean_accuracy": 0.7191666666666666,
+      "background_probe_accuracy": 0.48,
+      "foreground_only_accuracy": 0.6758333333333333,
+      "strict_leakage": 0.5386087894439697,
+      "post_branch_seconds": 3071.0840548000006,
+      "peak_cuda_memory_bytes": 11549797376
+    }
+  },
+  "hard_gates": {
+    "clean_accuracy": {
+      "value": 0.8,
+      "minimum": 0.7983333333333333,
+      "passed": true
+    },
+    "background_probe_accuracy": {
+      "value": 0.42083333333333334,
+      "minimum": 0.489166666666667,
+      "passed": false
+    },
+    "foreground_only_accuracy": {
+      "value": 0.715,
+      "minimum": 0.716666666666667,
+      "passed": false
+    },
+    "strict_leakage": {
+      "value": 0.25638723373413086,
+      "maximum": 0.26621368527412415,
+      "passed": true
+    },
+    "post_branch_seconds": {
+      "value": 551.876468100003,
+      "maximum": 373.945068405,
+      "passed": false
+    },
+    "peak_cuda_memory_bytes": {
+      "value": 1876014080,
+      "maximum": 2063567617,
+      "passed": true
+    }
+  },
+  "failed_hard_gates": [
+    "background_probe_accuracy",
+    "foreground_only_accuracy",
+    "post_branch_seconds"
+  ],
+  "material_improvements": {
+    "clean_accuracy": false,
+    "background_probe_accuracy": false,
+    "foreground_only_accuracy": false,
+    "strict_leakage": false
+  },
+  "material_improvement_count": 0,
+  "dominated_by": []
+}

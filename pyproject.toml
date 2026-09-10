@@ -17,6 +17,7 @@ dependencies = [
   "scipy",
   "scikit-learn",
   "matplotlib",
+  "nibabel",
   "torch",
   "torchvision",
   "timm",

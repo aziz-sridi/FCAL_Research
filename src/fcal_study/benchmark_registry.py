@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from .config import PROJECT_ROOT
 
-
 RUNS = {
     "ResNet-50": {
         "CE": PROJECT_ROOT / "outputs" / "resnet50-ce-seed42",

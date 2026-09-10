@@ -8,14 +8,73 @@ from pathlib import Path
 import numpy as np
 import torch
 from torch.nn import functional as F
+
 from universal_fcal import measure_maps
 
 from .config import PROJECT_ROOT
 from .data import make_multi_variant_loader
-from .losses import leakage, normalized_attention
+from .losses import leakage
 from .models import create_model
 from .utils import atomic_json
-from .variants import DEFAULT_VARIANTS, parse_variant
+from .variants import DEFAULT_VARIANTS, TAILORED_VARIANTS, parse_variant
+
+
+def with_variant_seed(config: dict, variant_seed: int | None) -> dict:
+    """Return an evaluation config with an optional common corruption seed.
+
+    Training seeds normally also seed stochastic evaluation variants.  An
+    explicit override lets checkpoints trained with different seeds see the
+    exact same corruptions without changing the checkpoint configuration.
+    """
+    if variant_seed is None:
+        return config
+    selected = copy.deepcopy(config)
+    selected["seed"] = int(variant_seed)
+    return selected
+
+
+def relocate_missing_data_paths(config: dict) -> dict:
+    """Relocate checkpoint data paths after the repository has been moved.
+
+    Historical checkpoints embed absolute paths.  Only missing paths are
+    replaced, so an explicitly valid experiment location always wins.
+    """
+    data = config["data"]
+    dataset = data.get("dataset", "cub")
+    dataset_root = PROJECT_ROOT.parent / "datasets"
+    replacements = {
+        "cub": {
+            "cub_root": dataset_root / "CUB-200-2011" / "versions" / "7" / "CUB_200_2011",
+            "segmentation_root": dataset_root / "CUB-200-2011" / "versions" / "7" / "segmentations",
+            "split_dir": PROJECT_ROOT / "splits" / "cub200_2011_seed42_val0.2",
+        },
+        "oxford_pet": {
+            "pet_root": dataset_root / "OxfordIIITPet" / "oxford-iiit-pet",
+            "split_dir": PROJECT_ROOT / "splits" / "oxford_pet_seed42_val0.2",
+        },
+        "isic": {
+            "isic_root": dataset_root / "ISIC" / "Skin cancer ISIC The International Skin Imaging Collaboration",
+            "segmentation_root": dataset_root / "ISIC" / "fcal_v1_v5_masks",
+            "split_dir": PROJECT_ROOT / "splits" / "isic_skin_seed42_grouped",
+        },
+        "acdc": {
+            "cardiac_root": dataset_root / "ACDC-MICCAI17-prepared",
+            "split_dir": dataset_root / "ACDC-MICCAI17-prepared" / "splits",
+        },
+    }
+    for key, candidate in replacements[dataset].items():
+        if key not in data or not Path(data[key]).exists():
+            data[key] = str(candidate)
+    if dataset == "cub" and (
+        "evaluation_cache" not in data or not Path(data["evaluation_cache"]).exists()
+    ):
+        archived_cache = (
+            PROJECT_ROOT.parent / "archive" / "legacy_projects" / "adaptive_fcal_study"
+            / "cache" / "cub_test_224_center"
+        )
+        if archived_cache.exists():
+            data["evaluation_cache"] = str(archived_cache)
+    return config
 
 
 def classification_metrics(labels: np.ndarray, predictions: np.ndarray, num_classes: int) -> dict:
@@ -106,6 +165,8 @@ def evaluate_all(
                     minimum_background_cells=float(settings.get("minimum_background_cells", 1.0)),
                     epsilon=float(settings.get("epsilon", 1e-8)),
                 ).outside
+            elif config["method"] == "fcal_v5_cheap":
+                tolerant = leakage(attention, masks, 0)
             else:
                 tolerant = leakage(
                     attention, masks, int(config["fcal"]["dilation_cells"]),
@@ -171,9 +232,16 @@ def evaluate_all(
     return summaries
 
 
-def run(checkpoint_path: str, variants: list[str], split: str = "test") -> Path:
+def run(
+    checkpoint_path: str,
+    variants: list[str],
+    split: str = "test",
+    output_dir: str | Path | None = None,
+    variant_seed: int | None = None,
+) -> Path:
     checkpoint = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
-    config = checkpoint["config"]
+    config = relocate_missing_data_paths(checkpoint["config"])
+    config = with_variant_seed(config, variant_seed)
     if config["data"].get("dataset", "cub") == "cub":
         config["data"].setdefault("evaluation_cache", str(PROJECT_ROOT / "cache" / "cub_test_224_center"))
     device = torch.device(config["device"] if torch.cuda.is_available() else "cpu")
@@ -182,7 +250,11 @@ def run(checkpoint_path: str, variants: list[str], split: str = "test") -> Path:
     model.to(device).eval()
     if config["training"]["channels_last"]:
         model.to(memory_format=torch.channels_last)
-    output_dir = Path(checkpoint["run_dir"]) / ("evaluation" if split == "test" else f"{split}_evaluation")
+    if output_dir is None:
+        output_dir = Path(checkpoint_path).resolve().parent / (
+            "evaluation" if split == "test" else f"{split}_evaluation"
+        )
+    output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     summaries = evaluate_all(model, config, variants, output_dir, split=split)
     summary_path = output_dir / "summary.json"
@@ -199,9 +271,27 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("checkpoint")
     parser.add_argument("--variants", nargs="*", default=DEFAULT_VARIANTS)
+    parser.add_argument(
+        "--tailored",
+        choices=tuple(TAILORED_VARIANTS),
+        help="Evaluate the dataset-specific realistic/extreme stress scenarios.",
+    )
     parser.add_argument("--split", choices=("validation", "test"), default="test")
+    parser.add_argument("--output-dir")
+    parser.add_argument(
+        "--variant-seed",
+        type=int,
+        help="Override only the deterministic evaluation-corruption seed.",
+    )
     args = parser.parse_args()
-    print(run(args.checkpoint, args.variants, split=args.split))
+    variants = TAILORED_VARIANTS[args.tailored] if args.tailored else args.variants
+    print(run(
+        args.checkpoint,
+        variants,
+        split=args.split,
+        output_dir=args.output_dir,
+        variant_seed=args.variant_seed,
+    ))
 
 
 if __name__ == "__main__":

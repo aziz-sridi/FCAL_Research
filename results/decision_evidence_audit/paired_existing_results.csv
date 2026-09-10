@@ -1,0 +1,11 @@
+candidate,reference,metric,n_seeds,mean_delta,sample_sd_delta,unit
+FCAL V2,CE,clean_accuracy,3,1.0528132550914746,0.18668715613378645,percentage_points
+FCAL V2,CE,bg_mean_accuracy,3,3.6509917421204983,1.3744256638998638,percentage_points
+FCAL V2,CE,bg_worst_accuracy,3,12.771832930617874,6.6250058057291215,percentage_points
+FCAL V2,CE,foreground_only_accuracy,3,3.8718214244620888,0.5730308179622946,percentage_points
+FCAL V2,CE,strict_leakage,3,-0.2902097801367442,0.005593313109172199,fraction
+FCAL V2+,FCAL V2,clean_accuracy,3,-0.33367851800713744,0.27686593983467533,percentage_points
+FCAL V2+,FCAL V2,bg_mean_accuracy,3,0.04425444535903027,0.5667833559292117,percentage_points
+FCAL V2+,FCAL V2,bg_worst_accuracy,3,1.8755033943159638,4.131787489788519,percentage_points
+FCAL V2+,FCAL V2,foreground_only_accuracy,3,-0.391209296973886,0.7041118684322205,percentage_points
+FCAL V2+,FCAL V2,strict_leakage,3,-0.018921126921971638,0.012231869917261452,fraction

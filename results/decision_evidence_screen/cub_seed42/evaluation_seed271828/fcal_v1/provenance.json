@@ -1,0 +1,7 @@
+{
+  "checkpoint_sha256": "cdecc9e26203874efdb0506c980eded9642b4f28c43cf72204cb16ae652940d9",
+  "protocol_sha256": "0bcfd6edb6f0dce12df65200955fd19b15c06b7ba185b2dc403ee9ec25a6ff77",
+  "split": "validation",
+  "variant_seed": 271828,
+  "runner_sha256": "1d5f36489c0ed53101211c2cfb79f969ec8e8181fb927e90be68d04eb5760e43"
+}

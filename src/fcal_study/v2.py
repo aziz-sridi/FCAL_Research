@@ -5,6 +5,7 @@ import math
 import torch
 from torch.nn import functional as F
 
+from .losses import article_tolerance_mask
 from .regions import projected_region_weights, ramp_weight
 
 
@@ -63,7 +64,11 @@ def support_aware_fcal_losses(
     maximum_tolerance_pixels: int | None = None,
     fixed_tolerance_pixels: int | None = None,
     epsilon: float = 1e-8,
-) -> tuple[torch.Tensor, torch.Tensor]:
+    fixed_tolerance_cells: int | None = None,
+    return_backgrounds: bool = False,
+) -> tuple[torch.Tensor, torch.Tensor] | tuple[
+    torch.Tensor, torch.Tensor, list[torch.Tensor]
+]:
     """Article positive containment plus scale-free distributed signed support."""
     if not raw_score_maps:
         raise ValueError("FCAL V2 requires at least one signed spatial evidence map")
@@ -72,26 +77,42 @@ def support_aware_fcal_losses(
     valid = flat_masks.any(dim=1) & ~flat_masks.all(dim=1)
     if not bool(valid.any()):
         zero = sum(scores.sum() for scores in raw_score_maps) * 0.0
+        if return_backgrounds:
+            return zero, zero, [torch.zeros_like(scores) for scores in raw_score_maps]
         return zero, zero
     masks = masks[valid]
     raw_score_maps = [scores[valid] for scores in raw_score_maps]
 
     outside_losses = []
     support_losses = []
+    backgrounds = []
     input_size = (int(masks.shape[-2]), int(masks.shape[-1]))
+    if fixed_tolerance_pixels is not None and fixed_tolerance_cells is not None:
+        raise ValueError("Choose fixed_tolerance_pixels or fixed_tolerance_cells, not both")
     for scores in raw_score_maps:
-        tolerance = (
-            int(fixed_tolerance_pixels)
-            if fixed_tolerance_pixels is not None
-            else resolution_aware_tolerance_pixels(
-                input_size,
-                (int(scores.shape[-2]), int(scores.shape[-1])),
-                tolerance_cell_fraction,
-                minimum_tolerance_pixels,
-                maximum_tolerance_pixels,
+        map_size = (int(scores.shape[-2]), int(scores.shape[-1]))
+        if fixed_tolerance_cells is not None:
+            # This is the literal V1 ablation: resize to the evidence grid, then
+            # dilate by a fixed number of evidence-map cells.
+            foreground = F.adaptive_avg_pool2d(masks.float(), map_size)[:, 0]
+            tolerant = article_tolerance_mask(
+                masks, map_size, int(fixed_tolerance_cells),
             )
-        )
-        foreground, _, background = projected_region_weights(masks, scores.shape[-2:], tolerance)
+            background = 1.0 - tolerant
+        else:
+            tolerance = (
+                int(fixed_tolerance_pixels)
+                if fixed_tolerance_pixels is not None
+                else resolution_aware_tolerance_pixels(
+                    input_size,
+                    map_size,
+                    tolerance_cell_fraction,
+                    minimum_tolerance_pixels,
+                    maximum_tolerance_pixels,
+                )
+            )
+            foreground, _, background = projected_region_weights(masks, map_size, tolerance)
+        backgrounds.append(background)
 
         positive = F.relu(scores.float())
         probability = positive / (
@@ -107,10 +128,15 @@ def support_aware_fcal_losses(
     outside = torch.stack(outside_losses)
     support = torch.stack(support_losses)
     if len(raw_score_maps) == 1:
+        if return_backgrounds:
+            return outside[0], support[0], backgrounds
         return outside[0], support[0]
     weights = torch.arange(1, len(raw_score_maps) + 1, device=outside.device, dtype=outside.dtype)
     weights = weights / weights.sum()
-    return (weights * outside).sum(), (weights * support).sum()
+    aggregate = (weights * outside).sum(), (weights * support).sum()
+    if return_backgrounds:
+        return (*aggregate, backgrounds)
+    return aggregate
 
 
 __all__ = [

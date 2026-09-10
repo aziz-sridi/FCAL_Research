@@ -1,0 +1,19 @@
+{
+  "decision": "not_promoted",
+  "gates": {
+    "clean": true,
+    "bg_mean": true,
+    "bg_worst": false,
+    "foreground_only": true,
+    "strict_leakage": false,
+    "historical_time": false,
+    "peak_memory": true
+  },
+  "caveats": [
+    "Existing development split, single training seed; exploratory screening, not independent confirmation. No retuning and no test evaluation.",
+    "Historical wall times are different sessions. Single paired-run ratios are descriptive, not controlled causal overhead. Same-session synthetic audit is reported separately."
+  ],
+  "accuracy_tests": 240,
+  "holm_significant": 88,
+  "protocol_sha256": "0bcfd6edb6f0dce12df65200955fd19b15c06b7ba185b2dc403ee9ec25a6ff77"
+}

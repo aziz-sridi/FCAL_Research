@@ -1,0 +1,5 @@
+candidate,mode,clean_accuracy,strict_leakage,bg_mean_accuracy,bg_worst_accuracy,fg_mean_accuracy,foreground_only_accuracy,attention_iou,insertion_auc,removal_auc,passed_gates,total_gates,test_opened
+V4.0,pure-original-input,0.800000,0.110127,0.741603,0.545000,0.329744,0.730000,0.194887,0.697468,0.079540,5,9,false
+V4.1,pure-original-input,0.779167,0.104546,0.718013,0.593333,0.311090,0.722500,0.212441,0.640767,0.073229,2,9,false
+V4.2,pure-original-input,0.805000,0.164038,0.735385,0.478333,0.319231,0.742500,0.296287,0.692628,0.081778,6,9,false
+V4.3,pure-original-input,0.793333,0.178549,0.732244,0.588333,0.309936,0.725833,0.301384,0.673938,0.073571,2,9,false

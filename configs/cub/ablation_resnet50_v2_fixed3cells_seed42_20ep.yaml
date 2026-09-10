@@ -1,0 +1,49 @@
+project: fcal_research
+run_id: ablation/cub/resnet50-v2-fixed3cells-seed42-20ep
+seed: 42
+device: cuda
+method: fcal_v2
+data:
+  cub_root: ../datasets/CUB-200-2011/versions/7/CUB_200_2011
+  segmentation_root: ../datasets/CUB-200-2011/versions/7/segmentations
+  split_dir: splits/cub200_2011_seed42_val0.2
+  evaluation_cache: cache/cub_test_224_center
+  image_size: 224
+  resize_size: 256
+  batch_size: 32
+  accumulation_steps: 1
+  num_workers: 6
+model:
+  family: cnn
+  name: resnet50
+  pretrained_id: torchvision:resnet50:IMAGENET1K_V1
+  num_classes: 200
+training:
+  epochs: 20
+  learning_rate: 0.0002
+  weight_decay: 0.0001
+  min_lr_ratio: 0.01
+  grad_clip_norm: 1.0
+  amp: bf16
+  channels_last: true
+  fused_adamw: true
+  save_epoch5_branch: false
+fcal:
+  warmup_epochs: 5
+  alpha: 0.15
+  lambda_min: 0.05
+  lambda_max: 0.30
+  dilation_cells: 3
+  epsilon: 1.0e-8
+fcal_v2:
+  warmup_epochs: 5
+  ramp_epochs: 5
+  support_temperature: 1.0
+  support_margin: 0.0
+  support_weight: 0.05
+  tolerance_cell_fraction: 0.5
+  minimum_tolerance_pixels: 0
+  maximum_tolerance_pixels: 24
+  fixed_tolerance_cells: 3
+  epsilon: 1.0e-8
+output_root: outputs

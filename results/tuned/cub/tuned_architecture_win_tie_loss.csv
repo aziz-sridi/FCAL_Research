@@ -1,0 +1,25 @@
+metric,reference,candidate,architectures,wins,ties,losses,tolerance
+clean_accuracy,FCAL V2,RRR,6,1,0,5,0.0
+bg_mean_accuracy,FCAL V2,RRR,6,3,0,3,0.0
+bg_worst_accuracy,FCAL V2,RRR,6,4,0,2,0.0
+fg_mean_accuracy,FCAL V2,RRR,6,2,0,4,0.0
+fg_worst_accuracy,FCAL V2,RRR,6,2,1,3,0.0
+foreground_only_accuracy,FCAL V2,RRR,6,3,0,3,0.0
+background_only_accuracy,FCAL V2,RRR,6,3,0,3,0.0
+strict_leakage,FCAL V2,RRR,6,0,0,6,0.0
+clean_accuracy,FCAL V2,GAIN-ext,6,2,0,4,0.0
+bg_mean_accuracy,FCAL V2,GAIN-ext,6,1,0,5,0.0
+bg_worst_accuracy,FCAL V2,GAIN-ext,6,3,0,3,0.0
+fg_mean_accuracy,FCAL V2,GAIN-ext,6,0,0,6,0.0
+fg_worst_accuracy,FCAL V2,GAIN-ext,6,1,0,5,0.0
+foreground_only_accuracy,FCAL V2,GAIN-ext,6,2,0,4,0.0
+background_only_accuracy,FCAL V2,GAIN-ext,6,0,0,6,0.0
+strict_leakage,FCAL V2,GAIN-ext,6,6,0,0,0.0
+clean_accuracy,FCAL V2,CAMAL,6,0,0,6,0.0
+bg_mean_accuracy,FCAL V2,CAMAL,6,3,0,3,0.0
+bg_worst_accuracy,FCAL V2,CAMAL,6,3,0,3,0.0
+fg_mean_accuracy,FCAL V2,CAMAL,6,0,0,6,0.0
+fg_worst_accuracy,FCAL V2,CAMAL,6,2,0,4,0.0
+foreground_only_accuracy,FCAL V2,CAMAL,6,1,0,5,0.0
+background_only_accuracy,FCAL V2,CAMAL,6,2,0,4,0.0
+strict_leakage,FCAL V2,CAMAL,6,3,0,3,0.0

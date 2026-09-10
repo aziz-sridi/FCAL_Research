@@ -1,0 +1,101 @@
+protocol: relative_pooled_margin_stage1
+dataset: cub
+architecture: resnet50
+seed: 42
+branch_epoch: 5
+candidate:
+  name: FCAL Relative
+  run_dir: outputs/resnet50-fcal-v2-relative-r4-seed42
+  expected_method: fcal_v2_relative
+anchor:
+  name: FCAL V2
+  run_dir: ../archive/legacy_projects/adaptive_fcal_study/outputs/resnet50-fcal-v5-seed42
+references:
+  CE: ../archive/legacy_projects/adaptive_fcal_study/outputs/resnet50-ce-seed42
+  CAMAL: outputs/baseline-fixed/cub/resnet50-camal-seed42
+  GAIN-ext: outputs/baseline-fixed/cub/resnet50-gain-ext-seed42
+  RRR: outputs/baseline-fixed/cub/resnet50-rrr-seed42
+  Faster-ISNet: outputs/baseline-fixed/cub/resnet50-isnet-seed42
+hard_gates:
+  clean_accuracy:
+    minimum: 0.7983333333333333
+  background_mean_accuracy:
+    minimum: 0.720448717948718
+  background_worst_accuracy:
+    minimum: 0.489166666666667
+  foreground_only_accuracy:
+    minimum: 0.716666666666667
+  strict_leakage:
+    maximum: 0.26621368527412415
+  post_branch_seconds:
+    maximum: 373.945068405
+  peak_cuda_memory_bytes:
+    maximum: 2063567617
+material_improvements:
+  minimum_count: 2
+  thresholds:
+    clean_accuracy:
+      minimum: 0.8008333333333333
+    background_mean_accuracy:
+      minimum: 0.725448717948718
+    background_worst_accuracy:
+      minimum: 0.499166666666667
+    foreground_only_accuracy:
+      minimum: 0.721666666666667
+    strict_leakage:
+      maximum: 0.25621368527412415
+competition:
+  require_all_references: true
+  require_pareto_nondominated: true
+  metrics:
+    - clean_accuracy
+    - background_mean_accuracy
+    - background_worst_accuracy
+    - foreground_only_accuracy
+    - strict_leakage
+adjustment_policy:
+  maximum_adjusted_runs: 1
+  maximum_narrow_miss:
+    clean_accuracy: 0.005
+    background_mean_accuracy: 0.005
+    background_worst_accuracy: 0.005
+    foreground_only_accuracy: 0.005
+    strict_leakage: 0.01
+implementation_checks:
+  one_untouched_input_test: tests/test_v2_relative.py::test_train_epoch_uses_one_original_forward_and_reports_diagnostics
+  one_backbone_forward_test: tests/test_v2_relative.py::test_train_epoch_uses_one_original_forward_and_reports_diagnostics
+  unchanged_inference: candidate_and_anchor_model_configs_must_match
+triage:
+  variants:
+    - clean
+    - bg_random_rgb_s1
+    - foreground_only
+  hard_gates:
+    clean_accuracy:
+      minimum: 0.7983333333333333
+    background_probe_accuracy:
+      minimum: 0.489166666666667
+    foreground_only_accuracy:
+      minimum: 0.716666666666667
+    strict_leakage:
+      maximum: 0.26621368527412415
+    post_branch_seconds:
+      maximum: 373.945068405
+    peak_cuda_memory_bytes:
+      maximum: 2063567617
+  material_improvements:
+    minimum_count: 2
+    thresholds:
+      clean_accuracy:
+        minimum: 0.8008333333333333
+      background_probe_accuracy:
+        minimum: 0.499166666666667
+      foreground_only_accuracy:
+        minimum: 0.721666666666667
+      strict_leakage:
+        maximum: 0.25621368527412415
+  competition_metrics:
+    - clean_accuracy
+    - background_probe_accuracy
+    - foreground_only_accuracy
+    - strict_leakage

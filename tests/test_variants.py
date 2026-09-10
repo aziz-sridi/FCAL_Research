@@ -1,6 +1,13 @@
 import torch
 
-from fcal_study.variants import VariantSpec, apply_variant
+from fcal_study.complete_results import GENERIC_BACKGROUND, GENERIC_FOREGROUND
+from fcal_study.evaluate import with_variant_seed
+from fcal_study.variants import (
+    TAILORED_VARIANTS,
+    VariantSpec,
+    apply_variant,
+    parse_variant,
+)
 
 
 def sample():
@@ -49,3 +56,50 @@ def test_random_solid_uses_one_rgb_color():
     background = ~mask[0].bool()
     for channel in range(3):
         assert result[channel][background].unique().numel() == 1
+
+
+def test_every_tailored_background_scenario_preserves_foreground_and_is_deterministic():
+    image, mask = sample()
+    names = (
+        "bg_cub_twilight", "bg_cub_camouflage", "bg_pet_warm_light",
+        "bg_pet_checkerboard", "bg_isic_hair", "bg_isic_ruler",
+    )
+    foreground = mask.expand_as(image).bool()
+    for name in names:
+        spec = VariantSpec(name, 1)
+        first = apply_variant(image, mask, 19, spec, 42)
+        second = apply_variant(image, mask, 19, spec, 42)
+        assert torch.equal(first, second), name
+        assert torch.equal(first[foreground], image[foreground]), name
+        assert not torch.equal(first[~foreground], image[~foreground]), name
+
+
+def test_isic_low_contrast_preserves_background_and_reduces_foreground_contrast():
+    image, mask = sample()
+    result = apply_variant(image, mask, 23, VariantSpec("fg_isic_low_contrast", 1), 42)
+    foreground = mask.expand_as(image).bool()
+    assert torch.equal(result[~foreground], image[~foreground])
+    original_contrast = image[foreground].std()
+    transformed_contrast = result[foreground].std()
+    assert transformed_contrast < original_contrast
+
+
+def test_complete_report_uses_only_the_13_generic_variants_per_region():
+    tailored_cub = {parse_variant(value).key for value in TAILORED_VARIANTS["cub"]}
+    assert len(GENERIC_BACKGROUND) == 13
+    assert len(GENERIC_FOREGROUND) == 13
+    assert not set(GENERIC_BACKGROUND).intersection(tailored_cub)
+
+
+def test_evaluation_variant_seed_override_does_not_mutate_training_config():
+    config = {"seed": 7, "data": {"batch_size": 32}}
+    selected = with_variant_seed(config, 42)
+    assert selected == {"seed": 42, "data": {"batch_size": 32}}
+    assert config == {"seed": 7, "data": {"batch_size": 32}}
+    assert with_variant_seed(config, None) is config
+
+    image, mask = sample()
+    spec = VariantSpec("bg_random_rgb", 1)
+    reference = apply_variant(image, mask, 17, spec, 42)
+    rerun = apply_variant(image, mask, 17, spec, selected["seed"])
+    assert torch.equal(reference, rerun)

@@ -8,7 +8,6 @@ from fcal_study.config import load_config
 from fcal_study.data import IsicDataset
 from fcal_study.evaluate import classification_metrics
 
-
 ROOT = Path(__file__).resolve().parents[1]
 SPLITS = ROOT / "splits" / "isic_skin_seed42_grouped"
 

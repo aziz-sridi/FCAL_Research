@@ -3,10 +3,22 @@ import torch
 from fcal_study.models import (
     DenseNet121CAM,
     EfficientNetB0CAM,
+    ISNetResNet50CAM,
     ResNet50CAM,
     TimmViTAttention,
     TimmViTAvgPoolCAM,
 )
+
+
+def test_isnet_resnet_adapter_preserves_resnet_logits():
+    baseline = ResNet50CAM(num_classes=5, pretrained=False).eval()
+    isnet = ISNetResNet50CAM(num_classes=5, pretrained=False).eval()
+    isnet.load_state_dict(baseline.state_dict())
+    images = torch.randn(2, 3, 64, 64)
+    with torch.no_grad():
+        expected = baseline(images)
+        actual = isnet(images)
+    torch.testing.assert_close(actual, expected)
 
 
 def test_resnet_cam_shape_and_gradient():
@@ -90,6 +102,16 @@ def test_average_pooled_vit_patch_cam_exactly_decomposes_selected_logits():
     torch.testing.assert_close(logits[torch.arange(2), labels], reconstructed)
     raw.sum().backward()
     assert model.model.head.weight.grad is not None
+
+
+def test_average_pooled_vit_can_disable_fused_attention_for_double_backward():
+    model = TimmViTAvgPoolCAM(
+        "vit_tiny_patch16_224",
+        num_classes=5,
+        pretrained=False,
+        require_second_order_attention=True,
+    )
+    assert all(not block.attn.fused_attn for block in model.model.blocks)
 
 
 def test_densenet_cam_exactly_decomposes_selected_logits():

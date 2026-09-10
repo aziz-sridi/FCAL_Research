@@ -1,0 +1,9 @@
+metric,reference,candidate,architectures,wins,ties,losses,tolerance
+clean_accuracy,CE,FCAL V2,6,5,0,1,0.0
+bg_mean_accuracy,CE,FCAL V2,6,4,0,2,0.0
+bg_worst_accuracy,CE,FCAL V2,6,4,0,2,0.0
+fg_mean_accuracy,CE,FCAL V2,6,2,0,4,0.0
+fg_worst_accuracy,CE,FCAL V2,6,3,0,3,0.0
+foreground_only_accuracy,CE,FCAL V2,6,3,0,3,0.0
+background_only_accuracy,CE,FCAL V2,6,4,0,2,0.0
+strict_leakage,CE,FCAL V2,6,6,0,0,0.0

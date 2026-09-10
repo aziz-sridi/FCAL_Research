@@ -1,0 +1,2 @@
+method,clean_accuracy,strict_leakage,bg_mean_accuracy,bg_worst_accuracy,fg_mean_accuracy,foreground_only_accuracy,background_only_accuracy,post_branch_wall_seconds,post_branch_train_samples_per_second,peak_vram_gib,passed_performance_gates,total_performance_gates,passed_compute_gate,test_opened
+FCAL V2.3,0.8008333333333333,0.1853652447462082,0.7175000000000000,0.4625000000000000,0.3257051282051282,0.7325000000000000,0.0416666666666667,470.6936747999844,534.4634022423390,1.7471470832824707,4,6,False,False

@@ -1,0 +1,74 @@
+{
+  "dataset": "samdazel/automated-cardiac-diagnosis-challenge-miccai17",
+  "pilot_epochs": 12,
+  "test_patients": 30,
+  "metrics": [
+    {
+      "architecture": "resnet50",
+      "method": "ce",
+      "balanced_accuracy": 0.6666666666666667,
+      "macro_f1": 0.6337662337662338,
+      "patient_accuracy": 0.6666666666666666,
+      "patients": 30,
+      "slice_accuracy": 0.6062717770034843,
+      "slices": 287,
+      "strict_leakage": 0.9146689693686854,
+      "tolerant_leakage": 0.6405697805476002
+    },
+    {
+      "architecture": "resnet50",
+      "method": "fcal_v2",
+      "balanced_accuracy": 0.6666666666666667,
+      "macro_f1": 0.6406093906093906,
+      "patient_accuracy": 0.6666666666666666,
+      "patients": 30,
+      "slice_accuracy": 0.5888501742160279,
+      "slices": 287,
+      "strict_leakage": 0.8821770183300722,
+      "tolerant_leakage": 0.5424697681142718
+    },
+    {
+      "architecture": "vit_tiny",
+      "method": "ce",
+      "balanced_accuracy": 0.5333333333333333,
+      "macro_f1": 0.5265734265734265,
+      "patient_accuracy": 0.5333333333333333,
+      "patients": 30,
+      "slice_accuracy": 0.5017421602787456,
+      "slices": 287,
+      "strict_leakage": 0.9111706241705692,
+      "tolerant_leakage": 0.8333249404662992
+    },
+    {
+      "architecture": "vit_tiny",
+      "method": "fcal_v2",
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.5002331002331002,
+      "patient_accuracy": 0.5,
+      "patients": 30,
+      "slice_accuracy": 0.49477351916376305,
+      "slices": 287,
+      "strict_leakage": 0.9095283407679002,
+      "tolerant_leakage": 0.8306955046147004
+    }
+  ],
+  "comparisons": [
+    {
+      "architecture": "resnet50",
+      "patient_accuracy_delta": 0.0,
+      "balanced_accuracy_delta": 0.0,
+      "strict_leakage_delta": -0.03249195103861313,
+      "strict_leakage_relative_change": -0.03552318065522594
+    },
+    {
+      "architecture": "vit_tiny",
+      "patient_accuracy_delta": -0.033333333333333326,
+      "balanced_accuracy_delta": -0.033333333333333326,
+      "strict_leakage_delta": -0.0016422834026689204,
+      "strict_leakage_relative_change": -0.0018023884430689115
+    }
+  ],
+  "recommend_full_matrix": false,
+  "gate": "For both architectures: FCAL patient accuracy no worse than -5 pp and strict leakage at least 5% lower; mean patient-accuracy delta must be non-negative.",
+  "warning": "This one-seed patient-held-out test is a screening pilot, not clinical evidence."
+}

@@ -50,6 +50,37 @@ def test_v2_dead_map_has_live_distributed_support_gradient():
     assert bool((scores.grad < 0).any())
 
 
+def test_v2_fixed_cell_tolerance_is_not_confused_with_input_pixels():
+    scores = torch.ones(1, 7, 7)
+    mask = torch.zeros(1, 1, 224, 224)
+    mask[:, :, 96:128, 96:128] = 1.0
+    cell_outside, _ = support_aware_fcal_losses(
+        [scores], mask, support_temperature=1.0, support_margin=0.0,
+        tolerance_cell_fraction=0.5, fixed_tolerance_cells=3,
+    )
+    pixel_outside, _ = support_aware_fcal_losses(
+        [scores], mask, support_temperature=1.0, support_margin=0.0,
+        tolerance_cell_fraction=0.5, fixed_tolerance_pixels=3,
+    )
+    assert cell_outside < pixel_outside
+
+
+def test_v2_rejects_two_fixed_tolerance_units():
+    scores = torch.ones(1, 7, 7)
+    mask = torch.zeros(1, 1, 224, 224)
+    mask[:, :, 96:128, 96:128] = 1.0
+    try:
+        support_aware_fcal_losses(
+            [scores], mask, support_temperature=1.0, support_margin=0.0,
+            tolerance_cell_fraction=0.5, fixed_tolerance_pixels=3,
+            fixed_tolerance_cells=3,
+        )
+    except ValueError as error:
+        assert "not both" in str(error)
+    else:
+        raise AssertionError("mixed tolerance units must be rejected")
+
+
 def test_v2_configs_change_only_objective_within_architecture():
     root = Path(__file__).resolve().parents[1]
     pairs = [

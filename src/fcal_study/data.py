@@ -4,9 +4,10 @@ import csv
 import math
 from dataclasses import dataclass
 from pathlib import Path
+from typing import ClassVar
 
-import torch
 import numpy as np
+import torch
 from PIL import Image
 from torch.utils.data import DataLoader, Dataset, Sampler
 from torchvision.transforms import InterpolationMode
@@ -14,7 +15,6 @@ from torchvision.transforms import functional as TF
 
 from .utils import seed_worker
 from .variants import VariantSpec, apply_variant
-
 
 IMAGENET_MEAN = (0.485, 0.456, 0.406)
 IMAGENET_STD = (0.229, 0.224, 0.225)
@@ -38,6 +38,7 @@ class Record:
     image_path: Path
     mask_path: Path
     label: int
+    group_id: int | None = None
 
 
 class CubDataset(Dataset):
@@ -111,17 +112,17 @@ class CubDataset(Dataset):
         for _ in range(10):
             target = area * float(torch.empty(1).uniform_(scale[0], scale[1], generator=generator))
             aspect = float(torch.exp(torch.empty(1).uniform_(log_ratio[0], log_ratio[1], generator=generator)))
-            crop_width = int(round(math.sqrt(target * aspect)))
-            crop_height = int(round(math.sqrt(target / aspect)))
+            crop_width = round(math.sqrt(target * aspect))
+            crop_height = round(math.sqrt(target / aspect))
             if 0 < crop_width <= width and 0 < crop_height <= height:
                 top = int(torch.randint(0, height - crop_height + 1, (1,), generator=generator))
                 left = int(torch.randint(0, width - crop_width + 1, (1,), generator=generator))
                 return top, left, crop_height, crop_width
         input_ratio = width / height
         if input_ratio < ratio[0]:
-            crop_width, crop_height = width, int(round(width / ratio[0]))
+            crop_width, crop_height = width, round(width / ratio[0])
         elif input_ratio > ratio[1]:
-            crop_height, crop_width = height, int(round(height * ratio[1]))
+            crop_height, crop_width = height, round(height * ratio[1])
         else:
             crop_width, crop_height = width, height
         return (height - crop_height) // 2, (width - crop_width) // 2, crop_height, crop_width
@@ -189,6 +190,8 @@ class CubDataset(Dataset):
             "label": record.label,
             "image_id": record.image_id,
         }
+        if record.group_id is not None:
+            sample["group_id"] = record.group_id
         if mask is not None:
             if self.cache_dir is None:
                 mask_tensor = self._mask_tensor(mask)
@@ -303,6 +306,96 @@ class OxfordPetDataset(CubDataset):
         return values.ne(2).to(torch.float32)
 
 
+class AcdcCardiacDataset(CubDataset):
+    """Prepared ACDC ED/ES/change images with patient-grouped manifests."""
+
+    def __init__(
+        self,
+        config: dict,
+        split: str,
+        need_mask: bool,
+        variant: VariantSpec | None = None,
+        variants: list[VariantSpec] | None = None,
+    ) -> None:
+        data = config["data"]
+        self.split = split
+        self.training = split == "train"
+        self.need_mask = need_mask or variant is not None or variants is not None
+        self.variant = variant
+        self.variants = variants
+        self.global_seed = int(config["seed"])
+        self.image_size = int(data["image_size"])
+        self.resize_size = int(data.get("resize_size", self.image_size))
+        root = Path(data["cardiac_root"])
+        split_path = Path(data["split_dir"]) / f"{split}.csv"
+        if not split_path.is_file():
+            raise FileNotFoundError(
+                f"Prepared ACDC split is missing: {split_path}; run "
+                "python -m fcal_study.prepare_acdc first"
+            )
+        self.records = []
+        with split_path.open(newline="", encoding="utf-8") as handle:
+            for row in csv.DictReader(handle):
+                record = Record(
+                    image_id=int(row["numeric_id"]),
+                    image_path=root / row["image_path"],
+                    mask_path=root / row["mask_path"],
+                    label=int(row["label"]),
+                    group_id=int(row["patient_id"]),
+                )
+                if not record.image_path.is_file() or (
+                    self.need_mask and not record.mask_path.is_file()
+                ):
+                    raise FileNotFoundError(record)
+                self.records.append(record)
+        if not self.records:
+            raise ValueError(f"Empty ACDC split: {split_path}")
+        self.cache_dir = None
+        self._cached_images = None
+        self._cached_masks = None
+
+    @staticmethod
+    def _square_pad(image: Image.Image) -> Image.Image:
+        width, height = image.size
+        side = max(width, height)
+        left = (side - width) // 2
+        top = (side - height) // 2
+        return TF.pad(image, [left, top, side - width - left, side - height - top], fill=0)
+
+    def _geometry(
+        self, image: Image.Image, mask: Image.Image | None, generator: torch.Generator,
+    ) -> tuple[Image.Image, Image.Image | None]:
+        image = self._square_pad(image)
+        if mask is not None:
+            mask = self._square_pad(mask)
+        image = TF.resize(
+            image, [self.image_size, self.image_size], InterpolationMode.BILINEAR,
+            antialias=True,
+        )
+        if mask is not None:
+            mask = TF.resize(
+                mask, [self.image_size, self.image_size], InterpolationMode.NEAREST,
+            )
+        if self.training:
+            angle = float(torch.empty(1).uniform_(-8.0, 8.0, generator=generator))
+            maximum_shift = round(self.image_size * 0.04)
+            translate = [
+                int(torch.randint(-maximum_shift, maximum_shift + 1, (1,), generator=generator)),
+                int(torch.randint(-maximum_shift, maximum_shift + 1, (1,), generator=generator)),
+            ]
+            scale = float(torch.empty(1).uniform_(0.95, 1.05, generator=generator))
+            image = TF.affine(
+                image, angle, translate, scale, 0.0,
+                interpolation=InterpolationMode.BILINEAR, fill=0,
+            )
+            if mask is not None:
+                mask = TF.affine(
+                    mask, angle, translate, scale, 0.0,
+                    interpolation=InterpolationMode.NEAREST, fill=0,
+                )
+        return image, mask
+
+
 class BloodMnistDataset(Dataset):
     """Memory-mapped 224px BloodMNIST+ arrays with classification transforms.
 
@@ -310,7 +403,11 @@ class BloodMnistDataset(Dataset):
     supports CE classification only and rejects spatial variants.
     """
 
-    SPLIT_PREFIX = {"train": "train", "validation": "val", "test": "test"}
+    SPLIT_PREFIX: ClassVar[dict[str, str]] = {
+        "train": "train",
+        "validation": "val",
+        "test": "test",
+    }
 
     def __init__(
         self,
@@ -377,7 +474,7 @@ class BloodMnistDataset(Dataset):
             # centered cell while adding scale and acquisition-position variety.
             width, height = image.size
             scale = float(torch.empty(1).uniform_(0.85, 1.0, generator=generator))
-            crop = max(1, int(round(min(width, height) * math.sqrt(scale))))
+            crop = max(1, round(min(width, height) * math.sqrt(scale)))
             top = int(torch.randint(0, height - crop + 1, (1,), generator=generator))
             left = int(torch.randint(0, width - crop + 1, (1,), generator=generator))
             image = TF.resized_crop(
@@ -411,6 +508,7 @@ def dataset_from_config(
         "isic": IsicDataset,
         "oxford_pet": OxfordPetDataset,
         "bloodmnist": BloodMnistDataset,
+        "acdc": AcdcCardiacDataset,
     }
     try:
         dataset_type = dataset_types[dataset_name]

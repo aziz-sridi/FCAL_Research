@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 from scipy.stats import binomtest
 
+from .complete_results import GENERIC_BACKGROUND, GENERIC_FOREGROUND
 
 ARCHITECTURES = (
     ("resnet50", "ResNet-50", "CNN"),
@@ -90,8 +91,8 @@ def build(outputs_root: Path, report_root: Path) -> Path:
                 missing.append(f"{run_dir} (full evaluation incomplete)")
                 continue
             clean = summaries["clean"]
-            background = [value for key, value in summaries.items() if key.startswith("bg_")]
-            foreground = [value for key, value in summaries.items() if key.startswith("fg_")]
+            background = [summaries[key] for key in GENERIC_BACKGROUND if key in summaries]
+            foreground = [summaries[key] for key in GENERIC_FOREGROUND if key in summaries]
             if not background or not foreground:
                 missing.append(f"{run_dir} (regional variants incomplete)")
                 continue

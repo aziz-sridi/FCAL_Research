@@ -1,0 +1,49 @@
+project: fcal_research
+run_id: acdc-pilot/vit-tiny-p16-avg-ce-seed42
+seed: 42
+device: cuda
+method: ce
+data:
+  dataset: acdc
+  cardiac_root: ../datasets/ACDC-MICCAI17-prepared
+  split_dir: ../datasets/ACDC-MICCAI17-prepared/splits
+  image_size: 224
+  resize_size: 224
+  batch_size: 32
+  accumulation_steps: 1
+  num_workers: 4
+model:
+  family: vit
+  name: vit_tiny_patch16_224
+  pretrained_id: vit_tiny_patch16_224.augreg_in21k_ft_in1k
+  pool: avg
+  fc_norm: false
+  num_classes: 5
+training:
+  epochs: 12
+  learning_rate: 0.00005
+  weight_decay: 0.0001
+  min_lr_ratio: 0.01
+  grad_clip_norm: 1.0
+  amp: bf16
+  channels_last: false
+  fused_adamw: true
+  save_epoch5_branch: true
+fcal:
+  warmup_epochs: 5
+  alpha: 0.50
+  lambda_min: 0.05
+  lambda_max: 1.00
+  dilation_cells: 1
+  epsilon: 1.0e-8
+fcal_v2:
+  warmup_epochs: 5
+  ramp_epochs: 3
+  support_temperature: 1.0
+  support_margin: 0.0
+  support_weight: 0.05
+  tolerance_cell_fraction: 0.5
+  minimum_tolerance_pixels: 0
+  maximum_tolerance_pixels: 16
+  epsilon: 1.0e-8
+output_root: outputs

@@ -1,0 +1,130 @@
+{
+  "status": "mechanism_verified_not_trained",
+  "torch": "2.11.0+cu128",
+  "source_sha256": {
+    "results/cub/resnet50_three_seed_metrics.csv": "64a62a14557144c135929e3110b338465d9e40f55911832be0ed52d62ada7664",
+    "results/v2_plus/cub/test_three_seed_metrics.csv": "0cee92a4e79056c3d33270751ae8d88fabda7c528b95b8123c1a11ae48d446c7",
+    "results/tuned/cub/tuned_winner_metrics.csv": "ac1153673056221c1e1f269ce121c00224e281e403ead5121bf70fe20be4c094"
+  },
+  "counterexample": [
+    {
+      "common_weight_shift": 0.0,
+      "reference": "target",
+      "target_probability": 0.8807970285415649,
+      "containment": 0.5,
+      "support_loss": 0.38316598534584045
+    },
+    {
+      "common_weight_shift": 0.0,
+      "reference": "class_mean",
+      "target_probability": 0.8807970285415649,
+      "containment": 0.5,
+      "support_loss": 0.38316598534584045
+    },
+    {
+      "common_weight_shift": 20.0,
+      "reference": "target",
+      "target_probability": 0.8807970285415649,
+      "containment": 0.04545454680919647,
+      "support_loss": 0.3446233868598938
+    },
+    {
+      "common_weight_shift": 20.0,
+      "reference": "class_mean",
+      "target_probability": 0.8807970285415649,
+      "containment": 0.5,
+      "support_loss": 0.38316598534584045
+    }
+  ],
+  "checkpoint_probe": {
+    "checkpoint": "D:\\AI Research\\archive\\legacy_projects\\adaptive_fcal_study\\outputs\\resnet50-fcal-v5-seed42\\best-validation.pt",
+    "checkpoint_sha256": "2be7fde19b4e673fd951f0ac7f66b6fde757d63be6f742d7285f5331b8e5a430",
+    "split": "train",
+    "images": 32,
+    "model_mode": "eval",
+    "dtype": "float32",
+    "image_ids": [
+      2,
+      4,
+      5,
+      7,
+      8,
+      9,
+      11,
+      18,
+      20,
+      21,
+      23,
+      30,
+      31,
+      32,
+      35,
+      37,
+      40,
+      41,
+      42,
+      43,
+      49,
+      55,
+      56,
+      58,
+      62,
+      66,
+      67,
+      69,
+      73,
+      74,
+      77,
+      81
+    ],
+    "input_tensor_sha256": "0834d5815baf91c3877d482978a51a92e48de56a4443f23f1a55c09e9c6b7da9",
+    "mask_tensor_sha256": "a9859ce0dcaa06e4881990dcb8bc01b18c6788ca59d15cfbaaabfa3e250cbd95",
+    "common_map_rms_over_raw_map_rms": 0.8688816428184509,
+    "raw_strict_leakage": 0.45665207505226135,
+    "centered_strict_leakage": 0.5762127637863159,
+    "interpretation": "Same predictions, different evidence definition. These leakage values are NOT a model improvement or a benchmark comparison."
+  },
+  "benchmark": {
+    "status": "complete",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "scope": "Synthetic ResNet-50 batch32 224x224 BF16 forward+loss+backward; no optimizer, data loading or validation. Not an end-to-end training cost.",
+    "seconds_per_step_blocks": {
+      "target": [
+        0.030764226666663792,
+        0.030666259999998148,
+        0.030742786666663354,
+        0.030661226666658572,
+        0.03072115999999975,
+        0.03067761333334905
+      ],
+      "class_mean": [
+        0.030872593333333496,
+        0.03074963333334987,
+        0.030867860000004535,
+        0.03074871333334765,
+        0.03058890000002066,
+        0.030746573333362903
+      ]
+    },
+    "peak_allocated_bytes_blocks": {
+      "target": [
+        1747957760,
+        1747957760,
+        1747957760,
+        1747957760,
+        1747957760,
+        1747957760
+      ],
+      "class_mean": [
+        1747957760,
+        1747957760,
+        1747957760,
+        1747957760,
+        1747957760,
+        1747957760
+      ]
+    },
+    "median_time_ratio": 1.0016217479265932,
+    "median_peak_memory_ratio": 1.0
+  }
+}

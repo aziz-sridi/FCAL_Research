@@ -1,0 +1,87 @@
+{
+  "created_utc": "2026-09-10T11:08:40.501003+00:00",
+  "protocol": "class_mean_evidence_cub_resnet50_seed42_exploratory",
+  "status": "frozen_before_training",
+  "scope": "Existing development split, single training seed; exploratory screening, not independent confirmation. No retuning and no test evaluation.",
+  "dataset": "CUB-200-2011",
+  "architecture": "ResNet-50",
+  "training_seed": 42,
+  "variant_seed": 271828,
+  "split": "validation",
+  "candidate": {
+    "name": "V2 class-mean",
+    "config": "configs\\cub\\resnet50_fcal_v2_class_mean_seed42.yaml",
+    "config_sha256": "08e28fbd8def94aee45fa03a3cbf7dee174ef326b72b61d646d6fec09151ce99",
+    "run_dir": "D:\\AI Research\\FCAL\\outputs\\decision-evidence\\cub\\resnet50-class-mean-seed42-20260910"
+  },
+  "branch_checkpoint": "D:\\AI Research\\archive\\legacy_projects\\adaptive_fcal_study\\outputs\\resnet50-ce-seed42\\epoch-005-branch.pt",
+  "branch_sha256": "23c6f866a05acd430b4affa90f3bc00a73456dadbe0fbd33d37ada33527866c1",
+  "references": {
+    "CE": {
+      "run_dir": "D:\\AI Research\\archive\\legacy_projects\\adaptive_fcal_study\\outputs\\resnet50-ce-seed42",
+      "checkpoint_sha256": "08d7e8f0bd6c89040453abd4c44f0a55c101ad1a9c70ff6a9da7d55a440521d5"
+    },
+    "FCAL V1": {
+      "run_dir": "D:\\AI Research\\archive\\legacy_projects\\adaptive_fcal_study\\outputs\\resnet50-fcal-seed42",
+      "checkpoint_sha256": "cdecc9e26203874efdb0506c980eded9642b4f28c43cf72204cb16ae652940d9"
+    },
+    "FCAL V2": {
+      "run_dir": "D:\\AI Research\\archive\\legacy_projects\\adaptive_fcal_study\\outputs\\resnet50-fcal-v5-seed42",
+      "checkpoint_sha256": "2be7fde19b4e673fd951f0ac7f66b6fde757d63be6f742d7285f5331b8e5a430"
+    },
+    "FCAL V2+": {
+      "run_dir": "D:\\AI Research\\FCAL\\outputs\\resnet50-fcal-v2-plus-seed42",
+      "checkpoint_sha256": "012e8ad2aad83fede07ef4f406475031e8160ea3863539ef1eed9fdd2d729a11"
+    },
+    "CAMAL": {
+      "run_dir": "D:\\AI Research\\FCAL\\outputs\\baseline-fixed\\cub\\resnet50-camal-seed42",
+      "checkpoint_sha256": "f694e6a58fa4e637a0521f5a6522cd322036c1d3b69264fb080108f4279a27ac"
+    },
+    "GAIN-ext": {
+      "run_dir": "D:\\AI Research\\FCAL\\outputs\\baseline-fixed\\cub\\resnet50-gain-ext-seed42",
+      "checkpoint_sha256": "702a0c7b174b291787141c2a225a3e9555756d9d3ae45894c9019b0726386723"
+    },
+    "RRR": {
+      "run_dir": "D:\\AI Research\\FCAL\\outputs\\baseline-fixed\\cub\\resnet50-rrr-seed42",
+      "checkpoint_sha256": "219c08089469aa548e8dc6afc9624d51fcf5b64fa84498e8b5c35928a48a54af"
+    },
+    "Faster-ISNet": {
+      "run_dir": "D:\\AI Research\\FCAL\\outputs\\baseline-fixed\\cub\\resnet50-isnet-seed42",
+      "checkpoint_sha256": "6762955d41921c162e11c1742044c9d668331a9b34854ba73006a7390b32fc22"
+    }
+  },
+  "split_sha256": {
+    "train.txt": "6b904c35882601d6c560f03c5c6dd6bc5591199834d0beb9094acc3400ec6a3f",
+    "validation.txt": "ab2d172a98918e4a75825473779024530d235474cf0da822d055630faa254a4c",
+    "test.txt": "aa924d77a38194d694d18b008a29999b7ee5f58771aaf28315a57be03ba01f64",
+    "manifest.json": "a8b3ebaae4c2784ba22566b62de2023da0181e38408457cda2e1f17549cb66fe"
+  },
+  "selection": "Strict improvement of clean validation accuracy; epochs 6-50 from CE epoch-5 branch; original parent cosine schedule.",
+  "evaluation": "All default 30 validation views for every method; raw target CAM convention unchanged. Shared variant_seed=271828. Evaluation views are never training inputs.",
+  "promotion_gates_vs_archived_v2": {
+    "clean_delta_min": -0.0025,
+    "bg_mean_delta_min": 0.01,
+    "bg_worst_delta_min": 0,
+    "foreground_only_delta_min": 0,
+    "strict_leakage_delta_max": 0,
+    "historical_post_branch_time_ratio_max": 1.15,
+    "peak_memory_ratio_max": 1.1
+  },
+  "cost_caveat": "Historical wall times are different sessions. Single paired-run ratios are descriptive, not controlled causal overhead. Same-session synthetic audit is reported separately.",
+  "statistics": {
+    "bootstrap_samples": 10000,
+    "bootstrap_seed": 20260910,
+    "intervals": "Paired images conditional on this training seed; all background views share each image resample.",
+    "mcnemar_family": "Candidate versus 8 references x 30 views = 240 exact tests; one global Holm correction.",
+    "promotion": "All gates conjunctive; passing is only eligibility for independent replication, not SOTA."
+  },
+  "implementation_files_sha256": {
+    "src/fcal_study/decision_evidence.py": "f49cf6b3240af9d32cce2a0cee1a91728ccb431af0d978c178a1eb2c4902b956",
+    "src/fcal_study/v2.py": "2ae6fdf9fdbab34ddfb46c38058c3b1e289152aa215322895fee818af023ee75",
+    "src/fcal_study/models.py": "34bc567a1fa32f627fd43f44101b186a4d9149ad3d8fec5e13ffc4fa19b95686",
+    "src/fcal_study/train.py": "2cffb0bd848fa09c2e14500e9f41e1601162aa555083eabf1b5c33e530f95495",
+    "src/fcal_study/evaluate.py": "216dab6bb5f4fe0a905ca8c546e3c643c27cbd92c492e9c91c165dbbf4a1fc7c",
+    "src/fcal_study/data.py": "bc3fdefb4ee0d83d8413a35f150bcc842fb5647bf9be7c910bd29142679f80b5",
+    "src/fcal_study/variants.py": "99530b6a2ec943b9399b3f17e7d731dd1358a17dba0f365e03cb92a92b1101ed"
+  }
+}

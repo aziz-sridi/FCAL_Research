@@ -19,13 +19,18 @@ cache/
 data/
 reports/
 /archive/
-/scripts/
 *.pt
 *.pth
 *.ckpt
 *.npz
 *.npy
 *.tex
+
+# Publish only the paper PDF while keeping manuscript source, older drafts,
+# revision material, and LaTeX build products out of version control.
+paper/*
+!paper/README.md
+!paper/FCAL_manuscript.pdf
 
 # Local logs and temporary files
 *.log

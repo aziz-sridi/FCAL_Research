@@ -1,0 +1,4 @@
+variant,epochs,clean_accuracy,bg_mean_accuracy,bg_worst_accuracy,fg_mean_accuracy,strict_leakage,parent_schedule_epochs,seed,run_id
+support_fixed_three_cells,20,0.6979634104245771,0.6176283157643186,0.3507076285812910,0.2697750989086853,0.5644237399101257,50,42,ablation/cub/resnet50-v2-fixed3cells-seed42-20ep-parent50
+tolerance_only,20,0.7046945115636866,0.6239744032288043,0.3469105971694857,0.2775948594036271,0.4900142550468445,50,42,ablation/cub/resnet50-v2-tolerance-only-seed42-20ep-parent50
+full_v2,20,0.6983085950983776,0.6284352513209952,0.4332067656196065,0.2774488197339423,0.4928121864795685,50,42,ablation/cub/resnet50-v2-full-seed42-20ep-parent50

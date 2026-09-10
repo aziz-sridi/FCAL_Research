@@ -1,0 +1,94 @@
+protocol: v2_7_resnet50_seed7_triage
+dataset: cub
+architecture: resnet50
+seed: 7
+branch_epoch: 5
+candidate:
+  name: FCAL V2.7
+  run_dir: outputs/multiseed/cub/resnet50-fcal-v2-7-foreground-pool-seed7
+  expected_method: fcal_v2_7
+anchor:
+  name: FCAL V2
+  run_dir: outputs/multiseed/cub/resnet50-fcal-v2-seed7
+references:
+  CE: outputs/multiseed/cub/resnet50-ce-seed7
+  FCAL V2+: outputs/multiseed/cub/resnet50-fcal-v2-plus-seed7
+  GAIN-ext: outputs/explanation-baselines/cub/resnet50-gain-ext-seed7
+  RRR: outputs/explanation-baselines/cub/resnet50-rrr-seed7
+  Faster-ISNet: outputs/explanation-baselines/cub/resnet50-isnet-selective-seed7-fp32
+unsupported_references:
+  CAMAL: no_seed7_run
+full_screen_policy:
+  status: materialize_only_after_triage_pass
+  anchor_metrics:
+    clean_accuracy: 0.7983333333333333
+    background_mean_accuracy: 0.7273076923076924
+    background_worst_accuracy: 0.57
+    foreground_mean_accuracy: 0.3164102564102564
+    foreground_only_accuracy: 0.7025
+    strict_leakage: 0.27196136116981506
+  hard_gates:
+    clean_accuracy: anchor_minus_0.0025
+    background_mean_accuracy: anchor
+    background_worst_accuracy: anchor
+    foreground_mean_accuracy: anchor
+    foreground_only_accuracy: anchor
+    strict_leakage: no_higher_than_anchor
+    post_branch_seconds: anchor_times_1.15
+    peak_cuda_memory_bytes: anchor_times_1.10_rounded_up
+  material_improvements:
+    minimum_count: 2
+    required_any:
+      - background_mean_accuracy
+      - background_worst_accuracy
+      - strict_leakage
+    deltas:
+      clean_accuracy: 0.0
+      background_mean_accuracy: 0.005
+      background_worst_accuracy: 0.01
+      foreground_only_accuracy: 0.005
+      strict_leakage: -0.01
+  competition: preserve_anchor_strict_win_counts_and_pareto_nondomination
+triage:
+  variants:
+    - clean
+    - bg_random_rgb_s1
+    - foreground_only
+  hard_gates:
+    clean_accuracy:
+      minimum: 0.7958333333333334
+    background_probe_accuracy:
+      minimum: 0.57
+    foreground_only_accuracy:
+      minimum: 0.7025
+    strict_leakage:
+      maximum: 0.27196136116981506
+    post_branch_seconds:
+      maximum: 602.9533036899999
+    peak_cuda_memory_bytes:
+      maximum: 2061263002
+  material_improvements:
+    minimum_count: 2
+    required_any:
+      - background_probe_accuracy
+      - strict_leakage
+    thresholds:
+      clean_accuracy:
+        minimum: 0.7983333333333333
+      background_probe_accuracy:
+        minimum: 0.58
+      foreground_only_accuracy:
+        minimum: 0.7075
+      strict_leakage:
+        maximum: 0.26196136116981505
+  competition_metrics:
+    - clean_accuracy
+    - background_probe_accuracy
+    - foreground_only_accuracy
+    - strict_leakage
+  minimum_strict_wins:
+    CE: 4
+    FCAL V2+: 1
+    GAIN-ext: 2
+    RRR: 3
+    Faster-ISNet: 4

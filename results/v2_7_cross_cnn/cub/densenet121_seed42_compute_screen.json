@@ -1,0 +1,17 @@
+{
+  "protocol": "v2_7_densenet121_seed42_triage",
+  "stage": "training_compute_precheck",
+  "decision": "stop_compute",
+  "completed_epochs": [6, 7, 8, 9],
+  "interrupted_during_epoch": 10,
+  "observed_post_branch_seconds": 208.30050039999696,
+  "first_epoch_seconds": 149.51725409999926,
+  "steady_epoch_median_seconds": 19.528612899999644,
+  "projected_post_branch_seconds": 1008.7762216999836,
+  "maximum_post_branch_seconds": 564.1879661100023,
+  "remaining_epoch_average_required_seconds": 8.680182090487936,
+  "peak_cuda_memory_bytes": 2315649536,
+  "maximum_peak_cuda_memory_bytes": 2536199988,
+  "best_partial_validation_accuracy": 0.7375,
+  "reason": "The projected runtime exceeds the frozen limit by 78.8%, and every observed steady epoch is more than twice the remaining per-epoch allowance. The incomplete run is not eligible for quality evaluation."
+}

@@ -1,0 +1,33 @@
+method,metric,reference,candidate,architectures,wins,ties,losses,tolerance
+FCAL V2,clean_accuracy,fixed,tuned,6,1,0,5,0.0
+FCAL V2,bg_mean_accuracy,fixed,tuned,6,1,0,5,0.0
+FCAL V2,bg_worst_accuracy,fixed,tuned,6,1,0,5,0.0
+FCAL V2,fg_mean_accuracy,fixed,tuned,6,3,0,3,0.0
+FCAL V2,fg_worst_accuracy,fixed,tuned,6,3,0,3,0.0
+FCAL V2,foreground_only_accuracy,fixed,tuned,6,1,1,4,0.0
+FCAL V2,background_only_accuracy,fixed,tuned,6,2,0,4,0.0
+FCAL V2,strict_leakage,fixed,tuned,6,3,0,3,0.0
+RRR,clean_accuracy,fixed,tuned,6,6,0,0,0.0
+RRR,bg_mean_accuracy,fixed,tuned,6,6,0,0,0.0
+RRR,bg_worst_accuracy,fixed,tuned,6,3,0,3,0.0
+RRR,fg_mean_accuracy,fixed,tuned,6,5,0,1,0.0
+RRR,fg_worst_accuracy,fixed,tuned,6,4,0,2,0.0
+RRR,foreground_only_accuracy,fixed,tuned,6,6,0,0,0.0
+RRR,background_only_accuracy,fixed,tuned,6,4,0,2,0.0
+RRR,strict_leakage,fixed,tuned,6,3,0,3,0.0
+GAIN-ext,clean_accuracy,fixed,tuned,6,3,0,3,0.0
+GAIN-ext,bg_mean_accuracy,fixed,tuned,6,3,0,3,0.0
+GAIN-ext,bg_worst_accuracy,fixed,tuned,6,2,0,4,0.0
+GAIN-ext,fg_mean_accuracy,fixed,tuned,6,3,0,3,0.0
+GAIN-ext,fg_worst_accuracy,fixed,tuned,6,4,0,2,0.0
+GAIN-ext,foreground_only_accuracy,fixed,tuned,6,2,0,4,0.0
+GAIN-ext,background_only_accuracy,fixed,tuned,6,4,0,2,0.0
+GAIN-ext,strict_leakage,fixed,tuned,6,5,0,1,0.0
+CAMAL,clean_accuracy,fixed,tuned,6,4,0,2,0.0
+CAMAL,bg_mean_accuracy,fixed,tuned,6,5,0,1,0.0
+CAMAL,bg_worst_accuracy,fixed,tuned,6,3,0,3,0.0
+CAMAL,fg_mean_accuracy,fixed,tuned,6,5,0,1,0.0
+CAMAL,fg_worst_accuracy,fixed,tuned,6,3,0,3,0.0
+CAMAL,foreground_only_accuracy,fixed,tuned,6,3,0,3,0.0
+CAMAL,background_only_accuracy,fixed,tuned,6,2,0,4,0.0
+CAMAL,strict_leakage,fixed,tuned,6,1,0,5,0.0

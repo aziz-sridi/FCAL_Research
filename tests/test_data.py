@@ -2,10 +2,8 @@ from pathlib import Path
 
 import pytest
 
-from fcal_study.data import EpochTupleSampler, VariantBatchSampler
 from fcal_study.config import load_config
-from fcal_study.data import CubDataset
-
+from fcal_study.data import CubDataset, EpochTupleSampler, VariantBatchSampler
 
 ROOT = Path(__file__).resolve().parents[1]
 SPLITS = ROOT / "splits" / "cub200_2011_seed42_val0.2"

@@ -6,6 +6,7 @@ from pathlib import Path
 
 import pandas as pd
 
+from .complete_results import GENERIC_BACKGROUND, GENERIC_FOREGROUND
 
 ARCHITECTURES = (
     "resnet50", "densenet121", "efficientnet-b0",
@@ -31,8 +32,8 @@ def build(outputs_root: Path, report_root: Path) -> Path:
                 continue
             summaries = _summary(path)
             clean = summaries["clean"]
-            background = [item for key, item in summaries.items() if key.startswith("bg_")]
-            foreground = [item for key, item in summaries.items() if key.startswith("fg_")]
+            background = [summaries[key] for key in GENERIC_BACKGROUND if key in summaries]
+            foreground = [summaries[key] for key in GENERIC_FOREGROUND if key in summaries]
             rows.append({
                 "architecture": architecture,
                 "method": method,

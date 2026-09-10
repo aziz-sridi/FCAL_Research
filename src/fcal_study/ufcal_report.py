@@ -9,7 +9,6 @@ from scipy.stats import binomtest
 
 from .config import PROJECT_ROOT
 
-
 RUNS = {
     "CE": PROJECT_ROOT / "outputs/isic/resnet50-ce-seed42",
     "FCAL V1": PROJECT_ROOT / "outputs/isic/resnet50-fcal-v1-seed42",

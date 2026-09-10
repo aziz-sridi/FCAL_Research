@@ -1,0 +1,5 @@
+method,status,clean_accuracy,strict_leakage,bg_mean_accuracy,bg_worst_accuracy,fg_mean_accuracy,foreground_only_accuracy,background_only_accuracy,raw_post_branch_wall_seconds,control_normalized_wall_seconds,steady_overhead_vs_control,peak_vram_gib,passed_final_performance_gates,total_performance_gates,passed_compute_gate,test_opened
+FCAL V2.7,reference,0.8000000000000000,0.2556151449680328,0.7306410256410256,0.5241666666666667,0.3203846153846153,0.7341666666666666,0.0441666666666667,355.3405938999968,355.3405938999968,0.0000000000000000,1.7471499443054200,1,6,True,False
+FCAL V2.7a Hard Local Rival,compute_rejected,,,,,,,,,,0.1970000000000000,,0,6,False,False
+FCAL V2.7b Channel Containment,compute_rejected,,,,,,,,,,0.5120000000000000,,0,6,False,False
+FCAL V2.7d Softmin Rival,performance_and_compute_rejected,0.8008333333333333,0.2509293258190155,0.7231410256410256,0.4400000000000000,0.3339743589743590,0.7200000000000000,0.0383333333333333,615.9380919999967,380.3347146018976,0.0832913291393855,1.7471547126770020,3,6,False,False
